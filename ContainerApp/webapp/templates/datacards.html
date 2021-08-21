@@ -26,14 +26,29 @@
             <article class="media content-section">
                 <div class="media-body">
                     <div class="article-metadata">
-                        <div class="mr-2 d-inline">{{ datacard["Name"] }}</div>
+                        <div class="row">
+                            <div class="unit-datacard-name col-sm-8">{{ datacard["Name"] }}</div>
+                            {% if datacard["Unit_Size"]["min"] == datacard["Unit_Size"]["max"] %}
+                                {% if datacard["Unit_Size"]["min"] == 1 %}
+                                    <div class="unit-datacard-models col-sm-2">1 Model</div>
+                                {% else %}
+                                    <div class="unit-datacard-models col-sm-2">{{ datacard["Unit_Size"]["min"] }} Models</div>
+                                {% endif %}
+                                <div class="unit-datacard-points col-sm-2">{{ datacard["Points"] }} Points</div>
+                            {% else %}
+                                <div class="unit-datacard-models col-sm-2">
+                                    {{ datacard["Unit_Size"]["min"] }}-{{ datacard["Unit_Size"]["max"] }} Models
+                                </div>
+                                <div class="unit-datacard-points col-sm-2">{{ datacard["Points"] }} Points Per Model</div>
+                            {% endif %}
+                        </div>
+                        
                         <ul class="list-inline">
                             {% for keyword in datacard["Keywords"] %}
                                 <li class="list-inline-item">{{ keyword }}</li>
                             {% endfor %}
                         </ul>
                     </div>
-                    <h2><a class="article-title" href="#">{{ stuff }}</a></h2>
                     <p class="article-content">stuff2</p>
                 </div>
             </article>

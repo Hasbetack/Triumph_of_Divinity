@@ -66,7 +66,7 @@ def load_datacard_json():
                     'Name': 'Centurion',
                     'Keywords': ['Infantry', 'Character', 'Magistro Malitiae'],
                     'Points': 240,
-                    'Unit_Size': {'min': 1, 'max': 2},
+                    'Unit_Size': {'min': 1, 'max': 1},
                     'Move': 6,
                     'Dash': 4
                     # etc...
