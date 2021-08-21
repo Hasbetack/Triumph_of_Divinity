@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <h1>Changelog</h1>
+    {% for change in changelog %}
+        <article class="media content-section">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <small class="text-muted">{{ change["Version"]}}</small>
+                    <div class="mr-2 d-inline">{{ change["Name"] }}</div>
+                </div>
+                <ul class="list-unstyled">
+                    {% for main_change in change["Main_Changes"] %}
+                        <li>{{ main_change }}</li>
+                    {% endfor %}
+                </ul>
+                <ul class="list-unstyled">
+                    {% for minor_change in change["Minor_Changes"] %}
+                        <li>{{ minor_change }}</li>
+                    {% endfor %}
+                </ul>
+                <p>{{ change['Notes'] }}</p>
+            </div>
+        </article>
+    {% endfor %}
+{% endblock content %}

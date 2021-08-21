@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <h1>Datacards</h1>
+    {% for faction in datacards.keys() %}
+        <h2>{{ faction }}</h2>
+        <h3>Companies</h3>
+        {% for company in datacards[faction]["Companies"] %}
+            <article class="media content-section">
+                <div class="media-body">
+                    <div class="article-metadata">
+                        <div class="mr-2 d-inline">{{ company["Name"] }}</div>
+                        <small class="text-muted">{{ company["Points"]}}</small>
+                    </div>
+                    <div>Requirements</div>
+                    <ul class="list-unstyled">
+                        {% for requirement in company["Requirements"] %}
+                            <li>{{ requirement }}</li>
+                        {% endfor %}
+                    </ul>
+                    <p>{{ company["Effect"] }}</p>
+                </div>
+            </article>
+        {% endfor %}
+        <h3>Units</h3>
+        {% for datacard in datacards[faction]["Units"] %}
+            <article class="media content-section">
+                <div class="media-body">
+                    <div class="article-metadata">
+                        <div class="mr-2 d-inline">{{ datacard["Name"] }}</div>
+                        <ul class="list-inline">
+                            {% for keyword in datacard["Keywords"] %}
+                                <li class="list-inline-item">{{ keyword }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <h2><a class="article-title" href="#">{{ stuff }}</a></h2>
+                    <p class="article-content">stuff2</p>
+                </div>
+            </article>
+        {% endfor %}
+    {% endfor %}
+{% endblock content %}
