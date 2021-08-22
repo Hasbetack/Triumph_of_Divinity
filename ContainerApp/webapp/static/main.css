@@ -42,6 +42,20 @@ body {
     border-bottom: 1px solid #e3e3e3
   }
 
+  .tooltip-inner {
+    background: #ffffff;
+    color: #333333
+  }
+
+  .datacard-keyword {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .ability-name {
+    font-weight: bold;
+  }
+
   .unit-datacard-name {
     background: #ffffff;
   }

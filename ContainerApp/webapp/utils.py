@@ -2,6 +2,8 @@ def load_datacard_json():
     # I need to create something like this from saved JSON
     datacards = {
         'Greeks': {
+            'Abilities': {
+            },
             'Companies': [
                 {
                     'Name': 'The Gates of the Underworld',
@@ -23,7 +25,9 @@ def load_datacard_json():
                     'Points': 2700,
                     'Unit_Size': {'min': 1, 'max': 1},
                     'Move': 12,
-                    'Dash': 7
+                    'Dash': 7,
+                    'Faction_Abilities': [],
+                    'Unit_Abilities': []
                     # etc...
                 },
                 {
@@ -32,12 +36,17 @@ def load_datacard_json():
                     'Points': 20,
                     'Unit_Size': {'min': 10, 'max': 20},
                     'Move': 5,
-                    'Dash': 4
+                    'Dash': 4,
+                    'Faction_Abilities': [],
+                    'Unit_Abilities': []
                     # etc...
                 }
             ]
         },
         'Romans': {
+            'Abilities': {
+                'Servants of the Emperor': 'While a friendly <span class="datacard-keyword">MAGISTRO MALITAE CHARACTER</span> is within 6" of this formation, then models in this formation cannot fail Will tests.'
+            },
             'Companies': [
                 {
                     'Name': 'The Chosen Sons',
@@ -59,7 +68,18 @@ def load_datacard_json():
                     'Points': 90,
                     'Unit_Size': {'min': 3, 'max': 6},
                     'Move': 12,
-                    'Dash': 6
+                    'Dash': 6,
+                    'Faction_Abilities': ['Servants of the Emperor'],
+                    'Unit_Abilities': [
+                        {
+                            'Ability_Name': "The Emperor's Bodyguard",
+                            'Ability_Effect': 'While a friendly <span class="datacard-keyword">MAGISTRO MALITIAE CHARACTER</span> is within 3" of this formation then that character cannot be selected as the target of ranged attacks.'
+                        },
+                        {
+                            'Ability_Name': 'Militiae Battle Shield',
+                            'Ability_Effect': 'Improve the Armour of models in this formation by 1.'
+                        }
+                    ]
                     # etc...
                 },
                 {
@@ -68,7 +88,9 @@ def load_datacard_json():
                     'Points': 240,
                     'Unit_Size': {'min': 1, 'max': 1},
                     'Move': 6,
-                    'Dash': 4
+                    'Dash': 4,
+                    'Faction_Abilities': [],
+                    'Unit_Abilities': []
                     # etc...
                 }
             ]

@@ -45,11 +45,30 @@
                         
                         <ul class="list-inline">
                             {% for keyword in datacard["Keywords"] %}
-                                <li class="list-inline-item">{{ keyword }}</li>
+                                <li class="list-inline-item datacard-keyword">{{ keyword }}</li>
                             {% endfor %}
                         </ul>
                     </div>
-                    <p class="article-content">stuff2</p>
+                    <div>Stats</div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            Abilities
+                            <ul class="list-inline">
+                                {% for faction_ability in datacard["Faction_Abilities"] %}
+                                    <li class="list-inline-item ability-name" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="{{ datacards[faction]['Abilities'][faction_ability] }}">{{ faction_ability }}</li>
+                                {% endfor %}
+                            </ul>
+                            <ul class="list-unstyled">
+                                {% for unit_ability in datacard["Unit_Abilities"] %}
+                                    <li>
+                                        <span class="ability-name">{{ unit_ability["Ability_Name"] }}</span>
+                                        <span>: {{ unit_ability["Ability_Effect"] | safe}}</span>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">Caster</div>
+                    </div>
                 </div>
             </article>
         {% endfor %}
