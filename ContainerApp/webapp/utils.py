@@ -27,8 +27,15 @@ def load_datacard_json():
                     'Move': 12,
                     'Dash': 7,
                     'Faction_Abilities': [],
-                    'Unit_Abilities': []
+                    'Unit_Abilities': [],
                     # etc...
+                    'Caster': 3,
+                    'Spells': [
+                        {
+                            'Name': 'Rage of the Ocean (35)',
+                            'Effect': 'Select D3 enemy formations within 18” of the caster. Then roll 2D6 for each model in each formation (to a maximum of 15 D6). For each 4+ that model’s formation suffers 1 ethereal damage.'
+                        }   
+                    ]                   
                 },
                 {
                     'Name': 'Hoplites',
@@ -69,6 +76,29 @@ def load_datacard_json():
                     'Unit_Size': {'min': 3, 'max': 6},
                     'Move': 12,
                     'Dash': 6,
+                    # etc...
+                    'Weapons': [
+                        {
+                            'Cost': 0,
+                            'Name': 'blah',
+                            'Type': 'blah',
+                            'Range': 'blah',
+                            'Wound': 'blah',
+                            'Rend': 'blah',
+                            'D': 'blah',
+                            'Abilities': 'blah'
+                        },
+                        {
+                            'Cost': 0,
+                            'Name': 'blah',
+                            'Type': 'blah',
+                            'Range': 'blah',
+                            'Wound': 'blah',
+                            'Rend': 'blah',
+                            'D': 'blah',
+                            'Abilities': 'blah'
+                        }
+                    ],
                     'Faction_Abilities': ['Servants of the Emperor'],
                     'Unit_Abilities': [
                         {
@@ -79,8 +109,9 @@ def load_datacard_json():
                             'Ability_Name': 'Militiae Battle Shield',
                             'Ability_Effect': 'Improve the Armour of models in this formation by 1.'
                         }
-                    ]
-                    # etc...
+                    ],
+                    'Caster': False,
+                    'Spells': []
                 },
                 {
                     'Name': 'Centurion',

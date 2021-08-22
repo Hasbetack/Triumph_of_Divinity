@@ -49,7 +49,69 @@
                             {% endfor %}
                         </ul>
                     </div>
-                    <div>Stats</div>
+                    <div>
+                        <table class="table text-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Move</th>
+                                    <th scope="col">Dash</th>
+                                    <th scope="col">Melee</th>
+                                    <th scope="col">Ranged</th>
+                                    <th scope="col">Strength</th>
+                                    <th scope="col">Durability</th>
+                                    <th scope="col">Health</th>
+                                    <th scope="col">Attacks</th>
+                                    <th scope="col">Will</th>
+                                    <th scope="col">Armour</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{{ datacard["Move"] }}</td>
+                                    <td>{{ datacard["Dash"] }}</td>
+                                    <td>{{ datacard["Melee"] }}</td>
+                                    <td>{{ datacard["Ranged"] }}</td>
+                                    <td>{{ datacard["Strength"] }}</td>
+                                    <td>{{ datacard["Durability"] }}</td>
+                                    <td>{{ datacard["Health"] }}</td>
+                                    <td>{{ datacard["Attacks"] }}</td>
+                                    <td>{{ datacard["Will"] }}</td>
+                                    <td>{{ datacard["Armour"] }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <div>Wargear info for this unit</div>
+                        <table class="table text-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Cost</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Type</th>
+                                    <th scope="col">Range</th>
+                                    <th scope="col">Wound</th>
+                                    <th scope="col">Rend</th>
+                                    <th scope="col">D</th>
+                                    <th scope="col">Abilities</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for weapon in datacard["Weapons"] %}
+                                    <tr>
+                                        <td>{{ weapon["Cost"] }}</td>
+                                        <td>{{ weapon["Name"] }}</td>
+                                        <td>{{ weapon["Type"] }}</td>
+                                        <td>{{ weapon["Range"] }}</td>
+                                        <td>{{ weapon["Wound"] }}</td>
+                                        <td>{{ weapon["Rend"] }}</td>
+                                        <td>{{ weapon["D"] }}</td>
+                                        <td>{{ weapon["Abilities"] }}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
                     <div class="row">
                         <div class="col-sm-6">
                             Abilities
@@ -67,7 +129,20 @@
                                 {% endfor %}
                             </ul>
                         </div>
-                        <div class="col-sm-6">Caster</div>
+                        <div class="col-sm-6">
+                            Caster
+                            <div>
+                                {% if datacard["Caster"] %}
+                                    <div>Level {{ datacard["Caster"] }} Caster</div>
+                                    {% for spell in datacard["Spells"] %}
+                                        <span>{{ spell['Name'] }}: </span>
+                                        <span>{{ spell['Effect'] }}</span>
+                                    {% endfor %}
+                                {% else %}
+                                <span>-</span>
+                                {% endif %}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </article>
