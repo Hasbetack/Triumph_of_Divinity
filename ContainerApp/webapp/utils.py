@@ -1,5 +1,6 @@
 def load_datacard_json():
-    # I need to create something like this from saved JSON
+    # Create something like this from saved JSON
+    # Return the datastructure, a list of all factions in it, a list of all keywords
     datacards = {
         'Greeks': {
             'Abilities': {
@@ -127,10 +128,10 @@ def load_datacard_json():
             ]
         }
     }
-    return datacards
+    return datacards, datacards.keys(), ["Infantry", "Cavalry", "Character", 'Magistro Malitiae', "Elite", "Legendary", "Line Troop"]
 
 def load_changelog_json():
-    # I need to create something like this from saved JSON
+    # Create something like this from saved JSON
     changelog = [
         {
             'Version': '1.0.0',
@@ -155,3 +156,50 @@ def load_changelog_json():
         }
     ]
     return changelog
+
+def filter_datacards_by_faction(datacards, searched_factions):
+    """
+    Returns only datacards that belong to one of the specified
+    factions.
+
+    Args:
+    datacards:          datastructure containing all datacards.
+    searched_factions : list containing faction name keywords searched for.
+    """
+    assert type(searched_factions) == list, "seached_factions must be a list"
+    return {k: v for k, v in datacards.items() if k in searched_factions}
+
+def all_keywords_shared(datacard_keywords, searched_keywords):
+    datacard_set = set(datacard_keywords)
+    searched_set = set(searched_keywords)
+    if (datacard_set | searched_set) == datacard_set:
+        return True 
+    else:
+        return False
+
+def any_keywords_shared(datacard_keywords, searched_keywords):
+    datacard_set = set(datacard_keywords)
+    searched_set = set(searched_keywords)
+    if (datacard_set & searched_set):
+        return True 
+    else:
+        return False
+
+def filter_datacards_by_keyword(datacards, searched_keywords, strict):
+    """
+    Returns only datacards that contain the specified unit keywords.
+    Can be set to either any or all searched keywords must be present on datacard
+    for it to be shown.
+
+    Args:
+    datacards:         datastructure containing all datacards.
+    searched_keywords: list containing unit keywords searched for.
+    strict (bool):     if True all searched_keywords must be present on the datacard, otherwise at least one must be present.
+    """
+    assert type(searched_keywords) == list, "seached_keywords must be a list"
+    for faction in datacards.keys():
+        if strict:
+            datacards[faction]["Units"] = [unit for unit in datacards[faction]["Units"] if all_keywords_shared(unit["Keywords"], searched_keywords)]
+        else:
+            datacards[faction]["Units"] = [unit for unit in datacards[faction]["Units"] if any_keywords_shared(unit["Keywords"], searched_keywords)]
+    return datacards

@@ -23,7 +23,12 @@ body {
   .site-header .navbar-nav .nav-link.active {
     font-weight: 500;
   }
-  
+
+  .datacard-container {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
   .content-section {
     background: #ffffff;
     padding: 10px 20px;
@@ -66,4 +71,36 @@ body {
 
   .unit-datacard-points {
     background: #ffffff;
+  }
+
+  .datacards-search-menu {
+      display: none;
+      position: fixed;
+      background: #5f788a;
+      top: 10%;
+      left: 10%;
+      right: 10%;
+      bottom: 10%;
+      z-index: 99;
+  }
+
+  .datacards-buttons {
+    position: fixed;
+    z-index: 99;
+    bottom: 6%;
+    right: 1%;
+    width: 4%;
+  }
+
+  .search-button {
+    top: 0%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 25%;
+  }
+
+  .top-button {
+    width: 100%;
+    height: auto;
+    bottom: 0%;
   }
