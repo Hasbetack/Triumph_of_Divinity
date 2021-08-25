@@ -46,13 +46,13 @@
                             
                             <ul class="list-inline">
                                 {% for keyword in datacard["Keywords"] %}
-                                    <li class="list-inline-item datacard-keyword">{{ keyword }}</li>
+                                    <li class="list-inline-item datacard-keyword datacard-unit-keywords">{{ keyword }}</li>
                                 {% endfor %}
                             </ul>
                         </div>
                         <div>
-                            <table class="table text-center">
-                                <thead>
+                            <table class="table table-striped text-center datacard-table borderless">
+                                <thead class="color-light">
                                     <tr>
                                         <th scope="col">Move</th>
                                         <th scope="col">Dash</th>
@@ -83,9 +83,10 @@
                             </table>
                         </div>
                         <div>
-                            <div>Wargear info for this unit</div>
-                            <table class="table text-center">
-                                <thead>
+                            <div class="datacard-header">Wargear</div>
+                            <div class="datacard-wargear-desc">Wargear info for this unit</div>
+                            <table class="table table-striped text-center datacard-table borderless">
+                                <thead class="color-light">
                                     <tr>
                                         <th scope="col">Cost</th>
                                         <th scope="col">Name</th>
@@ -115,7 +116,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                Abilities
+                                <div class="datacard-header">Abilities</div>
                                 <ul class="list-inline">
                                     {% for faction_ability in datacard["Faction_Abilities"] %}
                                         <li class="list-inline-item ability-name" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="{{ datacards[faction]['Abilities'][faction_ability] }}">{{ faction_ability }}</li>
@@ -123,7 +124,7 @@
                                 </ul>
                                 <ul class="list-unstyled">
                                     {% for unit_ability in datacard["Unit_Abilities"] %}
-                                        <li>
+                                        <li class="datacard-ability">
                                             <span class="ability-name">{{ unit_ability["Ability_Name"] }}</span>
                                             <span>: {{ unit_ability["Ability_Effect"] | safe}}</span>
                                         </li>
@@ -131,14 +132,18 @@
                                 </ul>
                             </div>
                             <div class="col-sm-6">
-                                Caster
+                                <div class="datacard-header">Caster</div>
                                 <div>
                                     {% if datacard["Caster"] %}
-                                        <div>Level {{ datacard["Caster"] }} Caster</div>
-                                        {% for spell in datacard["Spells"] %}
-                                            <span>{{ spell['Name'] }}: </span>
-                                            <span>{{ spell['Effect'] }}</span>
-                                        {% endfor %}
+                                        <div class="ability-name">Level {{ datacard["Caster"] }} Caster</div>
+                                        <ul class="list-unstyled">
+                                            {% for spell in datacard["Spells"] %}
+                                                <li class="datacard-ability">
+                                                    <span class="ability-name">{{ spell['Name'] }}: </span>
+                                                    <span>{{ spell['Effect'] }}</span>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
                                     {% else %}
                                     <span>-</span>
                                     {% endif %}

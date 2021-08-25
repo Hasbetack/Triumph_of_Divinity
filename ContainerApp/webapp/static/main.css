@@ -1,5 +1,5 @@
 body {
-    background: #fafafa;
+    background: #CFDAE8;
     color: #333333;
     margin-top: 5rem;
   }
@@ -8,8 +8,12 @@ body {
     color: #444444;
   }
   
-  .bg-steel {
-    background-color: #5f788a;
+  .color-dark {
+    background-color: #4882CF;
+  }
+
+  .color-light {
+    background-color: #9dc4f7;
   }
   
   .site-header .navbar-nav .nav-link {
@@ -44,12 +48,16 @@ body {
   .article-metadata {
     padding-bottom: 1px;
     margin-bottom: 4px;
-    border-bottom: 1px solid #e3e3e3
   }
 
   .tooltip-inner {
     background: #ffffff;
-    color: #333333
+    color: #333333;
+    text-align: left;
+    border-style: solid;
+    border-color: #000000;
+    padding: 0.5rem;
+    opacity: 100%;
   }
 
   .datacard-keyword {
@@ -57,12 +65,31 @@ body {
     text-transform: uppercase;
   }
 
+  .datacard-unit-keywords {
+    font-size: 120%;
+  }
+
+  .datacard-header {
+    font-weight: bold;
+    font-size: 120%;
+  }
+
+  .datacard-ability {
+    margin-bottom: 0.3rem;
+  }
+
+  .datacard-wargear-desc {
+    margin-bottom: 1rem;
+  }
+
   .ability-name {
     font-weight: bold;
   }
 
   .unit-datacard-name {
-    background: #ffffff;
+    font-size: 250%;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
   }
 
   .unit-datacard-models {
@@ -103,4 +130,13 @@ body {
     width: 100%;
     height: auto;
     bottom: 0%;
+  }
+
+
+  .table>:not(caption)>*>* {
+    padding: 0;
+  }
+
+  .borderless td, .borderless th {
+    border: none;
   }
