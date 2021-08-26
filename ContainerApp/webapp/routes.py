@@ -1,6 +1,6 @@
 from flask import render_template, url_for, flash, redirect, request
 from webapp import app
-from webapp.utils import load_changelog_json, load_datacard_json, filter_datacards_by_faction, filter_datacards_by_keyword
+from webapp.utils import load_changelog_json, load_datacard_json, filter_datacards_by_faction, filter_datacards_by_keyword, load_datacards_from_files
 
 @app.route("/")
 @app.route("/home")
@@ -9,7 +9,7 @@ def home():
 
 @app.route("/datacards", methods=['GET', 'POST'])
 def datacards():
-    datacards_data, all_factions, all_keywords = load_datacard_json()
+    datacards_data, all_factions, all_keywords = load_datacards_from_files()
     
     if request.method == 'POST':
         faction_list = request.form.getlist('faction-checkbox')

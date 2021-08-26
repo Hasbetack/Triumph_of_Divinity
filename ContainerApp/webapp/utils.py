@@ -1,3 +1,39 @@
+# from ContainerApp.webapp.routes import datacards
+import os
+import json
+
+
+def load_datacards_from_files():
+    """Loads Datacards from files.
+
+    Usage:
+    Populate factions.txt with the lowercase name of the faction on each line
+    in the case of spaces replace them with _ instead
+
+    then create .json files for each faction using the name placed in the factions.txt.
+    """
+
+    # setup local variables
+    datacards_from_file = {}
+    faction_names = []
+    path = "ContainerApp/webapp/json/"  # This will need to be changed to be a different value in docker. TODO add a .env file to allow for setting this dynamically.
+
+    # parse factions.txt into list
+    if os.path.exists("ContainerApp/webapp/json/factions.txt"):
+        with open("ContainerApp/webapp/json/factions.txt", "r") as faction_names_file:
+            faction_names = faction_names_file.read().splitlines()
+
+        # parse each file for each faction using json
+        for filename in faction_names:
+            datacards_from_file.update(json.load(open(path + filename + ".json", "r")))
+
+        # resturn the formatted dictionary. TODO set up a function to extract all relevant keywords
+        return datacards_from_file, datacards_from_file.keys(), ["Infantry", "Cavalry", "Character", 'Magistro Malitiae', "Elite", "Legendary", "Line Troop"]
+
+    # debug return for if there is no data
+    return load_datacard_json()
+
+
 def load_datacard_json():
     # Create something like this from saved JSON
     # Return the datastructure, a list of all factions in it, a list of all keywords
