@@ -1,7 +1,7 @@
-FROM python:3.6
-COPY . /app
-WORKDIR /app
+FROM python:3.7.9
+COPY . /webapp
+WORKDIR /webapp
 RUN pip install -r requirements.txt
-EXPOSE 8080
+EXPOSE 5000
 ENTRYPOINT ["python"]
-CMD ["app/app.py"]
+CMD ["run.py"]
