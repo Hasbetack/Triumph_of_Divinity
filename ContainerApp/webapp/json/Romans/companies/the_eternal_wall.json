@@ -1,0 +1,6 @@
+{
+    "Name": "The Eternal Wall",
+    "Points": 200,
+    "Requirements": ["Requirement 1", "Requirement 2"],
+    "Effect": "Effect description 2"
+}
