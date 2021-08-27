@@ -1,0 +1,6 @@
+{
+    "Name": "The Gates of the Underworld",
+    "Points": 600,
+    "Requirements": ["Requirement 1", "Requirement 2", "Requirement 3"],
+    "Effect": "Effect description"
+}

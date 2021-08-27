@@ -3,37 +3,97 @@ import os
 import json
 
 
+def get_companies(path, faction_name):
+
+    if len(os.listdir(path + faction_name + "\\companies\\")) == 0:
+        return []
+
+    companies = []
+
+    company_files = [pos_json for pos_json in os.listdir(path + faction_name + "\\companies\\") if pos_json.endswith('.json')]
+    for index, js in enumerate(company_files):
+        with open(os.path.join(path + faction_name + "\\companies\\", js), encoding="utf8") as company_file:
+            companies_dict = json.load(company_file)
+            companies.append(companies_dict)
+
+    return companies
+
+
+def get_datacards(path, faction_name):
+
+    if len(os.listdir(path + faction_name + "\\datacards\\")) == 0:
+        return []
+
+    datacards = []
+
+    datacard_files = [pos_json for pos_json in os.listdir(path + faction_name + "\\datacards\\") if pos_json.endswith('.json')]
+    for index, js in enumerate(datacard_files):
+        with open(os.path.join(path + faction_name + "\\datacards\\", js), encoding="utf8") as datacard_file:
+            datacards_dict = json.load(datacard_file)
+            datacards.append(datacards_dict)
+
+    return datacards
+
+
+def get_abilities(path, faction_name):
+
+    if len(os.listdir(path + faction_name + "\\abilities\\")) == 0:
+        return {}
+
+    with open(os.path.join(path + faction_name + "\\abilities\\abilities.json"), "r", encoding="utf8") as ability_file:
+        abilities = json.load(ability_file)
+
+    return abilities
+
+
+def get_traits(path, faction_name):
+
+    if len(os.listdir(path + faction_name + "\\traits\\")) == 0:
+        return {}
+
+    with open(os.path.join(path + faction_name + "\\traits\\traits.json"), "r", encoding="utf8") as traits_file:
+        traits = json.load(traits_file)
+
+    return traits
+
+
+def get_primaries(path, faction_name):
+
+    if len(os.listdir(path + faction_name + "\\primaries\\")) == 0:
+        return {}
+
+    with open(os.path.join(path + faction_name + "\\primaries\\primaries.json"), "r", encoding="utf8") as primaries_file:
+        primaries = json.load(primaries_file)
+
+    return primaries
+
+
+def construct_factions_dict():
+
+    factions_dict = {}
+
+    path = os.getcwd() + "\\ContainerApp\\webapp\\json\\"
+    factions = os.listdir(path)
+
+    for dir in factions:
+        faction_name = os.path.basename(dir)
+        factions_dict[faction_name] = {
+            "Abilities": get_abilities(path, faction_name),
+            "Companies": get_companies(path, faction_name),
+            "Units": get_datacards(path, faction_name),
+            "Traits": get_traits(path, faction_name),
+            "Faction Primary": get_primaries(path, faction_name)
+        }
+
+    return factions_dict
+
+
 def load_datacards_from_files():
-    """Loads Datacards from files.
-
-    Usage:
-    Populate factions.txt with the lowercase name of the faction on each line
-    in the case of spaces replace them with _ instead
-
-    then create .json files for each faction using the name placed in the factions.txt.
-    """
-
-    # setup local variables
-    datacards_from_file = {}
-    faction_names = []
-    path = "ContainerApp/webapp/json/"  # This will need to be changed to be a different value in docker. TODO add a .env file to allow for setting this dynamically.
-
-    # parse factions.txt into list
-    if os.path.exists("ContainerApp/webapp/json/factions.txt"):
-        with open("ContainerApp/webapp/json/factions.txt", "r") as faction_names_file:
-            faction_names = faction_names_file.read().splitlines()
-
-        # parse each file for each faction using json
-        for filename in faction_names:
-            datacards_from_file.update(json.load(open(path + filename + ".json", "r")))
-
-        # resturn the formatted dictionary. TODO set up a function to extract all relevant keywords
-        return datacards_from_file, datacards_from_file.keys(), ["Infantry", "Cavalry", "Character", 'Magistro Malitiae', "Elite", "Legendary", "Line Troop"]
-
-    # debug return for if there is no data
-    return load_datacard_json()
+    factions = construct_factions_dict()
+    return factions, factions.keys(), ["Infantry", "Cavalry", "Character", 'Magistro Malitiae', "Elite", "Legendary", "Line Troop"]
 
 
+# TODO old function, deprecate when possible
 def load_datacard_json():
     # Create something like this from saved JSON
     # Return the datastructure, a list of all factions in it, a list of all keywords
