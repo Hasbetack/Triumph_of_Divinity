@@ -3,86 +3,48 @@ import os
 import json
 
 
-def get_companies(path, faction_name):
+def get_large_json(path, faction_name, json_dir):
 
-    if len(os.listdir(path + faction_name + "\\companies\\")) == 0:
+    if len(os.listdir(path + faction_name + json_dir)) == 0:
         return []
 
     companies = []
 
-    company_files = [pos_json for pos_json in os.listdir(path + faction_name + "\\companies\\") if pos_json.endswith('.json')]
+    company_files = [pos_json for pos_json in os.listdir(path + faction_name + json_dir) if pos_json.endswith('.json')]
     for index, js in enumerate(company_files):
-        with open(os.path.join(path + faction_name + "\\companies\\", js), encoding="utf8") as company_file:
+        with open(os.path.join(path + faction_name + json_dir, js), encoding="utf8") as company_file:
             companies_dict = json.load(company_file)
             companies.append(companies_dict)
 
     return companies
 
 
-def get_datacards(path, faction_name):
+def get_small_json(path, faction_name, json_dir, filename):
 
-    if len(os.listdir(path + faction_name + "\\datacards\\")) == 0:
-        return []
-
-    datacards = []
-
-    datacard_files = [pos_json for pos_json in os.listdir(path + faction_name + "\\datacards\\") if pos_json.endswith('.json')]
-    for index, js in enumerate(datacard_files):
-        with open(os.path.join(path + faction_name + "\\datacards\\", js), encoding="utf8") as datacard_file:
-            datacards_dict = json.load(datacard_file)
-            datacards.append(datacards_dict)
-
-    return datacards
-
-
-def get_abilities(path, faction_name):
-
-    if len(os.listdir(path + faction_name + "\\abilities\\")) == 0:
+    if len(os.listdir(path + faction_name + json_dir)) == 0:
         return {}
 
-    with open(os.path.join(path + faction_name + "\\abilities\\abilities.json"), "r", encoding="utf8") as ability_file:
+    with open(os.path.join(path + faction_name + json_dir + filename), "r", encoding="utf8") as ability_file:
         abilities = json.load(ability_file)
 
     return abilities
-
-
-def get_traits(path, faction_name):
-
-    if len(os.listdir(path + faction_name + "\\traits\\")) == 0:
-        return {}
-
-    with open(os.path.join(path + faction_name + "\\traits\\traits.json"), "r", encoding="utf8") as traits_file:
-        traits = json.load(traits_file)
-
-    return traits
-
-
-def get_primaries(path, faction_name):
-
-    if len(os.listdir(path + faction_name + "\\primaries\\")) == 0:
-        return {}
-
-    with open(os.path.join(path + faction_name + "\\primaries\\primaries.json"), "r", encoding="utf8") as primaries_file:
-        primaries = json.load(primaries_file)
-
-    return primaries
 
 
 def construct_factions_dict():
 
     factions_dict = {}
 
-    path = os.getcwd() + "\\ContainerApp\\webapp\\json\\"
+    path = os.getcwd() + "/ContainerApp/webapp/json/"
     factions = os.listdir(path)
 
     for dir in factions:
         faction_name = os.path.basename(dir)
         factions_dict[faction_name] = {
-            "Abilities": get_abilities(path, faction_name),
-            "Companies": get_companies(path, faction_name),
-            "Units": get_datacards(path, faction_name),
-            "Traits": get_traits(path, faction_name),
-            "Faction Primary": get_primaries(path, faction_name)
+            "Abilities": get_small_json(path, faction_name, "/abilities/", "abilities.json"),
+            "Companies": get_large_json(path, faction_name, "/companies/"),
+            "Units": get_large_json(path, faction_name, "/datacards/"),
+            "Traits": get_small_json(path, faction_name, "/traits/", "traits.json"),
+            "Faction Primary": get_small_json(path, faction_name, "/primaries/", "primaries.json")
         }
 
     return factions_dict
