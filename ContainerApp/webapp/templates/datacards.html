@@ -85,30 +85,38 @@
                         <div>
                             <div class="datacard-header">Wargear</div>
                             <div class="datacard-wargear-desc">Wargear info for this unit</div>
-                            <table class="table table-striped text-center datacard-table borderless">
+                            <table class="table table-striped datacard-table borderless">
                                 <thead class="color-light">
                                     <tr>
-                                        <th scope="col">Cost</th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Type</th>
-                                        <th scope="col">Range</th>
-                                        <th scope="col">Wound</th>
-                                        <th scope="col">Rend</th>
-                                        <th scope="col">D</th>
+                                        <th scope="col" class="text-center">Cost</th>
+                                        <th scope="col" class="text-center">Name</th>
+                                        <th scope="col" class="text-center">Type</th>
+                                        <th scope="col" class="text-center">Range</th>
+                                        <th scope="col" class="text-center">Wound</th>
+                                        <th scope="col" class="text-center">Rend</th>
+                                        <th scope="col" class="text-center">D</th>
                                         <th scope="col">Abilities</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {% for weapon in datacard["Weapons"] %}
                                         <tr>
-                                            <td>{{ weapon["Cost"] }}</td>
-                                            <td>{{ weapon["Name"] }}</td>
-                                            <td>{{ weapon["Type"] }}</td>
-                                            <td>{{ weapon["Range"] }}</td>
-                                            <td>{{ weapon["Wound"] }}</td>
-                                            <td>{{ weapon["Rend"] }}</td>
-                                            <td>{{ weapon["D"] }}</td>
-                                            <td>{{ weapon["Abilities"] }}</td>
+                                            <td class="text-center">{{ weapon["Cost"] }}</td>
+                                            <td class="text-center">{{ weapon["Name"] }}</td>
+                                            <td class="text-center">{{ weapon["Type"] }}</td>
+                                            <td class="text-center">{{ weapon["Range"] }}</td>
+                                            <td class="text-center">{{ weapon["Wound"] }}</td>
+                                            <td class="text-center">{{ weapon["Rend"] }}</td>
+                                            <td class="text-center">{{ weapon["D"] }}</td>
+                                            <td>
+                                                <ul class="list-inline" style="margin-bottom: 0rem">
+                                                    {% for weapon_ability in weapon["Abilities"] %}   
+                                                        <li class="list-inline-item ability-name" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="{{ weapon_ability_tooltip(weapon_ability) }}">
+                                                            {{ weapon_ability }}
+                                                        </li>
+                                                    {% endfor %}
+                                                </ul>
+                                            </td>
                                         </tr>
                                     {% endfor %}
                                 </tbody>

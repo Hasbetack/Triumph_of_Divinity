@@ -2,10 +2,12 @@ body {
     background: #CFDAE8;
     color: #333333;
     margin-top: 5rem;
+    font-family: Ariel;
   }
   
   h1, h2, h3, h4, h5, h6 {
     color: #444444;
+    font-family: Merriweather;
   }
   
   .color-dark {
@@ -63,6 +65,7 @@ body {
   .datacard-keyword {
     font-weight: bold;
     text-transform: uppercase;
+    font-family: Merriweather;
   }
 
   .datacard-unit-keywords {

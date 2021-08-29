@@ -5,7 +5,7 @@ import json
 
 def get_large_json(path, faction_name, json_dir):
 
-    if len(os.listdir(path + faction_name + json_dir)) == 0:
+    if not os.path.isdir(path + faction_name + json_dir) or len(os.listdir(path + faction_name + json_dir)) == 0:
         return []
 
     list_of_cards = []
@@ -21,7 +21,7 @@ def get_large_json(path, faction_name, json_dir):
 
 def get_small_json(path, faction_name, json_dir, filename):
 
-    if len(os.listdir(path + faction_name + json_dir)) == 0:
+    if not os.path.isdir(path + faction_name + json_dir) or len(os.listdir(path + faction_name + json_dir)) == 0:
         return {}
 
     with open(os.path.join(path + faction_name + json_dir + filename), "r", encoding="utf8") as json_file:
@@ -54,6 +54,27 @@ def load_datacards_from_files():
     factions = construct_factions_dict()
     return factions, factions.keys(), ["Infantry", "Cavalry", "Character", 'Magistro Malitiae', "Elite", "Legendary", "Line Troop"]
 
+def dummy_weapon_abilities():
+    weapon_abilities = {
+        "Artillery": "Ignores Line of Sight.",
+        "Cannon": 'Blast Template of X”.', 
+        "Spread": 'Spread Template of X”.', 
+        "Balanced": "+1 to hit.",
+        "Felling": "add X to Rend on wound of 6 with Melee.",
+        "Tearing": "add X to Rend on wound of 6 with Ranged.",
+        "Unwieldy": "-1 to hit.",
+        "Devastating": "Ignores Durability Saves.",
+        "Toxic": "+1 Damage against <span class='datacard-keyword'>LINE TROOPS</span>.",
+        "Lance": "+1 to wound if the bearer completed a charge this turn.",
+        "Ethereal Weapon": "Unmodified wound rolls of 6 inflict X ethereal damage in addition to normal damage.",
+        "Additional Attacks": "The bearer of this weapon may make X additional attacks with this weapon in addition to any normal attacks but they may not make more than X attacks with this weapon.",
+        "Fragmentation": "This weapon inflicts X additional automatic hits on a hit roll of 6 in the shooting phase.",
+        "Serrated": "This weapon inflicts X additional automatic hits on a hit roll of 6 in the melee combat phase.",
+        "Auto-Hit": "This weapon automatically hits its target, If this weapon uses a blast template then that attack is considered to score a direct hit.",
+        "Decimating": "Any abilities that would allow the target to ignore, reduce or alter the rend characteristic do not affect attacks made with this weapon."
+    }
+    return weapon_abilities
+
 
 def load_changelog_json():
     # Create something like this from saved JSON
@@ -82,6 +103,19 @@ def load_changelog_json():
     ]
     return changelog
 
+def weapon_ability_tooltip(weapon_ability):
+    # TODO this requires a check when loading every datacard that all weapon abilities are present in the dict.
+    assert isinstance(weapon_ability, str), "weapon ability must be a string"
+    weapon_abilities = dummy_weapon_abilities()
+    if weapon_ability.count("(") == 1 and weapon_ability.count(")") == 1:
+        contents = weapon_ability[weapon_ability.find("(")+1:weapon_ability.find(")")]
+        weapon_ability = weapon_ability.split("(")[0].strip()
+        tooltip = weapon_abilities[weapon_ability].replace("X", contents)
+    else:
+        tooltip = weapon_abilities[weapon_ability]
+
+    return tooltip
+        
 
 def filter_datacards_by_faction(datacards, searched_factions):
     """

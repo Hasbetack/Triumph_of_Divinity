@@ -1,6 +1,6 @@
 from flask import render_template, url_for, flash, redirect, request
 from webapp import app
-from webapp.utils import load_changelog_json, filter_datacards_by_faction, filter_datacards_by_keyword, load_datacards_from_files
+from webapp.utils import load_changelog_json, filter_datacards_by_faction, filter_datacards_by_keyword, load_datacards_from_files, weapon_ability_tooltip
 
 
 @app.route("/")
@@ -19,7 +19,12 @@ def datacards():
         datacards_data = filter_datacards_by_faction(datacards_data, faction_list)
         datacards_data = filter_datacards_by_keyword(datacards_data, keyword_list, False)
 
-    return render_template('datacards.html', datacards=datacards_data, all_factions=all_factions, all_keywords=all_keywords)
+    return render_template(
+        'datacards.html', 
+        datacards=datacards_data, 
+        all_factions=all_factions, 
+        all_keywords=all_keywords, 
+        weapon_ability_tooltip=weapon_ability_tooltip)
 
 
 @app.route("/rules")

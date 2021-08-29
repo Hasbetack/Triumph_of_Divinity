@@ -14,7 +14,7 @@
             "Wound": "blah",
             "Rend": "blah",
             "D": "blah",
-            "Abilities": "blah"
+            "Abilities": ["Ethereal Weapon (5)", "Additional Attacks (2)"]
         },
         {
             "Cost": 0,
@@ -24,7 +24,7 @@
             "Wound": "blah",
             "Rend": "blah",
             "D": "blah",
-            "Abilities": "blah"
+            "Abilities": ["Decimating", "Devastating"]
         }
     ],
     "Faction_Abilities": ["Servants of the Emperor"],
