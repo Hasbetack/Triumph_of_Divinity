@@ -9,8 +9,10 @@
                 <article class="media content-section">
                     <div class="media-body">
                         <div class="article-metadata">
-                            <div class="mr-2 d-inline">{{ company["Name"] }}</div>
-                            <small class="text-muted">{{ company["Points"]}}</small>
+                            <div class="row">
+                                <div class="unit-datacard-name col-sm-10">{{ company["Name"] }}</div>
+                                <div class="unit-datacard-name company-cost col-sm-2">{{ company["Points"]}} Points</div>
+                            </div>
                         </div>
                         <div>Requirements</div>
                         <ul class="list-unstyled">
@@ -28,20 +30,22 @@
                     <div class="media-body">
                         <div class="article-metadata">
                             <div class="row">
-                                <div class="unit-datacard-name col-sm-8">{{ datacard["Name"] }}</div>
-                                {% if datacard["Unit_Size"]["min"] == datacard["Unit_Size"]["max"] %}
-                                    {% if datacard["Unit_Size"]["min"] == 1 %}
-                                        <div class="unit-datacard-models col-sm-2">1 Model</div>
+                                <div class="unit-datacard-name col-sm-10">{{ datacard["Name"] }}</div>
+                                <div class="col col-sm-2">
+                                    {% if datacard["Unit_Size"]["min"] == datacard["Unit_Size"]["max"] %}
+                                        <div class="unit-datacard-points col-sm-12">{{ datacard["Points"] }} Points</div>
+                                        {% if datacard["Unit_Size"]["min"] == 1 %}
+                                            <div class="unit-datacard-models col-sm-12">1 Model</div>
+                                        {% else %}
+                                            <div class="unit-datacard-models col-sm-12">{{ datacard["Unit_Size"]["min"] }} Models</div>
+                                        {% endif %}
                                     {% else %}
-                                        <div class="unit-datacard-models col-sm-2">{{ datacard["Unit_Size"]["min"] }} Models</div>
+                                        <div class="unit-datacard-points col-sm-12">{{ datacard["Points"] }} Points Per Model</div>
+                                        <div class="unit-datacard-models col-sm-12">
+                                            {{ datacard["Unit_Size"]["min"] }}-{{ datacard["Unit_Size"]["max"] }} Models
+                                        </div>
                                     {% endif %}
-                                    <div class="unit-datacard-points col-sm-2">{{ datacard["Points"] }} Points</div>
-                                {% else %}
-                                    <div class="unit-datacard-models col-sm-2">
-                                        {{ datacard["Unit_Size"]["min"] }}-{{ datacard["Unit_Size"]["max"] }} Models
-                                    </div>
-                                    <div class="unit-datacard-points col-sm-2">{{ datacard["Points"] }} Points Per Model</div>
-                                {% endif %}
+                                </div>
                             </div>
                             
                             <ul class="list-inline">
@@ -168,7 +172,7 @@
         <img src='{{ url_for("static", filename="arrow-up-circle.svg") }}' class="top-button" onclick="top_function()">
     </div>
 
-    <div class="datacards-search-menu" id="search-menu-id">
+    <div class="datacards-search-menu color-dark" id="search-menu-id">
         <form method="POST" role="form" action="/datacards">
             <div>
                 {% for faction in all_factions %}

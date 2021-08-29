@@ -110,8 +110,12 @@ def weapon_ability_tooltip(weapon_ability):
     if weapon_ability.count("(") == 1 and weapon_ability.count(")") == 1:
         contents = weapon_ability[weapon_ability.find("(")+1:weapon_ability.find(")")]
         weapon_ability = weapon_ability.split("(")[0].strip()
+        if weapon_ability not in weapon_abilities.keys():
+            return "ERROR"
         tooltip = weapon_abilities[weapon_ability].replace("X", contents)
     else:
+        if weapon_ability not in weapon_abilities.keys():
+            return "ERROR"
         tooltip = weapon_abilities[weapon_ability]
 
     return tooltip

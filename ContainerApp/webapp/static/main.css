@@ -92,21 +92,25 @@ body {
   .unit-datacard-name {
     font-size: 250%;
     padding-bottom: 0.5rem;
-    padding-left: 1rem;
+  }
+
+  .company-cost {
+    text-align: right;
   }
 
   .unit-datacard-models {
-    background: #ffffff;
+    text-align: right;
+    font-size: 120%;
   }
 
   .unit-datacard-points {
-    background: #ffffff;
+    text-align: right;
+    font-size: 120%;
   }
 
   .datacards-search-menu {
       display: none;
       position: fixed;
-      background: #5f788a;
       top: 10%;
       left: 10%;
       right: 10%;
