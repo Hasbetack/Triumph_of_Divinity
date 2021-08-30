@@ -66,6 +66,10 @@ def construct_factions_dict():
     path = os.getcwd() + "/ContainerApp/webapp/json/"
     factions = os.listdir(path)
 
+    for li in factions:
+        if li.endswith(".json"):
+            factions.remove(li)
+
     for dir in factions:
         faction_name = os.path.basename(dir)
         factions_dict[faction_name] = {
