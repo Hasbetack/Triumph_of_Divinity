@@ -1,0 +1,7 @@
+{
+    "Version": "1.0.1",
+    "Name": "Balance Patch",
+    "Main_Changes": ["Errata for Greeks"],
+    "Minor_Changes": ["Poseidon went from 2700 points to 2800 points.", "Hoplites had their armor save improved to 4+ from 5+ but lost the benefit of +2 to saves if the unit was 15 models or larger."],
+    "Notes": "Greeks were proving too dependant on Poseidon, so his points were raised to make him less of an autopick. Hoplites are still bad tho lol."
+}

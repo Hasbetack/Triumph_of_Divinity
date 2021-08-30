@@ -1,0 +1,7 @@
+{
+    "Version": "1.1.0",
+    "Name": "Pirate Update",
+    "Main_Changes": ["Release of Pirate faction", "Points adjustments for Greeks"],
+    "Minor_Changes": ["Hoplites went from 20 points per model to 15 points per model."],
+    "Notes": "Hoplites bad lul."
+}

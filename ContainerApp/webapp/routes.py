@@ -20,10 +20,10 @@ def datacards():
         datacards_data = filter_datacards_by_keyword(datacards_data, keyword_list, False)
 
     return render_template(
-        'datacards.html', 
-        datacards=datacards_data, 
-        all_factions=all_factions, 
-        all_keywords=all_keywords, 
+        'datacards.html',
+        datacards=datacards_data,
+        all_factions=all_factions,
+        all_keywords=all_keywords,
         weapon_ability_tooltip=weapon_ability_tooltip)
 
 

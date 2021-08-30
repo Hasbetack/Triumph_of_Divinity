@@ -4,6 +4,17 @@ import json
 
 
 def get_large_json(path, faction_name, json_dir):
+    """
+    Returns a list of dictionaries containing data extracted from multiple JSON files.
+    Function is data agnostic but should only be used when a list of dictionaries is required.
+
+    Args:
+    path: base path to pull files from NOTE: this should be changed before the full deployment.
+    faction_name: the parent folder for all faction related JSON files.
+    json_dir: the directory inside the factions directory that the function pulls files from.
+    """
+
+    # TODO Replace fixed directories with ones from a .env file.
 
     if not os.path.isdir(path + faction_name + json_dir) or len(os.listdir(path + faction_name + json_dir)) == 0:
         return []
@@ -11,6 +22,7 @@ def get_large_json(path, faction_name, json_dir):
     list_of_cards = []
 
     json_files = [pos_json for pos_json in os.listdir(path + faction_name + json_dir) if pos_json.endswith('.json')]
+
     for index, js in enumerate(json_files):
         with open(os.path.join(path + faction_name + json_dir, js), encoding="utf8") as json_file:
             card_dict = json.load(json_file)
@@ -20,6 +32,18 @@ def get_large_json(path, faction_name, json_dir):
 
 
 def get_small_json(path, faction_name, json_dir, filename):
+    """
+    Returns a dictionary from a JSON file in the given directory.
+    Function is data agnostic.
+
+    Args:
+    path: base path to pull files from NOTE: this should be changed before the full deployment.
+    faction_name: the parent folder for all faction related JSON files.
+    json_dir: the directory inside the factions directory that the function pulls files from.
+    filename: the specific JSON file this function will read.
+    """
+
+    # TODO Replace fixed directories with ones from a .env file.
 
     if not os.path.isdir(path + faction_name + json_dir) or len(os.listdir(path + faction_name + json_dir)) == 0:
         return {}
@@ -31,6 +55,11 @@ def get_small_json(path, faction_name, json_dir, filename):
 
 
 def construct_factions_dict():
+    """
+    Returns a dictionary from of data constructed from multiple JSON files.
+    """
+
+    # TODO Replace fixed directories with ones from a .env file.
 
     factions_dict = {}
 
@@ -52,74 +81,74 @@ def construct_factions_dict():
 
 def load_datacards_from_files():
     factions = construct_factions_dict()
+
     return factions, factions.keys(), ["Infantry", "Cavalry", "Character", 'Magistro Malitiae', "Elite", "Legendary", "Line Troop"]
 
-def dummy_weapon_abilities():
-    weapon_abilities = {
-        "Artillery": "Ignores Line of Sight.",
-        "Cannon": 'Blast Template of X”.', 
-        "Spread": 'Spread Template of X”.', 
-        "Balanced": "+1 to hit.",
-        "Felling": "add X to Rend on wound of 6 with Melee.",
-        "Tearing": "add X to Rend on wound of 6 with Ranged.",
-        "Unwieldy": "-1 to hit.",
-        "Devastating": "Ignores Durability Saves.",
-        "Toxic": "+1 Damage against <span class='datacard-keyword'>LINE TROOPS</span>.",
-        "Lance": "+1 to wound if the bearer completed a charge this turn.",
-        "Ethereal Weapon": "Unmodified wound rolls of 6 inflict X ethereal damage in addition to normal damage.",
-        "Additional Attacks": "The bearer of this weapon may make X additional attacks with this weapon in addition to any normal attacks but they may not make more than X attacks with this weapon.",
-        "Fragmentation": "This weapon inflicts X additional automatic hits on a hit roll of 6 in the shooting phase.",
-        "Serrated": "This weapon inflicts X additional automatic hits on a hit roll of 6 in the melee combat phase.",
-        "Auto-Hit": "This weapon automatically hits its target, If this weapon uses a blast template then that attack is considered to score a direct hit.",
-        "Decimating": "Any abilities that would allow the target to ignore, reduce or alter the rend characteristic do not affect attacks made with this weapon."
-    }
+
+def load_weapon_abilities():
+    """
+    Returns a dictionary of weapon abilities from a JSON file.
+    """
+
+    # TODO Replace fixed directories with ones from a .env file.
+
+    weapon_abilities = {}
+
+    with open(os.path.join("ContainerApp/webapp/json/weapon_abilities.json"), "r", encoding="utf8") as json_file:
+        weapon_abilities = json.load(json_file)
+
     return weapon_abilities
 
 
 def load_changelog_json():
-    # Create something like this from saved JSON
-    changelog = [
-        {
-            'Version': '1.0.0',
-            'Name': 'First Release',
-            'Main_Changes': ['Release of 4 starting factions', 'Launch of the Webapp'],
-            'Minor_Changes': [],
-            'Notes': ''
-        },
-        {
-            'Version': '1.0.1',
-            'Name': 'Balance Patch',
-            'Main_Changes': ['Errata for Greeks'],
-            'Minor_Changes': ['Poseidon went from 2700 points to 2800 points.', 'Hoplites had their armor save improved to 4+ from 5+ but lost the benefit of +2 to saves if the unit was 15 models or larger.'],
-            'Notes': 'Greeks were proving too dependant on Poseidon, so his points were raised to make him less of an autopick. Hoplites are still bad tho lol.'
-        },
-        {
-            'Version': '1.1.0',
-            'Name': 'Pirate Update',
-            'Main_Changes': ['Release of Pirate faction', 'Points adjustments for Greeks'],
-            'Minor_Changes': ['Hoplites went from 20 points per model to 15 points per model.'],
-            'Notes': 'Hoplites bad lul.'
-        }
-    ]
+    """
+    Returns a list of dictionaries using changelog data pulled from JSON files.
+    """
+
+    # TODO Replace fixed directories with ones from a .env file.
+
+    changelog = []
+
+    json_files = [pos_json for pos_json in os.listdir("ContainerApp/webapp/changelogs/") if pos_json.endswith('.json')]
+
+    for index, js in enumerate(json_files):
+        with open(os.path.join("ContainerApp/webapp/changelogs/", js), encoding="utf8") as json_file:
+            changelog_dict = json.load(json_file)
+            changelog.append(changelog_dict)
+
     return changelog
 
+
 def weapon_ability_tooltip(weapon_ability):
-    # TODO this requires a check when loading every datacard that all weapon abilities are present in the dict.
+    """
+    Returns a specific weapon tooltip as a string.
+
+    Args:
+    weapon_ability: the key to get the value of.
+    """
+
+    # TODO Replace fixed directories with ones from a .env file.
+
     assert isinstance(weapon_ability, str), "weapon ability must be a string"
-    weapon_abilities = dummy_weapon_abilities()
+
+    weapon_abilities = load_weapon_abilities()
+
     if weapon_ability.count("(") == 1 and weapon_ability.count(")") == 1:
-        contents = weapon_ability[weapon_ability.find("(")+1:weapon_ability.find(")")]
+        contents = weapon_ability[weapon_ability.find("(") + 1:weapon_ability.find(")")]
         weapon_ability = weapon_ability.split("(")[0].strip()
+
         if weapon_ability not in weapon_abilities.keys():
             return "ERROR"
+
         tooltip = weapon_abilities[weapon_ability].replace("X", contents)
-    else:
-        if weapon_ability not in weapon_abilities.keys():
-            return "ERROR"
-        tooltip = weapon_abilities[weapon_ability]
+
+    if weapon_ability not in weapon_abilities.keys():
+        return "ERROR"
+
+    tooltip = weapon_abilities[weapon_ability]
 
     return tooltip
-        
+
 
 def filter_datacards_by_faction(datacards, searched_factions):
     """
@@ -130,26 +159,30 @@ def filter_datacards_by_faction(datacards, searched_factions):
     datacards:          datastructure containing all datacards.
     searched_factions : list containing faction name keywords searched for.
     """
+
     assert type(searched_factions) == list, "searched_factions must be a list"
+
     return {k: v for k, v in datacards.items() if k in searched_factions}
 
 
 def all_keywords_shared(datacard_keywords, searched_keywords):
     datacard_set = set(datacard_keywords)
     searched_set = set(searched_keywords)
+
     if (datacard_set | searched_set) == datacard_set:
         return True
-    else:
-        return False
+
+    return False
 
 
 def any_keywords_shared(datacard_keywords, searched_keywords):
     datacard_set = set(datacard_keywords)
     searched_set = set(searched_keywords)
+
     if (datacard_set & searched_set):
         return True
-    else:
-        return False
+
+    return False
 
 
 def filter_datacards_by_keyword(datacards, searched_keywords, strict):
@@ -164,9 +197,12 @@ def filter_datacards_by_keyword(datacards, searched_keywords, strict):
     strict (bool):     if True all searched_keywords must be present on the datacard, otherwise at least one must be present.
     """
     assert type(searched_keywords) == list, "searched_keywords must be a list"
+
     for faction in datacards.keys():
+
         if strict:
             datacards[faction]["Units"] = [unit for unit in datacards[faction]["Units"] if all_keywords_shared(unit["Keywords"], searched_keywords)]
-        else:
-            datacards[faction]["Units"] = [unit for unit in datacards[faction]["Units"] if any_keywords_shared(unit["Keywords"], searched_keywords)]
+
+        datacards[faction]["Units"] = [unit for unit in datacards[faction]["Units"] if any_keywords_shared(unit["Keywords"], searched_keywords)]
+
     return datacards

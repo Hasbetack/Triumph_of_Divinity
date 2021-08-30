@@ -1,0 +1,18 @@
+{
+    "Artillery": "When making attacks with the weapon, you may target formations not visible to the bearer.",
+    "Cannon": "When making attacks with this weapon, use a Blast Template of X”.", 
+    "Spread": "When making attacks with this weapon, use a Spread Template of X”.", 
+    "Balanced": "Add 1 to hit rolls with this weapon.",
+    "Felling": "for each unmodified wound roll of 6+ with this weapon, add X to the Rend Characteristic of this weapon.",
+    "Tearing": "for each unmodified wound roll of 6+ with this weapon, add X to the Rend Characteristic of this weapon.",
+    "Unwieldy": "Subtract 1 from hit rolls with this weapon.",
+    "Devastating": "Enemy formations cannot make Durability Saves against this weapon.",
+    "Toxic": "When making attacks with this weapon against <span class='datacard-keyword'>LINE TROOPS</span> formations, add 1 to the Damage Characteristic of that attack.",
+    "Lance": "If the bearer completed a charge move this turn then add 1 to Wound rolls made with this weapon.",
+    "Ethereal Weapon": "When making attacks with this weapon, unmodified wound rolls of 6 inflict X ethereal damage in addition to normal damage.",
+    "Additional Attacks": "The bearer of this weapon may make X additional attacks with this weapon in addition to any normal attacks but they may not make more than X attacks with this weapon.",
+    "Fragmentation": "This weapon inflicts X additional automatic hits on a hit roll of 6 in the shooting phase.",
+    "Serrated": "This weapon inflicts X additional automatic hits on a hit roll of 6 in the melee combat phase.",
+    "Auto-Hit": "This weapon automatically hits its target, If this weapon uses a blast template then that attack is considered to score a direct hit.",
+    "Decimating": "Any abilities that would allow the target to ignore, reduce or alter the rend characteristic do not affect attacks made with this weapon."
+}
