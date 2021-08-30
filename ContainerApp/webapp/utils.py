@@ -207,6 +207,8 @@ def filter_datacards_by_keyword(datacards, searched_keywords, strict):
         if strict:
             datacards[faction]["Units"] = [unit for unit in datacards[faction]["Units"] if all_keywords_shared(unit["Keywords"], searched_keywords)]
 
+            return datacards
+
         datacards[faction]["Units"] = [unit for unit in datacards[faction]["Units"] if any_keywords_shared(unit["Keywords"], searched_keywords)]
 
     return datacards
