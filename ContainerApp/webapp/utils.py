@@ -2,6 +2,18 @@
 import os
 import json
 
+class Content_Loader:
+    def __init__():
+        self.DATACARD_TAGS = [] # list of all tags present on any datacard
+        self.RULES = ""         # string object with html from Google Drive rules doc
+        self.DATACARDS = {}     # dict, keys are faction names
+
+    def _load_rules():
+        pass
+
+    def _load_datacards():
+        pass
+
 
 def get_large_json(path, faction_name, json_dir):
     """
@@ -206,9 +218,7 @@ def filter_datacards_by_keyword(datacards, searched_keywords, strict):
 
         if strict:
             datacards[faction]["Units"] = [unit for unit in datacards[faction]["Units"] if all_keywords_shared(unit["Keywords"], searched_keywords)]
-
-            return datacards
-
-        datacards[faction]["Units"] = [unit for unit in datacards[faction]["Units"] if any_keywords_shared(unit["Keywords"], searched_keywords)]
+        else:
+            datacards[faction]["Units"] = [unit for unit in datacards[faction]["Units"] if any_keywords_shared(unit["Keywords"], searched_keywords)]
 
     return datacards
