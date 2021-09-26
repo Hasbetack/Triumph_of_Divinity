@@ -1,6 +1,6 @@
 {
     "Name": "Centurion",
-    "Keywords": ["Infantry", "Character", "Magistro Malitiae"],
+    "Keywords": ["INFANTRY", "CHARACTER", "MAGISTRO MALITIAE"],
     "Points": 240,
     "Unit_Size": {"min": 1, "max": 1},
     "Move": 6,

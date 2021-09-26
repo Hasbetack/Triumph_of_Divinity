@@ -1,6 +1,6 @@
 {
     "Name": "Poseidon",
-    "Keywords": ["Character", "Legendary"],
+    "Keywords": ["CHARACTER", "LEGENDARY"],
     "Points": 2700,
     "Unit_Size": {"min": 1, "max": 1},
     "Move": 12,

@@ -1,6 +1,6 @@
 {
     "Name": "Hoplites",
-    "Keywords": ["Infantry", "Line Troop"],
+    "Keywords": ["INFANTRY", "LINE TROOP"],
     "Points": 20,
     "Unit_Size": {"min": 10, "max": 20},
     "Move": 5,

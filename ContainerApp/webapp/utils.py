@@ -3,117 +3,208 @@ import os
 import json
 
 class Content_Loader:
-    def __init__():
-        self.DATACARD_TAGS = [] # list of all tags present on any datacard
-        self.RULES = ""         # string object with html from Google Drive rules doc
-        self.DATACARDS = {}     # dict, keys are faction names
+    def __init__(self):
+        self.RULES = ""             # string object with html from Google Drive rules doc
+        self.WEAPON_ABILITIES = {}  # dictionary of all weapon abilities
+        self.DATACARD_TAGS = []     # list of all tags present on any datacard
+        self.DATACARDS = {}         # dict, keys are faction names
+        self.FACTIONS = []          # list of all factions
 
-    def _load_rules():
-        pass
-
-    def _load_datacards():
-        pass
+        self.load_content()
 
 
-def get_large_json(path, faction_name, json_dir):
-    """
-    Returns a list of dictionaries containing data extracted from multiple JSON files.
-    Function is data agnostic but should only be used when a list of dictionaries is required.
+    def load_content(self):
+        path_json = os.getcwd() + "/ContainerApp/webapp/json/"
+        path_armies = path_json + "/armies"
+        path_game_data = path_json + "/game_data"
 
-    Args:
-    path: base path to pull files from NOTE: this should be changed before the full deployment.
-    faction_name: the parent folder for all faction related JSON files.
-    json_dir: the directory inside the factions directory that the function pulls files from.
-    """
+        assert os.path.exists(path_armies), "Could not find armies folder"
+        assert os.path.exists(path_game_data), "Could not find game_data folder"
 
-    # TODO Replace fixed directories with ones from a .env file.
+        assert os.path.isdir(path_armies), "Found something called 'armies' that is not folder"
+        assert os.path.isdir(path_game_data), "Found something called 'game_data' that is not folder"
 
-    if not os.path.isdir(path + faction_name + json_dir) or len(os.listdir(path + faction_name + json_dir)) == 0:
-        return []
+        factions = os.listdir(path_armies)
+        faction_folders = []
 
-    list_of_cards = []
+        for faction in factions:
+            faction_path = os.path.join(path_armies, faction)
+            assert os.path.isdir(faction_path), "{} is not a folder in 'armies' folder".format(faction)
+            faction_folders.append(faction_path)
 
-    json_files = [pos_json for pos_json in os.listdir(path + faction_name + json_dir) if pos_json.endswith('.json')]
-
-    for index, js in enumerate(json_files):
-        with open(os.path.join(path + faction_name + json_dir, js), encoding="utf8") as json_file:
-            card_dict = json.load(json_file)
-            list_of_cards.append(card_dict)
-
-    return list_of_cards
+        self._load_game_data(path_game_data)
+        self._load_datacards(faction_folders)
 
 
-def get_small_json(path, faction_name, json_dir, filename):
-    """
-    Returns a dictionary from a JSON file in the given directory.
-    Function is data agnostic.
+    def weapon_ability_tooltip(self, weapon_ability):
+        """
+        Returns a specific weapon tooltip as a string.
 
-    Args:
-    path: base path to pull files from NOTE: this should be changed before the full deployment.
-    faction_name: the parent folder for all faction related JSON files.
-    json_dir: the directory inside the factions directory that the function pulls files from.
-    filename: the specific JSON file this function will read.
-    """
+        Args:
+        weapon_ability: the key to get the value of.
+        """
+        assert isinstance(weapon_ability, str), "weapon ability must be a string"
 
-    # TODO Replace fixed directories with ones from a .env file.
+        if weapon_ability.count("(") == 1 and weapon_ability.count(")") == 1:
+            contents = weapon_ability[weapon_ability.find("(") + 1:weapon_ability.find(")")]
+            weapon_ability = weapon_ability.split("(")[0].strip()
 
-    if not os.path.isdir(path + faction_name + json_dir) or len(os.listdir(path + faction_name + json_dir)) == 0:
+            if weapon_ability not in self.WEAPON_ABILITIES.keys():
+                return "ERROR"
+
+            tooltip = self.WEAPON_ABILITIES[weapon_ability].replace("X", contents)
+            return tooltip
+
+        if weapon_ability not in self.WEAPON_ABILITIES.keys():
+            return "ERROR"
+
+        tooltip = self.WEAPON_ABILITIES[weapon_ability]
+
+        return tooltip
+
+    def _load_datacards(self, faction_folders):
+        for faction_folder in faction_folders:
+            faction_name = os.path.basename(faction_folder).replace("_", " ")
+            self.DATACARDS[faction_name] = {
+                "Abilities":       self._load_faction_abilities(faction_folder),
+                "Companies":       self._load_faction_companies(faction_folder),
+                "Units":           self._load_faction_units(faction_folder),
+                "Traits":          self._load_faction_traits(faction_folder),
+                "Faction Primary": self._load_faction_primary(faction_folder),
+            }
+            self.FACTIONS.append(faction_name)
+
+
+    def _load_game_data(self, path_game_data):
+        path_rules = path_game_data + "/rules.json"
+        path_weapon_abilities = path_game_data + "/weapon_abilities.json"
+        path_formation_tags = path_game_data + "/formation_tags.json"
+
+        assert os.path.isfile(path_rules), "Could not find rules.json"
+        assert os.path.isfile(path_weapon_abilities), "Could not find weapon_abilities.json"
+        assert os.path.isfile(path_formation_tags), "Could not find formation_tags.json"
+
+        with open(path_rules, "r", encoding="utf8") as json_rules:
+            self.RULES = json.load(json_rules)
+
+        with open(path_weapon_abilities, "r", encoding="utf8") as json_weapon_abilities:
+            self.WEAPON_ABILITIES = json.load(json_weapon_abilities)
+
+        with open(path_formation_tags, "r", encoding="utf8") as json_formation_tags:
+            self.DATACARD_TAGS = json.load(json_formation_tags)
+
+
+    def _load_faction_abilities(self, faction_folder):
+        path_abilities = faction_folder + "/abilities"
+        if not os.path.exists(path_abilities):
+            print("In {}: Did not contain a folder 'abilities'".format(faction_folder))
+            return {}
+
+        path_abilities_json = path_abilities + "/abilities.json"
+        if not os.path.exists(path_abilities_json):
+            print("In {}: Did not contain 'abilities.json'".format(path_abilities))
+            return {}
+
+        abilities = {}
+        with open(path_abilities_json, "r", encoding="utf8") as json_abilities:
+            abilities = json.load(json_abilities)
+        
+        assert isinstance(abilities, dict), "In {}: Abilities must be stored in dict".format(path_abilities_json)
+
+        if len(abilities.keys()) == 0:
+            print("In {}: Found empty dict".format(path_abilities_json))
+            return {}
+
+        for ability_name in abilities.keys():
+            assert isinstance(ability_name, str), "In {}: Ability names must be of type str".format(path_abilities_json)
+            assert isinstance(abilities[ability_name], str), "In {}: Ability descriptions must be of type str".format(path_abilities_json)
+
+        return abilities
+
+
+    def _load_faction_companies(self, faction_folder):
+        path_companies = faction_folder + "/companies"
+        if not os.path.exists(path_companies):
+            print("In {}: Did not contain a folder 'companies'".format(faction_folder))
+            return []
+
+        companies = []
+        company_jsons = os.listdir(path_companies)
+        for company_json in company_jsons:
+            path_company_json = os.path.join(path_companies, company_json)
+            assert os.path.isfile(path_company_json), "Contents of {} must be json files".format(path_companies)
+            
+            company = {}
+            with open(path_company_json, "r", encoding="utf8") as json_company:
+                company = json.load(json_company)
+
+            assert isinstance(company, dict), "In {}: Companies must be stored in dict".format(path_company_json)
+
+            if len(company.keys()) == 0:
+                print("In {}: Found empty json".format(path_company_json))
+                continue
+
+            assert "Name" in company.keys(),         "In {}: Cannot find key 'Name'".format(path_company_json)
+            assert "Points" in company.keys(),       "In {}: Cannot find key 'Points'".format(path_company_json)
+            assert "Requirements" in company.keys(), "In {}: Cannot find key 'Requirements'".format(path_company_json)
+            assert "Effect" in company.keys(),       "In {}: Cannot find key 'Effect'".format(path_company_json)
+
+            assert len(company.keys()) == 4, "In {}: Contains one or more unrecognized keys".format(path_company_json)
+
+            assert isinstance(company["Name"], str),          "In {}: 'Name' must be of type string".format(path_company_json)
+            assert isinstance(company["Points"], int),        "In {}: 'Points' must be of type int".format(path_company_json)
+            assert isinstance(company["Requirements"], list), "In {}: 'Requirements' must be of type list".format(path_company_json)
+            assert isinstance(company["Effect"], str),        "In {}: 'Effect' must be of type string".format(path_company_json)
+            
+            for requirement in company["Requirements"]:
+                assert isinstance(requirement, str), "In {}: Each element of 'Requirements' must be of type string".format(path_company_json)
+
+            companies.append(company)
+
+        return companies
+
+
+    def _load_faction_units(self, faction_folder):
+        path_datacards = faction_folder + "/datacards"
+        if not os.path.exists(path_datacards):
+            print("In {}: Did not contain a folder 'datacards'".format(faction_folder))
+            return []
+
+        units = []
+        unit_jsons = os.listdir(path_datacards)
+        for unit_json in unit_jsons:
+            path_unit_json = os.path.join(path_datacards, unit_json)
+            assert os.path.isfile(path_unit_json), "Contents of {} must be json files".format(path_datacards)
+            
+            unit = {}
+            with open(path_unit_json, "r", encoding="utf8") as json_unit:
+                unit = json.load(json_unit)
+
+            assert isinstance(unit, dict), "In {}: Units must be stored in dict".format(path_unit_json)
+
+            if len(unit.keys()) == 0:
+                print("In {}: Found empty json".format(path_unit_json))
+                continue  
+            
+            # TODO add content type checks
+            # TODO add check for keywords being in DATACARD_TAGS
+            # TODO add check for each weapon_ability being in WEAPON_ABILITIES 
+            units.append(unit)
+
+        return units
+
+
+    def _load_faction_traits(self, faction_folder):
         return {}
 
-    with open(os.path.join(path + faction_name + json_dir + filename), "r", encoding="utf8") as json_file:
-        card_dict = json.load(json_file)
 
-    return card_dict
-
-
-def construct_factions_dict():
-    """
-    Returns a dictionary from of data constructed from multiple JSON files.
-    """
-
-    # TODO Replace fixed directories with ones from a .env file.
-
-    factions_dict = {}
-
-    path = os.getcwd() + "/ContainerApp/webapp/json/"
-    factions = os.listdir(path)
-
-    for li in factions:
-        if li.endswith(".json"):
-            factions.remove(li)
-
-    for dir in factions:
-        faction_name = os.path.basename(dir)
-        factions_dict[faction_name] = {
-            "Abilities": get_small_json(path, faction_name, "/abilities/", "abilities.json"),
-            "Companies": get_large_json(path, faction_name, "/companies/"),
-            "Units": get_large_json(path, faction_name, "/datacards/"),
-            "Traits": get_small_json(path, faction_name, "/traits/", "traits.json"),
-            "Faction Primary": get_small_json(path, faction_name, "/primaries/", "primaries.json")
-        }
-
-    return factions_dict
+    def _load_faction_primary(self, faction_folder):
+        return {}
 
 
-def load_datacards_from_files():
-    factions = construct_factions_dict()
-
-    return factions, factions.keys(), ["Infantry", "Cavalry", "Character", 'Magistro Malitiae', "Elite", "Legendary", "Line Troop"]
-
-
-def load_weapon_abilities():
-    """
-    Returns a dictionary of weapon abilities from a JSON file.
-    """
-
-    # TODO Replace fixed directories with ones from a .env file.
-
-    weapon_abilities = {}
-
-    with open(os.path.join("ContainerApp/webapp/json/weapon_abilities.json"), "r", encoding="utf8") as json_file:
-        weapon_abilities = json.load(json_file)
-
-    return weapon_abilities
+def rules_parser(rules):
+    # given string from json doc containing ToD rules
+    pass
 
 
 def load_changelog_json():
@@ -133,37 +224,6 @@ def load_changelog_json():
             changelog.append(changelog_dict)
 
     return changelog
-
-
-def weapon_ability_tooltip(weapon_ability):
-    """
-    Returns a specific weapon tooltip as a string.
-
-    Args:
-    weapon_ability: the key to get the value of.
-    """
-
-    # TODO Replace fixed directories with ones from a .env file.
-
-    assert isinstance(weapon_ability, str), "weapon ability must be a string"
-
-    weapon_abilities = load_weapon_abilities()
-
-    if weapon_ability.count("(") == 1 and weapon_ability.count(")") == 1:
-        contents = weapon_ability[weapon_ability.find("(") + 1:weapon_ability.find(")")]
-        weapon_ability = weapon_ability.split("(")[0].strip()
-
-        if weapon_ability not in weapon_abilities.keys():
-            return "ERROR"
-
-        tooltip = weapon_abilities[weapon_ability].replace("X", contents)
-
-    if weapon_ability not in weapon_abilities.keys():
-        return "ERROR"
-
-    tooltip = weapon_abilities[weapon_ability]
-
-    return tooltip
 
 
 def filter_datacards_by_faction(datacards, searched_factions):

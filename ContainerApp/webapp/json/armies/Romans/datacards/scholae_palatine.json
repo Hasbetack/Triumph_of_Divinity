@@ -1,6 +1,6 @@
 {
     "Name": "Scholae Palatine",
-    "Keywords": ["Cavalry", "Elite", "Magistro Malitiae"],
+    "Keywords": ["CAVALRY", "ELITE", "MAGISTRO MALITIAE"],
     "Points": 90,
     "Unit_Size": {"min": 3, "max": 6},
     "Move": 12,
