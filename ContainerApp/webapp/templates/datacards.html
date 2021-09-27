@@ -72,23 +72,23 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>{{ datacard["Move"] }}</td>
-                                        <td>{{ datacard["Dash"] }}</td>
-                                        <td>{{ datacard["Melee"] }}</td>
-                                        <td>{{ datacard["Ranged"] }}</td>
+                                        <td>{{ datacard["Move"] }}"</td>
+                                        <td>{{ datacard["Dash"] }}"</td>
+                                        <td>{{ datacard["Melee"] }}+</td>
+                                        <td>{{ datacard["Ranged"] }}+</td>
                                         <td>{{ datacard["Strength"] }}</td>
-                                        <td>{{ datacard["Durability"] }}</td>
+                                        <td>{{ datacard["Durability"] }}+</td>
                                         <td>{{ datacard["Health"] }}</td>
                                         <td>{{ datacard["Attacks"] }}</td>
                                         <td>{{ datacard["Will"] }}</td>
-                                        <td>{{ datacard["Armour"] }}</td>
+                                        <td>{{ datacard["Armour"] }}+</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div>
                             <div class="datacard-header">Wargear</div>
-                            <div class="datacard-wargear-desc">Wargear info for this unit</div>
+                            <div class="datacard-wargear-desc">{{ datacard["Equipment_Options"] }}</div>
                             <table class="table table-striped datacard-table borderless">
                                 <thead class="color-light">
                                     <tr>

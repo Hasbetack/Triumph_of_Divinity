@@ -233,6 +233,10 @@ class Content_Loader:
             assert isinstance(unit["Caster"], bool),            "In {}: Unit caster must be bool".format(path_unit_json)
             assert isinstance(unit["Spells"], list),            "In {}: Unit spells must be in a list".format(path_unit_json)
             
+            for keyword in unit["Keywords"]:
+                assert isinstance(keyword, str), "In {}: Unit keyword '{}' must all be string".format(path_unit_json, keyword)
+                assert keyword.isupper(), "In {}, unit keyword '{}' must be all caps".format(path_unit_json, keyword)
+                assert keyword in self.DATACARD_TAGS, "In {}, unit keyword '{}' is not a recognized keyword".format(path_unit_json, keyword)
             # TODO add check for keywords being in DATACARD_TAGS
             # TODO add check for each weapon_ability being in WEAPON_ABILITIES 
             units.append(unit)
