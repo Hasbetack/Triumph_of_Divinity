@@ -1,10 +1,18 @@
 {
-    "Name": "Scholae Palatine",
-    "Keywords": ["CAVALRY", "ELITE", "MAGISTRO MALITIAE"],
-    "Points": 90,
-    "Unit_Size": {"min": 3, "max": 6},
-    "Move": 12,
-    "Dash": 6,
+    "Name": "Name",
+    "Keywords": ["LINE TROOP"],
+    "Points": 1,
+    "Unit_Size": {"min": 1, "max": 10000},
+    "Move": 1,
+    "Dash": 1,
+    "Melee": 1,
+    "Ranged": 1,
+    "Strength": 1,
+    "Durability": 1,
+    "Health": 1,
+    "Attacks": 1,
+    "Will": 1,
+    "Armour": 1,
     "Equipment_Options": "",
     "Weapons": [
         {
@@ -16,29 +24,10 @@
             "Rend": "blah",
             "D": "blah",
             "Abilities": ["Ethereal Weapon (5)", "Additional Attacks (2)"]
-        },
-        {
-            "Cost": 0,
-            "Name": "blah",
-            "Type": "blah",
-            "Range": "blah",
-            "Wound": "blah",
-            "Rend": "blah",
-            "D": "blah",
-            "Abilities": ["Decimating", "Devastating"]
         }
     ],
-    "Faction_Abilities": ["Servants of the Emperor"],
-    "Unit_Abilities": [
-        {
-            "Ability_Name": "The Emperor's Bodyguard",
-            "Ability_Effect": "While a friendly <span class='datacard-keyword'>MAGISTRO MALITIAE CHARACTER</span> is within 3\" of this formation then that character cannot be selected as the target of ranged attacks."
-        },
-        {
-            "Ability_Name": "Militiae Battle Shield",
-            "Ability_Effect": "Improve the Armour of models in this formation by 1."
-        }
-    ],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [],
     "Caster": false,
     "Spells": []
 }

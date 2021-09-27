@@ -1,0 +1,6 @@
+{
+    "Name": "The Mounted Spearhead",
+    "Points": 300,
+    "Requirements": ["1-2 Khan Formations", "2-3 Formations of Selemchid", "2-3 Formations of Dairagchid", "2-3 Formations of Kharvaachid"],
+    "Effect": "While your army contains this company each model in this company gains the following ability: <b>Fear the Herd:</b> While an enemy formation is within 6” of a formation with this ability, subtract 2 from the will power of models in that formation. In addition, when a model in this formation scores an unmodified 6 to wound double the damage characteristic of that attack."
+}
