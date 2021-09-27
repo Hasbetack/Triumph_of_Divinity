@@ -209,7 +209,8 @@ class Content_Loader:
                 "Caster",
                 "Spells"]
 
-            assert all_keywords_shared(UNIT_KEYS, unit.keys()), "In {}: Includes unknown dictionary keyowrds".format(path_unit_json)
+            assert all_keywords_shared(UNIT_KEYS, unit.keys()), "In {}: Includes unknown dictionary keywords".format(path_unit_json)
+            assert all_keywords_shared(UNIT_KEYS, unit.keys()), "In {}: Does not include every dictionary keyword".format(path_unit_json)
 
             assert isinstance(unit["Name"], str),               "In {}: Unit name must be string".format(path_unit_json)
             assert isinstance(unit["Keywords"], list),          "In {}: Unit Keywords must be in a list".format(path_unit_json)
@@ -217,6 +218,14 @@ class Content_Loader:
             assert isinstance(unit["Unit_Size"], dict),         "In {}: Unit size must be in a dict".format(path_unit_json)
             assert isinstance(unit["Move"], int),               "In {}: Unit move must be int".format(path_unit_json)
             assert isinstance(unit["Dash"], int),               "In {}: Unit dash must be int".format(path_unit_json)
+            assert isinstance(unit["Melee"], int),              "In {}: Unit melee must be int".format(path_unit_json)
+            assert isinstance(unit["Ranged"], int),             "In {}: Unit ranged must be int".format(path_unit_json)
+            assert isinstance(unit["Strength"], int),           "In {}: Unit strength must be int".format(path_unit_json)
+            assert isinstance(unit["Durability"], int),         "In {}: Unit durability must be int".format(path_unit_json)
+            assert isinstance(unit["Health"], int),             "In {}: Unit health must be int".format(path_unit_json)
+            assert isinstance(unit["Attacks"], int),            "In {}: Unit attacks must be int".format(path_unit_json)
+            assert isinstance(unit["Will"], int),               "In {}: Unit will must be int".format(path_unit_json)
+            assert isinstance(unit["Armour"], int),             "In {}: Unit armour must be int".format(path_unit_json)
             assert isinstance(unit["Equipment_Options"], str),  "In {}: Unit equipment options must be string".format(path_unit_json)
             assert isinstance(unit["Weapons"], list),           "In {}: Unit weapons must be list".format(path_unit_json)
             assert isinstance(unit["Faction_Abilities"], list), "In {}: Unit faction abilities must be in a list".format(path_unit_json)
@@ -224,7 +233,6 @@ class Content_Loader:
             assert isinstance(unit["Caster"], bool),            "In {}: Unit caster must be bool".format(path_unit_json)
             assert isinstance(unit["Spells"], list),            "In {}: Unit spells must be in a list".format(path_unit_json)
             
-
             # TODO add check for keywords being in DATACARD_TAGS
             # TODO add check for each weapon_ability being in WEAPON_ABILITIES 
             units.append(unit)
