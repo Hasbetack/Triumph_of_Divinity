@@ -1,0 +1,56 @@
+{
+    "Name": "Sanguis Khan",
+    "Keywords": ["UNIQUE", "CHARACTER", "LEGENDARY", "CAVALRY"],
+    "Points": 750,
+    "Unit_Size": {"min": 1, "max": 1},
+    "Move": 16,
+    "Dash": 8,
+    "Melee": 2,
+    "Ranged": 2,
+    "Strength": 9,
+    "Durability": 6,
+    "Health": 12,
+    "Attacks": 6,
+    "Will": 9,
+    "Armour": 3,
+    "Equipment_Options": "This model is equipped with Hellfire and Boiling Breath",
+    "Weapons": [
+        {
+            "Cost": 0,
+            "Name": "Hellfire",
+            "Type": "Melee",
+            "Range": "2",
+            "Wound": "3",
+            "Rend": "3",
+            "D": "2",
+            "Abilities": ["Lance", "Ethereal Weapon (2)"]
+        },
+        {
+            "Cost": 0,
+            "Name": "Boiling Breath",
+            "Type": "Ranged *",
+            "Range": "-",
+            "Wound": "4",
+            "Rend": "1",
+            "D": "1",
+            "Abilities": ["Spread (8\")", "Ethereal Weapon (1)"]
+        }
+    ],
+    "Faction_Abilities": ["Dash Quickly"],
+    "Unit_Abilities": [
+        {
+            "Ability_Name": "Ethereal Stead",
+            "Ability_Effect": "If this model dashes, then after this model has moved, each enemy Formation this model moved across takes D3 Ethereal Damage."
+        },
+        {
+            "Ability_Name": "The Shadow Mantle:",
+            "Ability_Effect": "While an enemy model is within 6” of this model, that model’s Formation may not attempt to declare a charge."
+        },
+        {
+            "Ability_Name": "Blood Thirsty Warlord:",
+            "Ability_Effect": "When this model completes a charge, this model’s melee weapons gain the Devastating Ability."
+        }
+    ],
+    "Caster": 0,
+    "Spells": []
+}

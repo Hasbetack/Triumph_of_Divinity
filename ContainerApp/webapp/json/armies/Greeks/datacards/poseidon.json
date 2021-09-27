@@ -28,6 +28,11 @@
     ],
     "Faction_Abilities": [],
     "Unit_Abilities": [],
-    "Caster": false,
-    "Spells": []
+    "Caster": 0,
+    "Spells": [
+        {
+            "Name": "",
+            "Effect": ""
+        }
+    ]
 }
