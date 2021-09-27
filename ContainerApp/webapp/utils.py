@@ -230,7 +230,7 @@ class Content_Loader:
             assert isinstance(unit["Weapons"], list),           "In {}: Unit weapons must be list".format(path_unit_json)
             assert isinstance(unit["Faction_Abilities"], list), "In {}: Unit faction abilities must be in a list".format(path_unit_json)
             assert isinstance(unit["Unit_Abilities"], list),    "In {}: Unit abilities must be in a list".format(path_unit_json)
-            assert isinstance(unit["Caster"], bool),            "In {}: Unit caster must be bool".format(path_unit_json)
+            assert isinstance(unit["Caster"], int),             "In {}: Unit caster must be int, 0 if non-caster".format(path_unit_json)
             assert isinstance(unit["Spells"], list),            "In {}: Unit spells must be in a list".format(path_unit_json)
             
             for keyword in unit["Keywords"]:
