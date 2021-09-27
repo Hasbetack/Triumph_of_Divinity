@@ -1,7 +1,7 @@
 from flask import render_template, url_for, flash, redirect, request
 from webapp import app, Content
 from webapp.utils import load_changelog_json, filter_datacards_by_faction, filter_datacards_by_keyword
-
+import copy
 
 @app.route("/")
 @app.route("/home")
@@ -11,9 +11,9 @@ def home():
 
 @app.route("/datacards", methods=['GET', 'POST'])
 def datacards():
-    datacards_data = Content.DATACARDS
-    all_factions = Content.FACTIONS
-    all_keywords = Content.DATACARD_TAGS
+    datacards_data = copy.deepcopy(Content.DATACARDS)
+    all_factions =   copy.deepcopy(Content.FACTIONS)
+    all_keywords =   copy.deepcopy(Content.DATACARD_TAGS)
 
     if request.method == 'POST':
         faction_list = request.form.getlist('faction-checkbox')
@@ -27,11 +27,6 @@ def datacards():
         all_factions=all_factions,
         all_keywords=all_keywords,
         weapon_ability_tooltip=Content.weapon_ability_tooltip)
-
-
-@app.route("/rules")
-def rules():
-    return render_template('rules.html')
 
 
 @app.route("/army_builder")

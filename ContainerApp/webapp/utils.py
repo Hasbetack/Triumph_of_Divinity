@@ -43,7 +43,7 @@ class Content_Loader:
         Args:
         weapon_ability: the key to get the value of.
         """
-        assert isinstance(weapon_ability, str), "weapon ability must be a string"
+        assert isinstance(weapon_ability, str), "Was passed {}: weapon ability must be a string".format(weapon_ability)
 
         if weapon_ability.count("(") == 1 and weapon_ability.count(")") == 1:
             contents = weapon_ability[weapon_ability.find("(") + 1:weapon_ability.find(")")]
@@ -187,6 +187,26 @@ class Content_Loader:
                 continue  
             
             # TODO add content type checks
+            UNIT_KEYS = [
+                "Name", 
+                "Keywords", 
+                "Points", 
+                "Unit_Size", 
+                "Move", 
+                "Dash", 
+                "Weapons", 
+                "Faction_Abilities",
+                "Unit_Abilities",
+                "Caster",
+                "Spells"]
+
+            assert all_keywords_shared(UNIT_KEYS, unit.keys()), "In {}: Includes unknown dictionary keyowrds".format(path_unit_json)
+
+            assert isinstance(unit["Name"], str), "In {}: Unit name must be string".format(path_unit_json)
+            assert isinstance(unit["Keywords"], list), "In {}: Unit Keywords must be in a list".format(path_unit_json)
+            assert isinstance(unit["Points"], int), "In {}: Unit points must be int".format(path_unit_json)
+            assert isinstance(unit["Unit_Size"], dict), "In {}: Unit size must be dict".format(path_unit_json)
+
             # TODO add check for keywords being in DATACARD_TAGS
             # TODO add check for each weapon_ability being in WEAPON_ABILITIES 
             units.append(unit)
