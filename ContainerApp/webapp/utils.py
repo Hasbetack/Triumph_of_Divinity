@@ -72,6 +72,9 @@ class Content_Loader:
                 "Traits":          self._load_faction_traits(faction_folder),
                 "Faction Primary": self._load_faction_primary(faction_folder),
             }
+
+            # check that unit's Army Abilities are present in Abilities
+
             self.FACTIONS.append(faction_name)
 
 
@@ -267,7 +270,27 @@ class Content_Loader:
                 assert isinstance(weapon["D"], str)
                 assert isinstance(weapon["Abilities"], list)
 
-            # TODO add check for each weapon_ability being in WEAPON_ABILITIES 
+                for ability in weapon["Abilities"]:
+                    assert isinstance(ability, str)
+                    ability_name = ability.split("(")[0]
+                    ability_name = ability_name.strip()
+                    assert ability_name in self.WEAPON_ABILITIES
+
+            for faction_ability in unit["Faction_Abilities"]:
+                assert isinstance(faction_ability, str)
+                
+            for unit_ability in unit["Unit_Abilities"]:
+                assert isinstance(unit_ability, dict)
+                assert sorted(unit_ability.keys()) == ["Ability_Effect", "Ability_Name"]
+                assert isinstance(unit_ability["Ability_Name"], str)
+                assert isinstance(unit_ability["Ability_Effect"], str)
+
+            for spell in unit["Spells"]:
+                assert isinstance(spell, dict)
+                assert sorted(spell.keys()) == ["Effect", "Name"]
+                assert isinstance(spell["Name"], str)
+                assert isinstance(spell["Effect"], str)
+ 
             units.append(unit)
 
         return units
