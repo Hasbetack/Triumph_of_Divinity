@@ -186,7 +186,6 @@ class Content_Loader:
                 print("In {}: Found empty json".format(path_unit_json))
                 continue  
             
-            # TODO add content type checks
             UNIT_KEYS = [
                 "Name",
                 "Keywords",
@@ -207,10 +206,11 @@ class Content_Loader:
                 "Faction_Abilities",
                 "Unit_Abilities",
                 "Caster",
-                "Spells"]
+                "Spells"
+            ]
 
             assert all_keywords_shared(UNIT_KEYS, unit.keys()), "In {}: Includes unknown dictionary keywords".format(path_unit_json)
-            assert all_keywords_shared(UNIT_KEYS, unit.keys()), "In {}: Does not include every dictionary keyword".format(path_unit_json)
+            assert all_keywords_shared(unit.keys(), UNIT_KEYS), "In {}: Does not include every dictionary keyword".format(path_unit_json)
 
             assert isinstance(unit["Name"], str),               "In {}: Unit name must be string".format(path_unit_json)
             assert isinstance(unit["Keywords"], list),          "In {}: Unit Keywords must be in a list".format(path_unit_json)
@@ -237,7 +237,36 @@ class Content_Loader:
                 assert isinstance(keyword, str), "In {}: Unit keyword '{}' must all be string".format(path_unit_json, keyword)
                 assert keyword.isupper(), "In {}, unit keyword '{}' must be all caps".format(path_unit_json, keyword)
                 assert keyword in self.DATACARD_TAGS, "In {}, unit keyword '{}' is not a recognized keyword".format(path_unit_json, keyword)
-            # TODO add check for keywords being in DATACARD_TAGS
+            
+            assert sorted(unit["Unit_Size"].keys()) == ["max", "min"], "In {}, unit size must only have keys 'max' and 'min'".format(path_unit_json)
+            assert isinstance(unit["Unit_Size"]['max'], int), "In {}, unit size 'max' must be int".format(path_unit_json)
+            assert isinstance(unit["Unit_Size"]['min'], int), "In {}, unit size 'min' must be int".format(path_unit_json)
+
+            WEAPON_KEYS = [
+                "Cost",
+                "Name",
+                "Type",
+                "Range",
+                "Wound",
+                "Rend",
+                "D",
+                "Abilities"
+            ]
+
+            for weapon in unit["Weapons"]:
+                assert isinstance(weapon, dict)
+                assert all_keywords_shared(WEAPON_KEYS, weapon.keys()), "In {}: A weapon includes unknown dict keywords".format(path_unit_json)
+                assert all_keywords_shared(weapon.keys(), WEAPON_KEYS), "In {}: A weapon does not include every dict keyword".format(path_unit_json)
+
+                assert isinstance(weapon["Cost"], int)
+                assert isinstance(weapon["Name"], str)
+                assert isinstance(weapon["Type"], str)
+                assert isinstance(weapon["Range"], str)
+                assert isinstance(weapon["Wound"], str)
+                assert isinstance(weapon["Rend"], str)
+                assert isinstance(weapon["D"], str)
+                assert isinstance(weapon["Abilities"], list)
+
             # TODO add check for each weapon_ability being in WEAPON_ABILITIES 
             units.append(unit)
 

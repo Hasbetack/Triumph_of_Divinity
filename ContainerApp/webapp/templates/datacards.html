@@ -73,15 +73,42 @@
                                 <tbody>
                                     <tr>
                                         <td>{{ datacard["Move"] }}"</td>
-                                        <td>{{ datacard["Dash"] }}"</td>
-                                        <td>{{ datacard["Melee"] }}+</td>
-                                        <td>{{ datacard["Ranged"] }}+</td>
+
+                                        {% if datacard["Dash"] == -1 %}
+                                            <td>-</td>
+                                        {% else %}
+                                            <td>{{ datacard["Dash"] }}"</td>
+                                        {% endif %}
+
+                                        {% if datacard["Melee"] == -1 %}
+                                            <td>-</td>
+                                        {% else %}
+                                            <td>{{ datacard["Melee"] }}+</td>
+                                        {% endif %}
+
+                                        {% if datacard["Ranged"] == -1 %}
+                                            <td>-</td>
+                                        {% else %}
+                                            <td>{{ datacard["Ranged"] }}+</td>
+                                        {% endif %}
+
                                         <td>{{ datacard["Strength"] }}</td>
-                                        <td>{{ datacard["Durability"] }}+</td>
+
+                                        {% if datacard["Durability"] == -1 %}
+                                            <td>-</td>
+                                        {% else %}
+                                            <td>{{ datacard["Durability"] }}+</td>
+                                        {% endif %}
+
                                         <td>{{ datacard["Health"] }}</td>
                                         <td>{{ datacard["Attacks"] }}</td>
                                         <td>{{ datacard["Will"] }}</td>
-                                        <td>{{ datacard["Armour"] }}+</td>
+
+                                        {% if datacard["Armour"] == -1 %}
+                                            <td>-</td>
+                                        {% else %}
+                                            <td>{{ datacard["Armour"] }}+</td>
+                                        {% endif %}
                                     </tr>
                                 </tbody>
                             </table>
@@ -108,7 +135,11 @@
                                             <td class="text-center">{{ weapon["Cost"] }}</td>
                                             <td class="text-center">{{ weapon["Name"] }}</td>
                                             <td class="text-center">{{ weapon["Type"] }}</td>
-                                            <td class="text-center">{{ weapon["Range"] }}"</td>
+                                            {% if weapon["Range"] == "-" %}
+                                                <td class="text-center">-</td>
+                                            {% else %}
+                                                <td class="text-center">{{ weapon["Range"] }}"</td>
+                                            {% endif %}
                                             <td class="text-center">{{ weapon["Wound"] }}+</td>
                                             <td class="text-center">-{{ weapon["Rend"] }}</td>
                                             <td class="text-center">{{ weapon["D"] }}</td>
