@@ -5,6 +5,7 @@
     "Unit_Size": {"min": 3, "max": 6},
     "Move": 12,
     "Dash": 6,
+    "Equipment Options": "",
     "Weapons": [
         {
             "Cost": 0,
