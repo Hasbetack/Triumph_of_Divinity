@@ -1,0 +1,38 @@
+{
+    "Name": "Militiae Cavalry",
+    "Keywords": ["CAVALRY", "MAGISTRO MALITIAE"],
+    "Points": 65,
+    "Unit_Size": {"min": 5, "max": 10},
+    "Move": 12,
+    "Dash": 6,
+    "Melee": 3,
+    "Ranged": -1,
+    "Strength": 8,
+    "Durability": -1,
+    "Health": 3,
+    "Attacks": 4,
+    "Will": 7,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with Cavalry Sabre",
+    "Weapons": [
+        {
+            "Cost": 0,
+            "Name": "Cavalry Sabre",
+            "Type": "Melee",
+            "Range": "1",
+            "Wound": "3",
+            "Rend": "3",
+            "D": "D2",
+            "Abilities": []
+        }
+    ],
+    "Faction_Abilities": ["Servants of the Emperor"],
+    "Unit_Abilities": [
+        {
+            "Ability_Name": "Militiae Battle Shield:",
+            "Ability_Effect": "Improve the Armour Save Characteristic of models in this Formation by 1."
+        }
+    ],
+    "Caster": 0,
+    "Spells": []
+}

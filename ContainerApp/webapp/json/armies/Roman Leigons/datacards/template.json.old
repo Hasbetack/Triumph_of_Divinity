@@ -1,0 +1,38 @@
+{
+    "Name": "Name",
+    "Keywords": ["LINE TROOP"],
+    "Points": 1,
+    "Unit_Size": {"min": 1, "max": 10000},
+    "Move": 1,
+    "Dash": 1,
+    "Melee": 1,
+    "Ranged": 1,
+    "Strength": 1,
+    "Durability": 1,
+    "Health": 1,
+    "Attacks": 1,
+    "Will": 1,
+    "Armour": 1,
+    "Equipment_Options": "",
+    "Weapons": [
+        {
+            "Cost": 0,
+            "Name": "blah",
+            "Type": "blah",
+            "Range": "blah",
+            "Wound": "blah",
+            "Rend": "blah",
+            "D": "blah",
+            "Abilities": ["Ethereal Weapon (5)", "Additional Attacks (2)"]
+        }
+    ],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [],
+    "Caster": 0,
+    "Spells": [
+        {
+            "Name": "",
+            "Effect": ""
+        }
+    ]
+}

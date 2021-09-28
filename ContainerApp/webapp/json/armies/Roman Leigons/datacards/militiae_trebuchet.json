@@ -1,0 +1,38 @@
+{
+    "Name": "Militiae Trebuchet",
+    "Keywords": ["CONSTRUCT", "HEAVY", "MAGISTRO MALITIAE"],
+    "Points": 330,
+    "Unit_Size": {"min": 1, "max": 3},
+    "Move": 4,
+    "Dash": -1,
+    "Melee": 6,
+    "Ranged": 3,
+    "Strength": 8,
+    "Durability": -1,
+    "Health": 9,
+    "Attacks": 3,
+    "Will": 10,
+    "Armour": 3,
+    "Equipment_Options": "Models in this formation are equipped with Massive Boulder",
+    "Weapons": [
+        {
+            "Cost": 0,
+            "Name": "Massive Boulder",
+            "Type": "Ranged *",
+            "Range": "60",
+            "Wound": "3",
+            "Rend": "1",
+            "D": "3",
+            "Abilities": ["Cannon (5\")", "Devastating", "Artillery"]
+        }
+    ],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [
+        {
+            "Ability_Name": "Siege Weapon",
+            "Ability_Effect": "If this model remained stationary in the previous Movement Step, then it may add 1 to its hit roll."
+        }
+    ],
+    "Caster": 0,
+    "Spells": []
+}
