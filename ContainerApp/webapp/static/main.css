@@ -1,23 +1,48 @@
-body {
-    background: #CFDAE8;
-    color: #333333;
+
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+  /**/
+  body {
+    background: #282a36;/*Main Page Background*/
     margin-top: 5rem;
-    font-family: Ariel;
+    font-family: 'IBM Plex Sans';
+    color: #ff79c6;
+  }
+
+  /*Paragraph styling*/
+  p {
+    font-family:  'IBM Plex Sans';
+    color: white;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    color: #444444;
-    font-family: Merriweather;
+    font-family: 'IBM Plex Sans';
+  }
+
+  /**/
+  .content-section {
+    background: #44475a;
+    padding: 10px 20px;
+    border: 2px solid #0f0f0f;
+    color: #bd93f9;
+    margin-bottom: 20px;
   }
   
+  /*++++++++++Table Colors Start*/
   .color-dark {
-    background-color: #4882CF;
+    background-color: #374455;
   }
 
   .color-light {
-    background-color: #9dc4f7;
+    background-color: #264368;
   }
-  
+
+  .table{
+    color: white;
+    --bs-table-striped-color: white;
+  }
+  /*----------Table Colors End*/
+
+  /*NAVBAR STUFF START*/
   .site-header .navbar-nav .nav-link {
     color: #cbd5db;
   }
@@ -29,42 +54,23 @@ body {
   .site-header .navbar-nav .nav-link.active {
     font-weight: 500;
   }
+  /*NAVBAR STUFF END*/
 
   .datacard-container {
     margin-left: 6%;
     margin-right: 6%;
   }
-
-  .content-section {
-    background: #ffffff;
-    padding: 10px 20px;
-    border: 1px solid #dddddd;
-    margin-bottom: 20px;
-  }
   
-  .article-title {
-    color: #444444;
-  }
   
   .article-metadata {
     padding-bottom: 1px;
     margin-bottom: 4px;
   }
 
-  .tooltip-inner {
-    background: #ffffff;
-    color: #333333;
-    text-align: left;
-    border-style: solid;
-    border-color: #000000;
-    padding: 0.5rem;
-    opacity: 100%;
-  }
-
   .datacard-keyword {
     font-weight: bold;
     text-transform: uppercase;
-    font-family: Merriweather;
+    font-family: 'IBM Plex Sans';
   }
 
   .datacard-unit-keywords {
