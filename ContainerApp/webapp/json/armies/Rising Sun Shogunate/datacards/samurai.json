@@ -1,0 +1,63 @@
+{
+    "Name": "Samurai",
+    "Keywords": ["LINE TROOP", "INFANTRY"],
+    "Points": 40,
+    "Unit_Size": {"min": 2, "max": 10},
+    "Move": 6,
+    "Dash": 4,
+    "Melee": 3,
+    "Ranged": -1,
+    "Strength": 9,
+    "Durability": -1,
+    "Health": 2,
+    "Attacks": 3,
+    "Will": 9,
+    "Armour": 3,
+    "Equipment_Options": "Models in this formation are equipped with Katana. Each model in this formation may replace its Katana with 1 of the following: Tanto, Naginata, Yari",
+    "Weapons": [
+        {
+            "Cost": 0,
+            "Name": "Katana",
+            "Type": "Melee",
+            "Range": "1",
+            "Wound": "3",
+            "Rend": "1",
+            "D": "2",
+            "Abilities": ["Balanced"]
+        },
+        {
+            "Cost": 0,
+            "Name": "Tanto",
+            "Type": "Melee",
+            "Range": "1",
+            "Wound": "4",
+            "Rend": "3",
+            "D": "2",
+            "Abilities": ["Balanced"]
+        },
+        {
+            "Cost": 0,
+            "Name": "Naginata",
+            "Type": "Melee",
+            "Range": "3",
+            "Wound": "3",
+            "Rend": "1",
+            "D": "2",
+            "Abilities": ["Unwieldy"]
+        },
+        {
+            "Cost": 0,
+            "Name": "Yari",
+            "Type": "Melee",
+            "Range": "3",
+            "Wound": "4",
+            "Rend": "3",
+            "D": "2",
+            "Abilities": ["Unwieldy"]
+        }
+    ],
+    "Faction_Abilities": ["Dragon Scale Armour"],
+    "Unit_Abilities": [],
+    "Caster": 0,
+    "Spells": []
+}

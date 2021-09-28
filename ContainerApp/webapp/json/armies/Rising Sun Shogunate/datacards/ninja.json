@@ -1,0 +1,58 @@
+{
+    "Name": "Ninja",
+    "Keywords": ["LINE TROOP", "INFANTRY"],
+    "Points": 35,
+    "Unit_Size": {"min": 5, "max": 10},
+    "Move": 8,
+    "Dash": 6,
+    "Melee": 3,
+    "Ranged": 3,
+    "Strength": 6,
+    "Durability": -1,
+    "Health": 1,
+    "Attacks": 3,
+    "Will": 8,
+    "Armour": -1,
+    "Equipment_Options": "Models in this Formation are equipped with Katana and Shuriken. Models in this Formation may replace their Shuriken with a Kunai",
+    "Weapons": [
+        {
+            "Cost": 0,
+            "Name": "Katana",
+            "Type": "Melee",
+            "Range": "1",
+            "Wound": "3",
+            "Rend": "1",
+            "D": "2",
+            "Abilities": ["Balanced"]
+        },
+        {
+            "Cost": 0,
+            "Name": "Shuriken",
+            "Type": "Ranged 1",
+            "Range": "10",
+            "Wound": "3",
+            "Rend": "-1",
+            "D": "1",
+            "Abilities": []
+        },
+        {
+            "Cost": 5,
+            "Name": "Kunai",
+            "Type": "Ranged 1",
+            "Range": "6",
+            "Wound": "3",
+            "Rend": "-2",
+            "D": "2",
+            "Abilities": []
+        }
+    ],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [
+        {
+            "Ability_Name": "Ninja-Yoroi",
+            "Ability_Effect": "When resolving a ranged attack against a model in this Formation subtract 1 from the hit roll. If this Formation is within 1” of a terrain feature the attacking model must subtract an additional 1 from its hit roll."
+        }
+    ],
+    "Caster": 0,
+    "Spells": []
+}

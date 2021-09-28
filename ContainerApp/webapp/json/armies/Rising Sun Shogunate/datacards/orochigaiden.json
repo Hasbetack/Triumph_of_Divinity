@@ -1,0 +1,53 @@
+{
+    "Name": "Orochigaidan",
+    "Keywords": ["CAVALRY", "FLY"],
+    "Points": 95,
+    "Unit_Size": {"min": 3, "max": 6},
+    "Move": 10,
+    "Dash": 6,
+    "Melee": 2,
+    "Ranged": 3,
+    "Strength": 8,
+    "Durability": -1,
+    "Health": 4,
+    "Attacks": 3,
+    "Will": 8,
+    "Armour": 3,
+    "Equipment_Options": "Models in this Formation are equipped with Yari, Burning Breath and Wyvern Claws.",
+    "Weapons": [
+        {
+            "Cost": 0,
+            "Name": "Yari",
+            "Type": "Melee",
+            "Range": "3",
+            "Wound": "4",
+            "Rend": "3",
+            "D": "2",
+            "Abilities": ["Unwieldy"]
+        },
+        {
+            "Cost": 0,
+            "Name": "Burning Breath",
+            "Type": "Ranged *",
+            "Range": "-",
+            "Wound": "-2",
+            "Rend": "2",
+            "D": "1",
+            "Abilities": ["Spread (8\")", "Auto-Hit"]
+        },
+        {
+            "Cost": 0,
+            "Name": "Wyvern Claws",
+            "Type": "Melee",
+            "Range": "2",
+            "Wound": "3",
+            "Rend": "3",
+            "D": "1",
+            "Abilities": ["Serrated (1)", "Additional Attacks (2)"]
+        }
+    ],
+    "Faction_Abilities": ["Dragon Scale Armour"],
+    "Unit_Abilities": [],
+    "Caster": 0,
+    "Spells": []
+}
