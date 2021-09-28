@@ -1,6 +1,6 @@
 {
     "Name": "The Death Knell",
     "Points": 400,
-    "Requirements": ["Your Army must include Izunami", "2-4 Formations of Shinigami"],
+    "Requirements": ["Your Army must include Izanami", "2-4 Formations of Shinigami"],
     "Effect": "While your army contains this company add 1 to the result of any dice when rolling to see if any ethereal damage is inflicted as a result of either part of The Izanami Curse. In addition, add 1 to the damage characteristic of Shinigami models that are a part of this company."
 }

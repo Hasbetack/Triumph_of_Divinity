@@ -1,0 +1,57 @@
+{
+    "Name": "Fujin",
+    "Keywords": ["UNIQUE", "CHARACTER", "LEGENDARY", "INFANTRY", "FLY"],
+    "Points": 1750,
+    "Unit_Size": {"min": 1, "max": 1},
+    "Move": 12,
+    "Dash": 8,
+    "Melee": 2,
+    "Ranged": 2,
+    "Strength": 12,
+    "Durability": 6,
+    "Health": 21,
+    "Attacks": "3D3",
+    "Will": 12,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with Winds of the World and Forceful Touch",
+    "Weapons": [
+        {
+            "Cost": 0,
+            "Name": "Winds of the World",
+            "Type": "Ranged *",
+            "Range": "-",
+            "Wound": "2",
+            "Rend": "2",
+            "D": "D3",
+            "Abilities": ["Spread (16\")", "Auto-Hit", "Devastating"]
+        },
+        {
+            "Cost": 0,
+            "Name": "Forceful Touch",
+            "Type": "Melee",
+            "Range": "1",
+            "Wound": "2",
+            "Rend": "1",
+            "D": "D3+3",
+            "Abilities": ["Devastating"]
+        }
+    ],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [
+        {
+            "Ability_Name": "Godly Form",
+            "Ability_Effect": "Any attack that targets this model is treated as having a Rend characteristic of 0."
+        },
+        {
+            "Ability_Name": "Wind Walker",
+            "Ability_Effect": "Whenever this model attempts a charge a result of 12 is considered to have been rolled. In addition, after this model completes a charge roll a D6 for each enemy Formation within 3” of this model, on a result of 4+ that Formation suffers D6 Ethereal Damage."
+        }
+    ],
+    "Caster": 3,
+    "Spells": [
+        {
+            "Name": "Shifting the Winds (40)",
+            "Effect": "Each enemy Formation within 12” of this model is moved in a straight line directly away from this model such that they are more than 12” away from this model and outside of 3” of any friendly Formations. After moving each enemy Formation, that Formation suffers X ethereal damage where X is the amount of inches that Formation moved because of this spell."
+        }
+    ]
+}
