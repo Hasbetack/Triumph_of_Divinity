@@ -1,0 +1,66 @@
+{
+    "Name": "Roman Triumph",
+    "Keywords": ["UNIQUE", "CHARACTER", "LEGENDARY", "INFANTRY"],
+    "Points": 1800,
+    "Unit_Size": {"min": 1, "max": 1},
+    "Move": 6,
+    "Dash": 5,
+    "Melee": 2,
+    "Ranged": -1,
+    "Strength": 12,
+    "Durability": -1,
+    "Health": 40,
+    "Attacks": 8,
+    "Will": 12,
+    "Armour": 2,
+    "Equipment_Options": "This model is equipped with a Militiae Gladius, a Militiae Great Blade and a Militiae Warden Axe.",
+    "Weapons": [
+        {
+            "Cost": 0,
+            "Name": "Militiae Gladius",
+            "Type": "Melee",
+            "Range": "1",
+            "Wound": "3",
+            "Rend": "2",
+            "D": "2",
+            "Abilities": []
+        },
+        {
+            "Cost": 0,
+            "Name": "Militiae Great Blade",
+            "Type": "Melee",
+            "Range": "2",
+            "Wound": "2",
+            "Rend": "3",
+            "D": "1",
+            "Abilities": ["Additional Attacks (8)", "Devastating", "Serrated (1)"]
+        },
+        {
+            "Cost": 0,
+            "Name": "Militiae Warden Axe",
+            "Type": "Melee",
+            "Range": "3",
+            "Wound": "2",
+            "Rend": "4",
+            "D": "3",
+            "Abilities": ["Additional Attacks (4)", "Decimating"]
+        }
+    ],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [
+        {
+            "Ability_Name": "Banner of Triumph:",
+            "Ability_Effect": "While this model is alive all friendly <span class='datacard-keyword'>MAGISTRO MALITIAE</span> Formations are considered to be within 6” of a friendly <span class='datacard-keyword'>MAGISTRO MALITIAE CHARACTER</span> for the purposes of the Servants of the Emperor rule."
+        },
+        {
+            "Ability_Name": "Triumphant Display:",
+            "Ability_Effect": "While a friendly <span class='datacard-keyword'>MAGISTRO MALITIAE</span> Formation is within 6” of this model then models in that formation may re-roll failed hit and would rolls in the Melee Combat Step. In addition, this model can never be affected by the The Emperor’s Bodyguard ability."
+        },
+        {
+            "Ability_Name": "Victorious March:",
+            "Ability_Effect": "While a friendly <span class='datacard-keyword'>MAGISTRO MALITIAE</span> Formation is within 6” of this model then models in that formation may improve their Move and Dash Characteristics by 1”. In addition, while a friendly <span class='datacard-keyword'>MAGISTRO MALITIAE</span> Formation is within 6” of this model, then if a ranged attack targets that Formation then the attacking model must subtract 1 from its hit roll."
+        }
+    ],
+    "Caster": 0,
+    "Spells": []
+}

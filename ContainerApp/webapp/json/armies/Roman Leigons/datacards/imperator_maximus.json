@@ -1,0 +1,46 @@
+{
+    "Name": "Imperator Maximus",
+    "Keywords": ["UNIQUE", "CHARACTER", "LEGENDARY", "INFANTRY"],
+    "Points": 1200,
+    "Unit_Size": {"min": 1, "max": 1},
+    "Move": 8,
+    "Dash": 5,
+    "Melee": 2,
+    "Ranged": -1,
+    "Strength": 12,
+    "Durability": 6,
+    "Health": 18,
+    "Attacks": 3,
+    "Will": 10,
+    "Armour": 2,
+    "Equipment_Options": "This model is equipped with Tyrannus Aeterna.",
+    "Weapons": [
+        {
+            "Cost": 0,
+            "Name": "Tyrannus Aeterna",
+            "Type": "Melee",
+            "Range": "1",
+            "Wound": "2",
+            "Rend": "4",
+            "D": "3",
+            "Abilities": ["Devastating"]
+        }
+    ],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [
+        {
+            "Ability_Name": "Maximum Imperatorem:",
+            "Ability_Effect": "While a friendly <span class='datacard-keyword'>MAGISTRO MALITIAE</span> Formation is within 6” of this model, then models in that Formation may add 1 to any hit and wound rolls when attacking with a Melee weapon."
+        },
+        {
+            "Ability_Name": "The Armour of the Emperor:",
+            "Ability_Effect": "Any attack that targets this model with a Rend Characteristic of -2 or better are treated as having a Rend Characteristic of -1."
+        },
+        {
+            "Ability_Name": "Tantum enim officium finis in morte:",
+            "Ability_Effect": "Whenever a friendly <span class='datacard-keyword'>MAGISTRO MALITIAE</span> model is reduced to 0 Health while within 3” of this model, then that model may engage and fight as if it were the Melee Combat Step."
+        }
+    ],
+    "Caster": 0,
+    "Spells": []
+}

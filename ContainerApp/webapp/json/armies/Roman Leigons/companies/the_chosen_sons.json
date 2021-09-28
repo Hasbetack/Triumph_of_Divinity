@@ -1,0 +1,6 @@
+{
+    "Name": "The Chosen Sons",
+    "Points": 600,
+    "Requirements": ["2 Centurion Formations", "2 Praetorian Guard Formations", "2 Scholae Palatinae Formations", "Your army may not include Imperator Maximus"],
+    "Effect": " If your army contains this company then all Praetorians and Scholae Palatinae models lose the The Emperor’s Bodyguard ability. In addition, any improve the attacks characteristic of any Centurions in this company by 2 and improve the Damage and Rend characteristics of any Militiae Gladius they are equipped with by 2. Also Improve the Damage and Rend characteristics of weapons equipped by any Praetorians and Scholae Palatinae models in this formation by 1."
+}

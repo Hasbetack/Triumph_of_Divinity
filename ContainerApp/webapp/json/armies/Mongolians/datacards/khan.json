@@ -1,6 +1,6 @@
 {
     "Name": "Khan",
-    "Keywords": ["CHARACTER", "LEGENDARY"],
+    "Keywords": ["CHARACTER", "CAVALRY"],
     "Points": 130,
     "Unit_Size": {"min": 1, "max": 1},
     "Move": 14,

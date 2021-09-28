@@ -1,0 +1,38 @@
+{
+    "Name": "Ballista",
+    "Keywords": ["CONSTRUCT", "HEAVY", "MAGISTRO MALITIAE"],
+    "Points": 280,
+    "Unit_Size": {"min": 1, "max": 3},
+    "Move": 4,
+    "Dash": -1,
+    "Melee": 6,
+    "Ranged": 3,
+    "Strength": 8,
+    "Durability": -1,
+    "Health": 9,
+    "Attacks": 3,
+    "Will": 10,
+    "Armour": 3,
+    "Equipment_Options": "Models in this formation are equipped with Militiae Ballista Bolt",
+    "Weapons": [
+        {
+            "Cost": 0,
+            "Name": "Militiae Ballista Bolt",
+            "Type": "Ranged 1",
+            "Range": "60",
+            "Wound": "2",
+            "Rend": "-3",
+            "D": "3D3",
+            "Abilities": ["Devastating", "Tearing (3)"]
+        }
+    ],
+    "Faction_Abilities": ["Servants of the Emperor"],
+    "Unit_Abilities": [
+        {
+            "Ability_Name": "Siege Weapon",
+            "Ability_Effect": "If this model remained stationary in the previous Movement Step, then it may add 1 to its hit roll."
+        }
+    ],
+    "Caster": 0,
+    "Spells": []
+}
