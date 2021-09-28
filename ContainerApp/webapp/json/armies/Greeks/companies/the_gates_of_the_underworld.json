@@ -1,6 +1,6 @@
 {
     "Name": "The Gates of the Underworld",
     "Points": 600,
-    "Requirements": ["Requirement 1", "Requirement 2", "Requirement 3"],
-    "Effect": "Effect description"
+    "Requirements": ["Your Army must include Cerberus", "3-6 Formations of War Chariots"],
+    "Effect": "While your army includes this company, improve the damage characteristic of melee weapons equipped by models in this company by 1 and improve the movement characteristic of models in this company by 2”."
 }

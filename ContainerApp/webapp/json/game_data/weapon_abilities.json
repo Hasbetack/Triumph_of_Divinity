@@ -7,7 +7,7 @@
     "Tearing": "for each unmodified wound roll of 6+ with this weapon, add X to the Rend Characteristic of this weapon.",
     "Unwieldy": "Subtract 1 from hit rolls with this weapon.",
     "Devastating": "Enemy formations cannot make Durability Saves against this weapon.",
-    "Toxic": "When making attacks with this weapon against <span class='datacard-keyword'>LINE TROOPS</span> formations, add 1 to the Damage Characteristic of that attack.",
+    "Toxic": "When making attacks with this weapon against <span class='datacard-keyword'>LINE TROOP</span> formations, add 1 to the Damage Characteristic of that attack.",
     "Lance": "If the bearer completed a charge move this turn then add 1 to Wound rolls made with this weapon.",
     "Ethereal Weapon": "When making attacks with this weapon, unmodified wound rolls of 6 inflict X ethereal damage in addition to normal damage.",
     "Additional Attacks": "The bearer of this weapon may make X additional attacks with this weapon in addition to any normal attacks but they may not make more than X attacks with this weapon.",
