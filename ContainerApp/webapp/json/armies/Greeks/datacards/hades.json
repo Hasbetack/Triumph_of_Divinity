@@ -44,7 +44,7 @@
         },
         {
             "Ability_Name": "Helm of Darkness",
-            "Ability_Effect": "Enemy formations within 3” of this model are considered to have a Will Characteristic of 0. In addition, once per battle in the Tactics Step this model can elect to use its Helm of Darkness. Until the end of the round this model may not be selected as the target of any attacks or abilities."
+            "Ability_Effect": "Enemy formations within 3” of this model are considered to have a Will Characteristic of 0. In addition, once per battle in the Tactics Step this model can elect to use its Helm of Darkness. Until the end of the round this model may not be affected by or selected as the target of any attacks or abilities."
         },
         {
             "Ability_Name": "King of the Underworld",
