@@ -1,3 +1,3 @@
-# Triumph_of_Divinity
-WebApp for Triumph of Divinity
-### Testing discord webhook
+# Epitath: Divine Disorder
+Official WebApp for "Epitath: Divine Disorder"
+<br>Not yet live.
