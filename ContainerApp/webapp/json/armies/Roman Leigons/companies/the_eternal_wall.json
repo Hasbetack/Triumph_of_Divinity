@@ -1,6 +1,0 @@
-{
-    "Name": "The Eternal Wall",
-    "Points": 200,
-    "Requirements": ["1 Formation of Praetorian Guard", "100 Triarii models"],
-    "Effect": "While your army contains this company each model in this company’s Praetorian Formation is treated as a separate formation and gains the character tag. In addition, Improve the rend characteristic of Militiae Spear’s models in this company are equipped with by 1. In addition, Triarii formations in this company are always considered to have more than 10 models for the purposes of the Militiae Shield Wall ability."
-}

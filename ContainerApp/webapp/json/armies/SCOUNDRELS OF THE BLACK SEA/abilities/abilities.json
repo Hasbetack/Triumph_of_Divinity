@@ -1,0 +1,3 @@
+{
+    "Ghost Pirate": "If a model with this ability is reduced to 0 health in the Melee Combat Step, then do not remove that model until the end of the Step and treat that model as if it were still alive until the end of the Step."
+}

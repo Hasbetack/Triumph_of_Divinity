@@ -14,5 +14,6 @@
     "Fragmentation": "This weapon inflicts X additional automatic hits on a hit roll of 6 in the shooting phase.",
     "Serrated": "This weapon inflicts X additional automatic hits on a hit roll of 6 in the melee combat phase.",
     "Auto-Hit": "This weapon automatically hits its target, If this weapon uses a blast template then that attack is considered to score a direct hit.",
-    "Decimating": "Any abilities that would allow the target to ignore, reduce or alter the rend characteristic do not affect attacks made with this weapon."
+    "Decimating": "Any abilities that would allow the target to ignore, reduce or alter the rend characteristic do not affect attacks made with this weapon.",
+    "Deck Sweeper": "Whenever the bearer of this weapon targets an enemy Formation that is within half of this weapon’s Range Characteristic then, make 1 additional attack with this weapon."
 }

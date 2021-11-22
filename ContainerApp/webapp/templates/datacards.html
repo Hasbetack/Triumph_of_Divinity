@@ -125,7 +125,7 @@
                                         <th scope="col" class="text-center">Range</th>
                                         <th scope="col" class="text-center">Wound</th>
                                         <th scope="col" class="text-center">Rend</th>
-                                        <th scope="col" class="text-center">D</th>
+                                        <th scope="col" class="text-center">Damage</th>
                                         <th scope="col">Abilities</th>
                                     </tr>
                                 </thead>
@@ -142,7 +142,7 @@
                                             {% endif %}
                                             <td class="text-center">{{ weapon["Wound"] }}+</td>
                                             <td class="text-center">-{{ weapon["Rend"] }}</td>
-                                            <td class="text-center">{{ weapon["D"] }}</td>
+                                            <td class="text-center">{{ weapon["Damage"] }}</td>
                                             <td>
                                                 <ul class="list-inline" style="margin-bottom: 0rem">
                                                     {% for weapon_ability in weapon["Abilities"] %}   

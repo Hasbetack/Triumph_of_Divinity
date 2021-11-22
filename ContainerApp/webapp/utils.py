@@ -252,7 +252,7 @@ class Content_Loader:
                 "Range",
                 "Wound",
                 "Rend",
-                "D",
+                "Damage",
                 "Abilities"
             ]
 
@@ -267,7 +267,7 @@ class Content_Loader:
                 assert isinstance(weapon["Range"], str)
                 assert isinstance(weapon["Wound"], str)
                 assert isinstance(weapon["Rend"], str)
-                assert isinstance(weapon["D"], str)
+                assert isinstance(weapon["Damage"], str)
                 assert isinstance(weapon["Abilities"], list)
 
                 for ability in weapon["Abilities"]:

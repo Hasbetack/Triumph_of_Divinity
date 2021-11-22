@@ -1,0 +1,6 @@
+{
+    "Knight of the Round Table": "This Formation may re-roll failed charge rolls. In addition, models in this Formation count as 3 models for the purposes of rules that specify having more models within an objective marker or the centre of the battlefield.",
+    "Charge of the Knights": "If this Formation begins the Charge Step within 3” of any other KNIGHT Formations, then this Formation has a Dash Characteristic of 6” until the end of the step.",
+    "Knightly Shield": "For the duration of the first round, this Formation has a 5+ Durability Characteristic. For the duration of the Second round, this Formation has a 6+ Durability Characteristic. ",
+    "Holy Crusader": "In the Melee Combat Step, each time an enemy Formation successfully wounds this Formation, before rolling an Armour Saving Throw for that attack, roll a D6. On a result of 5+ the attacking Formation suffers 1 attack that automatically hits and wounds with a Rend Characteristic of 2 and a Damage Characteristic of 1. "
+}
