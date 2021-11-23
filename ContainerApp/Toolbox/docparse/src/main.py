@@ -3,7 +3,12 @@ import json
 import re
 import os
 
-rootdir = '\\'
+
+# Python Script to extract relevant tables from the playtest docx and process them into json files. 
+# run this file while CDed into the directory it os contained in unless you like messy output locations.
+
+
+rootdir = '/'
 
 document = Document(os.path.join(rootdir, "test.docx"))
 tables = document.tables
