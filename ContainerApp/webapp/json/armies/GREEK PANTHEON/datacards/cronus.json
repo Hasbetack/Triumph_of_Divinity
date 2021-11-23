@@ -1,1 +1,43 @@
-{"Name": "Cronus", "Keywords": ["GREEK PANTHEON", "LEGENDARY", "GOD", "CHARACTER"], "Points": 2400, "Unit_Size": {"min": 1, "max": 1}, "Move": 10, "Dash": 6, "Melee": 2, "Ranged": -1, "Strength": 12, "Durability": -1, "Health": 22, "Attacks": 5, "Will": 12, "Armour": 4, "Equipment_Options": "This model is equipped with The Sickle of Gaia.", "Weapons": [{"Name": "The Sickle of Gaia", "Cost": 0, "Type": "Melee", "Range": "2", "Wound": "2", "Rend": "4", "Damage": "3", "Abilities": ["Decimating"]}], "Faction_Abilities": [], "Unit_Abilities": [{"Ability_Name": "Godly Form", "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."}, {"Ability_Name": "Feast of Gods", "Ability_Effect": " Whenever this model is within 3\" of an enemy LEGENDARY Formation, add 2 to this model\u2019s Attacks Characteristic. In addition, if this model destroys an enemy GOD model in the Melee Combat Step, then this model regains 5 lost health and, until the start of the next Melee Combat Step, gains a 5+ durability save."}, {"Ability_Name": "Second Ruler of the Universe", "Ability_Effect": " Whenever a friendly GREEK PANTHEON Formation within 9\" of this model makes an attack, add 1 to the wound roll and if the attack is targeting an enemy LEGENDARY Formation, add 1 to the Damage Characteristic of the attack in addition."}], "Caster": 0, "Spells": []}
+{
+    "Name": "Cronus",
+    "Keywords": ["GREEK PANTHEON", "LEGENDARY", "GOD", "CHARACTER"],
+    "Points": 2400,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 10,
+    "Dash": 6,
+    "Melee": 2,
+    "Ranged": -1,
+    "Strength": 12,
+    "Durability": -1,
+    "Health": 22,
+    "Attacks": 5,
+    "Will": 12,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with The Sickle of Gaia.",
+    "Weapons": [{
+        "Name": "The Sickle of Gaia",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "2",
+        "Wound": "2",
+        "Rend": "4",
+        "Damage": "3",
+        "Abilities": ["Decimating"]
+    }],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [{
+        "Ability_Name": "Godly Form",
+        "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."
+    }, {
+        "Ability_Name": "Feast of Gods",
+        "Ability_Effect": " Whenever this model is within 3\" of an enemy LEGENDARY Formation, add 2 to this model\u2019s Attacks Characteristic. In addition, if this model destroys an enemy GOD model in the Melee Combat Step, then this model regains 5 lost health and, until the start of the next Melee Combat Step, gains a 5+ durability save."
+    }, {
+        "Ability_Name": "Second Ruler of the Universe",
+        "Ability_Effect": " Whenever a friendly GREEK PANTHEON Formation within 9\" of this model makes an attack, add 1 to the wound roll and if the attack is targeting an enemy LEGENDARY Formation, add 1 to the Damage Characteristic of the attack in addition."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

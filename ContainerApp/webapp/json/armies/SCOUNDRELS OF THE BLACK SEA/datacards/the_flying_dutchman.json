@@ -1,1 +1,40 @@
-{"Name": "The Flying Dutchman", "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "LEGENDARY", "CONSTRUCT", "FLY"], "Points": 2000, "Unit_Size": {"min": 1, "max": 1}, "Move": 14, "Dash": 6, "Melee": 6, "Ranged": 2, "Strength": 10, "Durability": -1, "Health": 36, "Attacks": 3, "Will": 10, "Armour": 2, "Equipment_Options": "This model is equipped with Screaming Ghost Cannons.", "Weapons": [{"Name": "Screaming Ghost Cannons", "Cost": 0, "Type": "Ranged 8", "Range": "24", "Wound": "3", "Rend": "3", "Damage": "3", "Abilities": ["Ethereal Weapon (3)", "\nDeck Sweeper"]}], "Faction_Abilities": ["Ghost Pirate"], "Unit_Abilities": [{"Ability_Name": "Flying Ghost Ship", "Ability_Effect": " Instead of deploying this model normally you can elect to keep it off the table. If you do so, then at the end of any movement step this model can arrive on the battlefield. When it does so the place it anywhere on the battlefield more than 9\" away from any enemy Formations. In addition, in the turn that this model arrives on the battlefield it may re-roll any or all dice when charging."}, {"Ability_Name": "On Board Crew", "Ability_Effect": " During the Deployment step you may elect to have any number of Formations totalling up to 20 infantry models embarked upon this model (Each CANNONEER model counts as 2 models instead of 1). While a Formation is embarked upon this model it may attack with any ranged weapons as if it were on the battlefield and it measures ranges and line of sight from this model. If an embarked Formation chooses to disembark from this model, then at the end of any movement step you may set up the disembarking Formation wholly within 6\" of this model and more than 9\" from enemy Formations. If this model is destroyed, then all embarked Formations must disembark as if it were the end of the movement step."}], "Caster": 0, "Spells": []}
+{
+    "Name": "The Flying Dutchman",
+    "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "LEGENDARY", "CONSTRUCT", "FLY"],
+    "Points": 2000,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 14,
+    "Dash": 6,
+    "Melee": 6,
+    "Ranged": 2,
+    "Strength": 10,
+    "Durability": -1,
+    "Health": 36,
+    "Attacks": 3,
+    "Will": 10,
+    "Armour": 2,
+    "Equipment_Options": "This model is equipped with Screaming Ghost Cannons.",
+    "Weapons": [{
+        "Name": "Screaming Ghost Cannons",
+        "Cost": 0,
+        "Type": "Ranged 8",
+        "Range": "24",
+        "Wound": "3",
+        "Rend": "3",
+        "Damage": "3",
+        "Abilities": ["Ethereal Weapon (3)", "\nDeck Sweeper"]
+    }],
+    "Faction_Abilities": ["Ghost Pirate"],
+    "Unit_Abilities": [{
+        "Ability_Name": "Flying Ghost Ship",
+        "Ability_Effect": " Instead of deploying this model normally you can elect to keep it off the table. If you do so, then at the end of any movement step this model can arrive on the battlefield. When it does so the place it anywhere on the battlefield more than 9\" away from any enemy Formations. In addition, in the turn that this model arrives on the battlefield it may re-roll any or all dice when charging."
+    }, {
+        "Ability_Name": "On Board Crew",
+        "Ability_Effect": " During the Deployment step you may elect to have any number of Formations totalling up to 20 infantry models embarked upon this model (Each CANNONEER model counts as 2 models instead of 1). While a Formation is embarked upon this model it may attack with any ranged weapons as if it were on the battlefield and it measures ranges and line of sight from this model. If an embarked Formation chooses to disembark from this model, then at the end of any movement step you may set up the disembarking Formation wholly within 6\" of this model and more than 9\" from enemy Formations. If this model is destroyed, then all embarked Formations must disembark as if it were the end of the movement step."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

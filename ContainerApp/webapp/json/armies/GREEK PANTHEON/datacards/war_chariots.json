@@ -1,1 +1,46 @@
-{"Name": "War Chariots", "Keywords": ["GREEK PANTHEON", "CAVALRY"], "Points": 135, "Unit_Size": {"min": 1, "max": 3}, "Move": 10, "Dash": 6, "Melee": 3, "Ranged": -1, "Strength": 7, "Durability": -1, "Health": 6, "Attacks": 5, "Will": 7, "Armour": 4, "Equipment_Options": "Models in this Formation are equipped with a Doru.", "Weapons": [{"Name": "Doru", "Cost": 0, "Type": "Melee", "Range": "3", "Wound": "4", "Rend": "1", "Damage": "1", "Abilities": ["Unwieldy"]}, {"Name": "Xiphos", "Cost": 0, "Type": "Melee", "Range": "1", "Wound": "4", "Rend": "1", "Damage": "1", "Abilities": ["Balanced"]}], "Faction_Abilities": [], "Unit_Abilities": [{"Ability_Name": "Skilled Riders", "Ability_Effect": " This Formation may declare a charge in a turn in which it dashed. In addition, when this Formation completes a charge roll 3D6 for each model in this Formation. For each result of 5+ each enemy Formation within 1\" of this Formation suffers 1 Ethereal Damage."}], "Caster": 0, "Spells": []}
+{
+    "Name": "War Chariots",
+    "Keywords": ["GREEK PANTHEON", "CAVALRY"],
+    "Points": 135,
+    "Unit_Size": {
+        "min": 1,
+        "max": 3
+    },
+    "Move": 10,
+    "Dash": 6,
+    "Melee": 3,
+    "Ranged": -1,
+    "Strength": 7,
+    "Durability": -1,
+    "Health": 6,
+    "Attacks": 5,
+    "Will": 7,
+    "Armour": 4,
+    "Equipment_Options": "Models in this Formation are equipped with a Doru.",
+    "Weapons": [{
+        "Name": "Doru",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "3",
+        "Wound": "4",
+        "Rend": "1",
+        "Damage": "1",
+        "Abilities": ["Unwieldy"]
+    }, {
+        "Name": "Xiphos",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "1",
+        "Wound": "4",
+        "Rend": "1",
+        "Damage": "1",
+        "Abilities": ["Balanced"]
+    }],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [{
+        "Ability_Name": "Skilled Riders",
+        "Ability_Effect": " This Formation may declare a charge in a turn in which it dashed. In addition, when this Formation completes a charge roll 3D6 for each model in this Formation. For each result of 5+ each enemy Formation within 1\" of this Formation suffers 1 Ethereal Damage."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

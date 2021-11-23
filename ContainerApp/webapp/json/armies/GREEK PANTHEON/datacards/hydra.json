@@ -1,1 +1,49 @@
-{"Name": "Hydra", "Keywords": ["GREEK PANTHEON", "LEGENDARY", "MONSTER", "FLY"], "Points": 1800, "Unit_Size": {"min": 1, "max": 1}, "Move": 10, "Dash": 5, "Melee": 3, "Ranged": 3, "Strength": 12, "Durability": -1, "Health": 18, "Attacks": 4, "Will": 12, "Armour": 3, "Equipment_Options": "Models in this Formation are equipped with the Heads of the Hydra and Noxious Breath.", "Weapons": [{"Name": "Heads of the Hydra", "Cost": 0, "Type": "Melee", "Range": "3", "Wound": "3", "Rend": "2", "Damage": "3", "Abilities": []}, {"Name": "Noxious Breath", "Cost": 0, "Type": "Ranged *", "Range": "-", "Wound": "3", "Rend": "", "Damage": "2", "Abilities": ["Spread (16\u201d)", "Auto-Hit", "Toxic"]}], "Faction_Abilities": [], "Unit_Abilities": [{"Ability_Name": "Legendary Dragon Scale", "Ability_Effect": " Any attack that targets this model with a Rend Characteristic of -2 or better are treated as having a Rend Characteristic of -1."}, {"Ability_Name": "The Hydra of Lerna", "Ability_Effect": " After an enemy Formation has finished resolving all their attacks against this model roll XD6 where X is the number of health this model lost because of that enemy Formation\u2019s attacks. For each result of 2-3 this model improves its Attacks Characteristic by 1. For each result of 4-5 this model improves its Attacks Characteristic by 1 and regains 1 lost wound and for each result of 6 this model improves its Attacks Characteristic by 1 and regains 2 lost wounds. (If this model is reduced to 0 Health, this ability has no effect). This model cannot gain more than 10 additional attacks from this ability."}], "Caster": 0, "Spells": []}
+{
+    "Name": "Hydra",
+    "Keywords": ["GREEK PANTHEON", "LEGENDARY", "MONSTER", "FLY"],
+    "Points": 1800,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 10,
+    "Dash": 5,
+    "Melee": 3,
+    "Ranged": 3,
+    "Strength": 12,
+    "Durability": -1,
+    "Health": 18,
+    "Attacks": 4,
+    "Will": 12,
+    "Armour": 3,
+    "Equipment_Options": "Models in this Formation are equipped with the Heads of the Hydra and Noxious Breath.",
+    "Weapons": [{
+        "Name": "Heads of the Hydra",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "3",
+        "Wound": "3",
+        "Rend": "2",
+        "Damage": "3",
+        "Abilities": []
+    }, {
+        "Name": "Noxious Breath",
+        "Cost": 0,
+        "Type": "Ranged *",
+        "Range": "-",
+        "Wound": "3",
+        "Rend": "",
+        "Damage": "2",
+        "Abilities": ["Spread (16\u201d)", "Auto-Hit", "Toxic"]
+    }],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [{
+        "Ability_Name": "Legendary Dragon Scale",
+        "Ability_Effect": " Any attack that targets this model with a Rend Characteristic of -2 or better are treated as having a Rend Characteristic of -1."
+    }, {
+        "Ability_Name": "The Hydra of Lerna",
+        "Ability_Effect": " After an enemy Formation has finished resolving all their attacks against this model roll XD6 where X is the number of health this model lost because of that enemy Formation\u2019s attacks. For each result of 2-3 this model improves its Attacks Characteristic by 1. For each result of 4-5 this model improves its Attacks Characteristic by 1 and regains 1 lost wound and for each result of 6 this model improves its Attacks Characteristic by 1 and regains 2 lost wounds. (If this model is reduced to 0 Health, this ability has no effect). This model cannot gain more than 10 additional attacks from this ability."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

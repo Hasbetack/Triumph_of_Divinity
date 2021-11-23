@@ -1,1 +1,43 @@
-{"Name": "Semargl", "Keywords": ["SLAVIC PAGANISM", "LEGENDARY", "GOD", "CHARACTER"], "Points": 1850, "Unit_Size": {"min": 1, "max": 1}, "Move": 12, "Dash": 6, "Melee": 3, "Ranged": -1, "Strength": 10, "Durability": -1, "Health": 18, "Attacks": 6, "Will": 12, "Armour": 4, "Equipment_Options": "This model is equipped with The Claws of Semargl.", "Weapons": [{"Name": "The Claws of Semargl", "Cost": 0, "Type": "Melee", "Range": "2", "Wound": "2", "Rend": "3", "Damage": "3", "Abilities": ["Ethereal Weapon (3)"]}], "Faction_Abilities": [], "Unit_Abilities": [{"Ability_Name": "Godly Form", "Ability_Effect": " Any attack that targets this model is treated as having a Rend characteristic of 0."}, {"Ability_Name": "Destroyer of Worlds", "Ability_Effect": " Once per battle after this formation has completed a charge you may roll 3D6. For each result of 3+, each other formation (friend or foe) within 3\" suffers D6 ethereal damage."}, {"Ability_Name": "Chained to Polaris", "Ability_Effect": " At the end of a step in which this formation loses any health roll a D6. On a result of 4+ this formation may immediately perform a normal move or disengage up to 6\"."}], "Caster": 0, "Spells": []}
+{
+    "Name": "Semargl",
+    "Keywords": ["SLAVIC PAGANISM", "LEGENDARY", "GOD", "CHARACTER"],
+    "Points": 1850,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 12,
+    "Dash": 6,
+    "Melee": 3,
+    "Ranged": -1,
+    "Strength": 10,
+    "Durability": -1,
+    "Health": 18,
+    "Attacks": 6,
+    "Will": 12,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with The Claws of Semargl.",
+    "Weapons": [{
+        "Name": "The Claws of Semargl",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "2",
+        "Wound": "2",
+        "Rend": "3",
+        "Damage": "3",
+        "Abilities": ["Ethereal Weapon (3)"]
+    }],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [{
+        "Ability_Name": "Godly Form",
+        "Ability_Effect": " Any attack that targets this model is treated as having a Rend characteristic of 0."
+    }, {
+        "Ability_Name": "Destroyer of Worlds",
+        "Ability_Effect": " Once per battle after this formation has completed a charge you may roll 3D6. For each result of 3+, each other formation (friend or foe) within 3\" suffers D6 ethereal damage."
+    }, {
+        "Ability_Name": "Chained to Polaris",
+        "Ability_Effect": " At the end of a step in which this formation loses any health roll a D6. On a result of 4+ this formation may immediately perform a normal move or disengage up to 6\"."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

@@ -1,1 +1,46 @@
-{"Name": "Great Shark", "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "MONSTER"], "Points": 275, "Unit_Size": {"min": 1, "max": 3}, "Move": 10, "Dash": 6, "Melee": 3, "Ranged": 3, "Strength": 9, "Durability": -1, "Health": 12, "Attacks": 4, "Will": 9, "Armour": 4, "Equipment_Options": "Models in this Formation are equipped with Great White Jaws and 2 Great Cannons.", "Weapons": [{"Name": "Great White Jaws", "Cost": 0, "Type": "Melee", "Range": "2", "Wound": "3", "Rend": "2", "Damage": "3", "Abilities": ["Devastating"]}, {"Name": "Great Cannon (Grape Shot)", "Cost": 0, "Type": "Ranged 2D3", "Range": "12", "Wound": "4", "Rend": "", "Damage": "1", "Abilities": ["Ethereal Weapon (1)"]}], "Faction_Abilities": [], "Unit_Abilities": [{"Ability_Name": "Apex Predator", "Ability_Effect": " When this Formation completes a charge, roll 2D6. For each result of 2+ each model in this Formation may increase its Attacks Characteristic by 1 until the end of the turn."}], "Caster": 0, "Spells": []}
+{
+    "Name": "Great Shark",
+    "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "MONSTER"],
+    "Points": 275,
+    "Unit_Size": {
+        "min": 1,
+        "max": 3
+    },
+    "Move": 10,
+    "Dash": 6,
+    "Melee": 3,
+    "Ranged": 3,
+    "Strength": 9,
+    "Durability": -1,
+    "Health": 12,
+    "Attacks": 4,
+    "Will": 9,
+    "Armour": 4,
+    "Equipment_Options": "Models in this Formation are equipped with Great White Jaws and 2 Great Cannons.",
+    "Weapons": [{
+        "Name": "Great White Jaws",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "2",
+        "Wound": "3",
+        "Rend": "2",
+        "Damage": "3",
+        "Abilities": ["Devastating"]
+    }, {
+        "Name": "Great Cannon (Grape Shot)",
+        "Cost": 0,
+        "Type": "Ranged 2D3",
+        "Range": "12",
+        "Wound": "4",
+        "Rend": "",
+        "Damage": "1",
+        "Abilities": ["Ethereal Weapon (1)"]
+    }],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [{
+        "Ability_Name": "Apex Predator",
+        "Ability_Effect": " When this Formation completes a charge, roll 2D6. For each result of 2+ each model in this Formation may increase its Attacks Characteristic by 1 until the end of the turn."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

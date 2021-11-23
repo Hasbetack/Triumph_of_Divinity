@@ -1,1 +1,52 @@
-{"Name": "Cernunnos", "Keywords": ["CELTIC FAEBORN", "LEGENDARY", "GOD", "CHARACTER", "CASTER"], "Points": 2000, "Unit_Size": {"min": 1, "max": 1}, "Move": 10, "Dash": 6, "Melee": 3, "Ranged": 2, "Strength": 12, "Durability": 5, "Health": 21, "Attacks": 3, "Will": 10, "Armour": 4, "Equipment_Options": "This model is equipped with The Staff of Being.", "Weapons": [{"Name": "The Staff of Being (Life)", "Cost": 0, "Type": "Ranged *", "Range": "*", "Wound": "3", "Rend": "2", "Damage": "2", "Abilities": ["Auto-Hit", "Spread (16\u201d)"]}, {"Name": "The Staff of Being (Death)", "Cost": 0, "Type": "Ranged 1", "Range": "12", "Wound": "2", "Rend": "5", "Damage": "5", "Abilities": ["Ethereal Weapon (3)"]}], "Faction_Abilities": ["Master of Magic"], "Unit_Abilities": [{"Ability_Name": "Godly Form", "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."}, {"Ability_Name": "God of Nature", "Ability_Effect": " At the start of the Tactics Step, pick a point on the battlefield within 12\" of this model, place a 5\" Template centred on this point. This template remains on the Battlefield until the start of the next Tactics Step. Until the start of your next Tactics Step, any time an enemy Formation ends a movement inside the template that Formation suffers D3 Ethereal Damage. "}], "Caster": "3", "Spells": [{"Name": "Faebolt (25)", "Effect": " Select an enemy Formation within 9\" of the caster, the selected Formation suffers D3 Ethereal Damage and until the start of the next Magic Step, the selected Formation cannot Dash, Charge or Disengage for any reason."}]}
+{
+    "Name": "Cernunnos",
+    "Keywords": ["CELTIC FAEBORN", "LEGENDARY", "GOD", "CHARACTER", "CASTER"],
+    "Points": 2000,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 10,
+    "Dash": 6,
+    "Melee": 3,
+    "Ranged": 2,
+    "Strength": 12,
+    "Durability": 5,
+    "Health": 21,
+    "Attacks": 3,
+    "Will": 10,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with The Staff of Being.",
+    "Weapons": [{
+        "Name": "The Staff of Being (Life)",
+        "Cost": 0,
+        "Type": "Ranged *",
+        "Range": "*",
+        "Wound": "3",
+        "Rend": "2",
+        "Damage": "2",
+        "Abilities": ["Auto-Hit", "Spread (16\u201d)"]
+    }, {
+        "Name": "The Staff of Being (Death)",
+        "Cost": 0,
+        "Type": "Ranged 1",
+        "Range": "12",
+        "Wound": "2",
+        "Rend": "5",
+        "Damage": "5",
+        "Abilities": ["Ethereal Weapon (3)"]
+    }],
+    "Faction_Abilities": ["Master of Magic"],
+    "Unit_Abilities": [{
+        "Ability_Name": "Godly Form",
+        "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."
+    }, {
+        "Ability_Name": "God of Nature",
+        "Ability_Effect": " At the start of the Tactics Step, pick a point on the battlefield within 12\" of this model, place a 5\" Template centred on this point. This template remains on the Battlefield until the start of the next Tactics Step. Until the start of your next Tactics Step, any time an enemy Formation ends a movement inside the template that Formation suffers D3 Ethereal Damage. "
+    }],
+    "Caster": "3",
+    "Spells": [{
+        "Name": "Faebolt (25)",
+        "Effect": " Select an enemy Formation within 9\" of the caster, the selected Formation suffers D3 Ethereal Damage and until the start of the next Magic Step, the selected Formation cannot Dash, Charge or Disengage for any reason."
+    }]
+}

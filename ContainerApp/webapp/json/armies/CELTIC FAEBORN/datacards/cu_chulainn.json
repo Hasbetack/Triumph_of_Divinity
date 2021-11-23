@@ -1,1 +1,43 @@
-{"Name": "Cu Chulainn", "Keywords": ["CELTIC FAEBORN", "LEGENDARY", "INFANTRY", "CHARACTER"], "Points": 550, "Unit_Size": {"min": 1, "max": 1}, "Move": 6, "Dash": 6, "Melee": 2, "Ranged": -1, "Strength": 12, "Durability": 6, "Health": 9, "Attacks": 6, "Will": 10, "Armour": 4, "Equipment_Options": "This model is equipped with The Cu\u2019s Blade.", "Weapons": [{"Name": "The Cu\u2019s Blade", "Cost": 0, "Type": "Melee", "Range": "1", "Wound": "3", "Rend": "3", "Damage": "2", "Abilities": ["Ethereal Weapon (1)"]}], "Faction_Abilities": [], "Unit_Abilities": [{"Ability_Name": "Godly Form", "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."}, {"Ability_Name": "Fury of the Cu", "Ability_Effect": " When this model completes a charge, you may choose to unleash the Fury of the Cu, if you do, this model suffers 2 Ethereal Damage but immediately makes 4 Attacks with The Cu\u2019s Blade adding the Devastating ability to the weapon until the end of the Step. In addition, this model can Dash and Charge in the same turn."}, {"Ability_Name": "Undying Rage", "Ability_Effect": " When this model is slain, before removing it from the field, this model may make melee attacks as if it were the Melee Combat Step."}], "Caster": 0, "Spells": []}
+{
+    "Name": "Cu Chulainn",
+    "Keywords": ["CELTIC FAEBORN", "LEGENDARY", "INFANTRY", "CHARACTER"],
+    "Points": 550,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 6,
+    "Dash": 6,
+    "Melee": 2,
+    "Ranged": -1,
+    "Strength": 12,
+    "Durability": 6,
+    "Health": 9,
+    "Attacks": 6,
+    "Will": 10,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with The Cu\u2019s Blade.",
+    "Weapons": [{
+        "Name": "The Cu\u2019s Blade",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "1",
+        "Wound": "3",
+        "Rend": "3",
+        "Damage": "2",
+        "Abilities": ["Ethereal Weapon (1)"]
+    }],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [{
+        "Ability_Name": "Godly Form",
+        "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."
+    }, {
+        "Ability_Name": "Fury of the Cu",
+        "Ability_Effect": " When this model completes a charge, you may choose to unleash the Fury of the Cu, if you do, this model suffers 2 Ethereal Damage but immediately makes 4 Attacks with The Cu\u2019s Blade adding the Devastating ability to the weapon until the end of the Step. In addition, this model can Dash and Charge in the same turn."
+    }, {
+        "Ability_Name": "Undying Rage",
+        "Ability_Effect": " When this model is slain, before removing it from the field, this model may make melee attacks as if it were the Melee Combat Step."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

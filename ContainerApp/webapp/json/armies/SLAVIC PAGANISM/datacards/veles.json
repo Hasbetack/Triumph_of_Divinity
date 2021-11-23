@@ -1,1 +1,55 @@
-{"Name": "Veles", "Keywords": ["SLAVIC PAGANISM", "LEGENDARY", "GOD", "CHARACTER", "CASTER"], "Points": 2250, "Unit_Size": {"min": 1, "max": 1}, "Move": 7, "Dash": 5, "Melee": 2, "Ranged": -1, "Strength": 10, "Durability": -1, "Health": 21, "Attacks": 4, "Will": 12, "Armour": 4, "Equipment_Options": "This model is equipped with a Staff of Nawia.", "Weapons": [{"Name": "Staff of Nawia", "Cost": 0, "Type": "Melee", "Range": "2", "Wound": "3", "Rend": "3", "Damage": "3", "Abilities": ["Devastating", "\nEthereal Weapon (3)"]}], "Faction_Abilities": [], "Unit_Abilities": [{"Ability_Name": "Godly Form", "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."}, {"Ability_Name": "God of Nawia", "Ability_Effect": " The first time this model is destroyed roll a D6. On a result of 4+ return this model to the battlefield at the start of the next round with 2D6 health remaining and place it anywhere on the battlefield more than 9\" away from any enemy Formations."}, {"Ability_Name": "Being of Many Forms", "Ability_Effect": " In the Tactics Step this model may select to shapeshift into one of its forms until the start of the next Tactics Step"}, {"Ability_Name": "The Cow", "Ability_Effect": " This model may increase its Attacks Characteristic by 2."}, {"Ability_Name": "The Bear", "Ability_Effect": " This model may improve its Armour Characteristic by 1."}, {"Ability_Name": "The Snake", "Ability_Effect": " This model may add 5 to its casting rolls."}], "Caster": "3", "Spells": [{"Name": "A Force of Nature (30)", "Effect": " Select an enemy Formation within 18\" of this model and then the selected Formation suffers D6 ethereal damage and then if the selected Formation can FLY, until the end of the turn, each time an attack targets the selected Formation resolve that attack as if it had the Decimating ability."}]}
+{
+    "Name": "Veles",
+    "Keywords": ["SLAVIC PAGANISM", "LEGENDARY", "GOD", "CHARACTER", "CASTER"],
+    "Points": 2250,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 7,
+    "Dash": 5,
+    "Melee": 2,
+    "Ranged": -1,
+    "Strength": 10,
+    "Durability": -1,
+    "Health": 21,
+    "Attacks": 4,
+    "Will": 12,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with a Staff of Nawia.",
+    "Weapons": [{
+        "Name": "Staff of Nawia",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "2",
+        "Wound": "3",
+        "Rend": "3",
+        "Damage": "3",
+        "Abilities": ["Devastating", "\nEthereal Weapon (3)"]
+    }],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [{
+        "Ability_Name": "Godly Form",
+        "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."
+    }, {
+        "Ability_Name": "God of Nawia",
+        "Ability_Effect": " The first time this model is destroyed roll a D6. On a result of 4+ return this model to the battlefield at the start of the next round with 2D6 health remaining and place it anywhere on the battlefield more than 9\" away from any enemy Formations."
+    }, {
+        "Ability_Name": "Being of Many Forms",
+        "Ability_Effect": " In the Tactics Step this model may select to shapeshift into one of its forms until the start of the next Tactics Step"
+    }, {
+        "Ability_Name": "The Cow",
+        "Ability_Effect": " This model may increase its Attacks Characteristic by 2."
+    }, {
+        "Ability_Name": "The Bear",
+        "Ability_Effect": " This model may improve its Armour Characteristic by 1."
+    }, {
+        "Ability_Name": "The Snake",
+        "Ability_Effect": " This model may add 5 to its casting rolls."
+    }],
+    "Caster": "3",
+    "Spells": [{
+        "Name": "A Force of Nature (30)",
+        "Effect": " Select an enemy Formation within 18\" of this model and then the selected Formation suffers D6 ethereal damage and then if the selected Formation can FLY, until the end of the turn, each time an attack targets the selected Formation resolve that attack as if it had the Decimating ability."
+    }]
+}

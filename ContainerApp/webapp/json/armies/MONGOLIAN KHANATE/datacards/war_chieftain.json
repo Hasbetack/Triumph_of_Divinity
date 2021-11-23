@@ -1,1 +1,37 @@
-{"Name": "War Chieftain", "Keywords": ["MONGOLIAN KHANNATE", "INFANTRY", "CHARACTER"], "Points": 160, "Unit_Size": {"min": 1, "max": 1}, "Move": 6, "Dash": 5, "Melee": 2, "Ranged": 2, "Strength": 8, "Durability": -1, "Health": 4, "Attacks": 4, "Will": 8, "Armour": 5, "Equipment_Options": "Models in this Formation are equipped with a Moriton Urtnum.", "Weapons": [{"Name": "Moriton Urtnum", "Cost": 0, "Type": "Ranged 1", "Range": "30", "Wound": "2", "Rend": "2", "Damage": "2", "Abilities": ["Ethereal Weapon (1)"]}], "Faction_Abilities": [], "Unit_Abilities": [{"Ability_Name": "War Chieftain", "Ability_Effect": " When a model in a friendly Formation within 3\" of this model makes a ranged attack, on a wound roll of 5+. Improve the Rend Characteristic of that attack by 1."}], "Caster": 0, "Spells": []}
+{
+    "Name": "War Chieftain",
+    "Keywords": ["MONGOLIAN KHANNATE", "INFANTRY", "CHARACTER"],
+    "Points": 160,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 6,
+    "Dash": 5,
+    "Melee": 2,
+    "Ranged": 2,
+    "Strength": 8,
+    "Durability": -1,
+    "Health": 4,
+    "Attacks": 4,
+    "Will": 8,
+    "Armour": 5,
+    "Equipment_Options": "Models in this Formation are equipped with a Moriton Urtnum.",
+    "Weapons": [{
+        "Name": "Moriton Urtnum",
+        "Cost": 0,
+        "Type": "Ranged 1",
+        "Range": "30",
+        "Wound": "2",
+        "Rend": "2",
+        "Damage": "2",
+        "Abilities": ["Ethereal Weapon (1)"]
+    }],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [{
+        "Ability_Name": "War Chieftain",
+        "Ability_Effect": " When a model in a friendly Formation within 3\" of this model makes a ranged attack, on a wound roll of 5+. Improve the Rend Characteristic of that attack by 1."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

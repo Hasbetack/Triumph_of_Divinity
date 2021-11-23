@@ -1,1 +1,40 @@
-{"Name": "Sir Bors", "Keywords": ["COURT OF KING ARTHUR", "LEGENDARY", "INFANTRY", "CHARACTER", "KNIGHT"], "Points": 400, "Unit_Size": {"min": 1, "max": 1}, "Move": 6, "Dash": 4, "Melee": 2, "Ranged": -1, "Strength": 10, "Durability": -1, "Health": 8, "Attacks": 3, "Will": 10, "Armour": 2, "Equipment_Options": "This model is equipped with a War Axe.", "Weapons": [{"Name": "War Axe", "Cost": 0, "Type": "Melee", "Range": "3", "Wound": "3", "Rend": "3", "Damage": "3", "Abilities": ["Devastating"]}], "Faction_Abilities": ["Charge of the Knights", "Knight of the Round Table", "Knightly Shield", "Holy Crusader"], "Unit_Abilities": [{"Ability_Name": "Crusade for the Grail", "Ability_Effect": " Models in this Formation may-re-roll failed wound rolls of 1 when attacking enemy LEGENDARY Formations in the Melee Combat Step. "}, {"Ability_Name": "Bors of Camelot", "Ability_Effect": " When this model completes a charge, improve the Damage Characteristic of this model\u2019s War Axe by 1 until the end of the Round."}], "Caster": 0, "Spells": []}
+{
+    "Name": "Sir Bors",
+    "Keywords": ["COURT OF KING ARTHUR", "LEGENDARY", "INFANTRY", "CHARACTER", "KNIGHT"],
+    "Points": 400,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 6,
+    "Dash": 4,
+    "Melee": 2,
+    "Ranged": -1,
+    "Strength": 10,
+    "Durability": -1,
+    "Health": 8,
+    "Attacks": 3,
+    "Will": 10,
+    "Armour": 2,
+    "Equipment_Options": "This model is equipped with a War Axe.",
+    "Weapons": [{
+        "Name": "War Axe",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "3",
+        "Wound": "3",
+        "Rend": "3",
+        "Damage": "3",
+        "Abilities": ["Devastating"]
+    }],
+    "Faction_Abilities": ["Charge of the Knights", "Knight of the Round Table", "Knightly Shield", "Holy Crusader"],
+    "Unit_Abilities": [{
+        "Ability_Name": "Crusade for the Grail",
+        "Ability_Effect": " Models in this Formation may-re-roll failed wound rolls of 1 when attacking enemy LEGENDARY Formations in the Melee Combat Step. "
+    }, {
+        "Ability_Name": "Bors of Camelot",
+        "Ability_Effect": " When this model completes a charge, improve the Damage Characteristic of this model\u2019s War Axe by 1 until the end of the Round."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

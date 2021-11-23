@@ -1,1 +1,37 @@
-{"Name": "Spectral Galleon", "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "CONSTRUCT", "FLY"], "Points": 850, "Unit_Size": {"min": 1, "max": 1}, "Move": 12, "Dash": 6, "Melee": 6, "Ranged": 3, "Strength": 10, "Durability": -1, "Health": 15, "Attacks": 3, "Will": 10, "Armour": 3, "Equipment_Options": "This model is equipped with a Ghost Cannon.", "Weapons": [{"Name": "Ghost Cannon", "Cost": 0, "Type": "Ranged 5", "Range": "24", "Wound": "3", "Rend": "1", "Damage": "2", "Abilities": ["Ethereal Weapon (2)"]}], "Faction_Abilities": ["Ghost Pirate"], "Unit_Abilities": [{"Ability_Name": "Galleon Crew", "Ability_Effect": " During the Deployment step you may elect to have any number of Formations totalling up to 10 INFANTRY models embarked upon this model (Each CANNONEER model counts as 2 models instead of 1). While a Formation is embarked upon this model it may attack with any ranged weapons as if it were on the battlefield and it measures ranges and line of sight from this model. If an embarked Formation chooses to disembark from this model, then at the end of any movement step you may set up the disembarking Formation wholly within 6\" of this model and more than 9\" from enemy Formations. If this model is destroyed, then all embarked Formations must disembark as if it were the end of the movement step."}], "Caster": 0, "Spells": []}
+{
+    "Name": "Spectral Galleon",
+    "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "CONSTRUCT", "FLY"],
+    "Points": 850,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 12,
+    "Dash": 6,
+    "Melee": 6,
+    "Ranged": 3,
+    "Strength": 10,
+    "Durability": -1,
+    "Health": 15,
+    "Attacks": 3,
+    "Will": 10,
+    "Armour": 3,
+    "Equipment_Options": "This model is equipped with a Ghost Cannon.",
+    "Weapons": [{
+        "Name": "Ghost Cannon",
+        "Cost": 0,
+        "Type": "Ranged 5",
+        "Range": "24",
+        "Wound": "3",
+        "Rend": "1",
+        "Damage": "2",
+        "Abilities": ["Ethereal Weapon (2)"]
+    }],
+    "Faction_Abilities": ["Ghost Pirate"],
+    "Unit_Abilities": [{
+        "Ability_Name": "Galleon Crew",
+        "Ability_Effect": " During the Deployment step you may elect to have any number of Formations totalling up to 10 INFANTRY models embarked upon this model (Each CANNONEER model counts as 2 models instead of 1). While a Formation is embarked upon this model it may attack with any ranged weapons as if it were on the battlefield and it measures ranges and line of sight from this model. If an embarked Formation chooses to disembark from this model, then at the end of any movement step you may set up the disembarking Formation wholly within 6\" of this model and more than 9\" from enemy Formations. If this model is destroyed, then all embarked Formations must disembark as if it were the end of the movement step."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

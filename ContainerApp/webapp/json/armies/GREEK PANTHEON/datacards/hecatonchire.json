@@ -1,1 +1,49 @@
-{"Name": "Hecatonchire", "Keywords": ["GREEK PANTHEON", "MONSTER"], "Points": 850, "Unit_Size": {"min": 1, "max": 1}, "Move": 8, "Dash": 6, "Melee": 3, "Ranged": 3, "Strength": 12, "Durability": -1, "Health": 24, "Attacks": "4D6", "Will": 9, "Armour": 4, "Equipment_Options": "This model is equipped with One Hundred Blades and the Boulders of Tartarus.", "Weapons": [{"Name": "One Hundred Blades", "Cost": 0, "Type": "Melee", "Range": "1", "Wound": "3", "Rend": "1", "Damage": "2", "Abilities": ["Serrated (D3)", "Tearing (2)"]}, {"Name": "Boulders of Tartarus", "Cost": 0, "Type": "Ranged 1", "Range": "36", "Wound": "2", "Rend": "4", "Damage": "6", "Abilities": []}], "Faction_Abilities": [], "Unit_Abilities": [{"Ability_Name": "Godly Form", "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."}, {"Ability_Name": "Monster of Tartarus", "Ability_Effect": " At the start of the Melee Combat Step roll 2D6. If the result exceeds this model\u2019s Will Characteristic, then until the end of the step this model has an Attacks Characteristic of 24 and an Armour Characteristic of 6+."}], "Caster": 0, "Spells": []}
+{
+    "Name": "Hecatonchire",
+    "Keywords": ["GREEK PANTHEON", "MONSTER"],
+    "Points": 850,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 8,
+    "Dash": 6,
+    "Melee": 3,
+    "Ranged": 3,
+    "Strength": 12,
+    "Durability": -1,
+    "Health": 24,
+    "Attacks": "4D6",
+    "Will": 9,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with One Hundred Blades and the Boulders of Tartarus.",
+    "Weapons": [{
+        "Name": "One Hundred Blades",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "1",
+        "Wound": "3",
+        "Rend": "1",
+        "Damage": "2",
+        "Abilities": ["Serrated (D3)", "Tearing (2)"]
+    }, {
+        "Name": "Boulders of Tartarus",
+        "Cost": 0,
+        "Type": "Ranged 1",
+        "Range": "36",
+        "Wound": "2",
+        "Rend": "4",
+        "Damage": "6",
+        "Abilities": []
+    }],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [{
+        "Ability_Name": "Godly Form",
+        "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."
+    }, {
+        "Ability_Name": "Monster of Tartarus",
+        "Ability_Effect": " At the start of the Melee Combat Step roll 2D6. If the result exceeds this model\u2019s Will Characteristic, then until the end of the step this model has an Attacks Characteristic of 24 and an Armour Characteristic of 6+."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

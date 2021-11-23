@@ -1,0 +1,6 @@
+{
+    "Name": "Warrior Conclave",
+    "Points": 450,
+    "Requirements": ["Your Army must include Cu Chulainn", "2 Formations of Celtic Trodai", "2 Formations of Celtic Marcra", "0-2 Formations of Celtic Ucheldir"],
+    "Effect": "If your army includes this company then all Formations in this company may add 1 to wound rolls in the Melee Combat Step."
+}

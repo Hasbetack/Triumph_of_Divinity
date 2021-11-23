@@ -1,1 +1,37 @@
-{"Name": "Vukodlak Fighters", "Keywords": ["SLAVIC PAGANISM", "INFANTRY"], "Points": 35, "Unit_Size": {"min": 5, "max": 10}, "Move": 7, "Dash": 5, "Melee": 3, "Ranged": -1, "Strength": 7, "Durability": -1, "Health": 2, "Attacks": 2, "Will": 8, "Armour": 3, "Equipment_Options": "Models in this Formation are equipped with a Vukodlak Sword.", "Weapons": [{"Name": "Vukodlak Sword", "Cost": 0, "Type": "Melee", "Range": "1", "Wound": "3", "Rend": "2", "Damage": "1", "Abilities": ["Serrated (1)"]}], "Faction_Abilities": [], "Unit_Abilities": [{"Ability_Name": "Enraged Charge", "Ability_Effect": " After this Formation completes a charge roll a D6. On a result of 4+ models in this Formation may increase their Attacks Characteristic by 1 until the end of the battle round."}], "Caster": 0, "Spells": []}
+{
+    "Name": "Vukodlak Fighters",
+    "Keywords": ["SLAVIC PAGANISM", "INFANTRY"],
+    "Points": 35,
+    "Unit_Size": {
+        "min": 5,
+        "max": 10
+    },
+    "Move": 7,
+    "Dash": 5,
+    "Melee": 3,
+    "Ranged": -1,
+    "Strength": 7,
+    "Durability": -1,
+    "Health": 2,
+    "Attacks": 2,
+    "Will": 8,
+    "Armour": 3,
+    "Equipment_Options": "Models in this Formation are equipped with a Vukodlak Sword.",
+    "Weapons": [{
+        "Name": "Vukodlak Sword",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "1",
+        "Wound": "3",
+        "Rend": "2",
+        "Damage": "1",
+        "Abilities": ["Serrated (1)"]
+    }],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [{
+        "Ability_Name": "Enraged Charge",
+        "Ability_Effect": " After this Formation completes a charge roll a D6. On a result of 4+ models in this Formation may increase their Attacks Characteristic by 1 until the end of the battle round."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

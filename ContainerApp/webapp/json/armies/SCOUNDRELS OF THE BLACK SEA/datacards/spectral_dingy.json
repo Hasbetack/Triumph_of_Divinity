@@ -1,1 +1,40 @@
-{"Name": "Spectral Dingy", "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "CONSTRUCT", "FLY"], "Points": 300, "Unit_Size": {"min": 1, "max": 3}, "Move": 14, "Dash": 7, "Melee": 5, "Ranged": 3, "Strength": 7, "Durability": -1, "Health": 6, "Attacks": 3, "Will": 10, "Armour": 4, "Equipment_Options": "This model is equipped with a Screaming Gatling Gun.", "Weapons": [{"Name": "Screaming Gatling Gun", "Cost": 0, "Type": "Ranged 8", "Range": "8", "Wound": "4", "Rend": "1", "Damage": "2", "Abilities": ["Ethereal Weapon (2)"]}], "Faction_Abilities": ["Ghost Pirate"], "Unit_Abilities": [{"Ability_Name": "Dingy Crew", "Ability_Effect": " During the Deployment step you may elect to have any number of Formations totalling up to 6 INFANTRY models embarked upon each model in this Formation (Each CANNONEER model counts as 2 models instead of 1). While a Formation is embarked upon a model in this Formation it may attack with any ranged weapons as if it were on the battlefield and it measures ranges and line of sight from models in this Formation. If an embarked Formation chooses to disembark from this models in this Formation, then at the end of any movement step you may set up the disembarking Formation wholly within 6\" of this models in this Formation and more than 9\" from enemy Formations. If a model in this Formation is destroyed, then all embarked Formations must disembark as if it were the end of the movement step."}, {"Ability_Name": "Spectral Mobility", "Ability_Effect": " During Deployment, models in this Formation must be set up in Coherency with each other, after the game starts, models in this Formation act as separate Formations for the rest of the game. "}], "Caster": 0, "Spells": []}
+{
+    "Name": "Spectral Dingy",
+    "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "CONSTRUCT", "FLY"],
+    "Points": 300,
+    "Unit_Size": {
+        "min": 1,
+        "max": 3
+    },
+    "Move": 14,
+    "Dash": 7,
+    "Melee": 5,
+    "Ranged": 3,
+    "Strength": 7,
+    "Durability": -1,
+    "Health": 6,
+    "Attacks": 3,
+    "Will": 10,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with a Screaming Gatling Gun.",
+    "Weapons": [{
+        "Name": "Screaming Gatling Gun",
+        "Cost": 0,
+        "Type": "Ranged 8",
+        "Range": "8",
+        "Wound": "4",
+        "Rend": "1",
+        "Damage": "2",
+        "Abilities": ["Ethereal Weapon (2)"]
+    }],
+    "Faction_Abilities": ["Ghost Pirate"],
+    "Unit_Abilities": [{
+        "Ability_Name": "Dingy Crew",
+        "Ability_Effect": " During the Deployment step you may elect to have any number of Formations totalling up to 6 INFANTRY models embarked upon each model in this Formation (Each CANNONEER model counts as 2 models instead of 1). While a Formation is embarked upon a model in this Formation it may attack with any ranged weapons as if it were on the battlefield and it measures ranges and line of sight from models in this Formation. If an embarked Formation chooses to disembark from this models in this Formation, then at the end of any movement step you may set up the disembarking Formation wholly within 6\" of this models in this Formation and more than 9\" from enemy Formations. If a model in this Formation is destroyed, then all embarked Formations must disembark as if it were the end of the movement step."
+    }, {
+        "Ability_Name": "Spectral Mobility",
+        "Ability_Effect": " During Deployment, models in this Formation must be set up in Coherency with each other, after the game starts, models in this Formation act as separate Formations for the rest of the game. "
+    }],
+    "Caster": 0,
+    "Spells": []
+}

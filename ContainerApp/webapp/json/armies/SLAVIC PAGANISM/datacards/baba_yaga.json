@@ -1,1 +1,49 @@
-{"Name": "Baba Yaga", "Keywords": ["SLAVIC PAGANISM", "LEGENDARY", "GOD", "CHARACTER", "CASTER"], "Points": 1400, "Unit_Size": {"min": 1, "max": 1}, "Move": 9, "Dash": 6, "Melee": 2, "Ranged": -1, "Strength": 7, "Durability": -1, "Health": 10, "Attacks": 3, "Will": 12, "Armour": 4, "Equipment_Options": "This model is equipped with a Cursed Pestle.", "Weapons": [{"Name": "Cursed Pestle", "Cost": 0, "Type": "Melee", "Range": "2", "Wound": "3", "Rend": "2", "Damage": "3", "Abilities": []}], "Faction_Abilities": [], "Unit_Abilities": [{"Ability_Name": "Godly Form", "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."}, {"Ability_Name": "The Mother Witch", "Ability_Effect": " When this model attempts to Cast a Magic Spell add 5 to the result."}, {"Ability_Name": "Burning Skull", "Ability_Effect": " At the start of the fight phase select 1 enemy Formation within 1\" of this model, then roll 3D6 for each other enemy Formation within 3\" of the selected Formation. For each result of 4+ the Formation being rolled for suffers D3 ethereal damage."}], "Caster": "3", "Spells": [{"Name": "A Feast for Twelve (40)", "Effect": " Select an enemy Formation within 12\" of this model containing 6 or more models and roll 6D6. For each result of 4+ the Formation suffers D3 ethereal damage. If the selected Formation contains 12 or more models, then roll 12D6 instead."}, {"Name": "The Curse of Baba Yaga (35)", "Effect": " Select an enemy Formation within 12\" of this model and have the selected Formation perform 3 strength checks. For each failed strength test the selected Formation suffers D6 ethereal damage."}]}
+{
+    "Name": "Baba Yaga",
+    "Keywords": ["SLAVIC PAGANISM", "LEGENDARY", "GOD", "CHARACTER", "CASTER"],
+    "Points": 1400,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 9,
+    "Dash": 6,
+    "Melee": 2,
+    "Ranged": -1,
+    "Strength": 7,
+    "Durability": -1,
+    "Health": 10,
+    "Attacks": 3,
+    "Will": 12,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with a Cursed Pestle.",
+    "Weapons": [{
+        "Name": "Cursed Pestle",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "2",
+        "Wound": "3",
+        "Rend": "2",
+        "Damage": "3",
+        "Abilities": []
+    }],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [{
+        "Ability_Name": "Godly Form",
+        "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."
+    }, {
+        "Ability_Name": "The Mother Witch",
+        "Ability_Effect": " When this model attempts to Cast a Magic Spell add 5 to the result."
+    }, {
+        "Ability_Name": "Burning Skull",
+        "Ability_Effect": " At the start of the fight phase select 1 enemy Formation within 1\" of this model, then roll 3D6 for each other enemy Formation within 3\" of the selected Formation. For each result of 4+ the Formation being rolled for suffers D3 ethereal damage."
+    }],
+    "Caster": "3",
+    "Spells": [{
+        "Name": "A Feast for Twelve (40)",
+        "Effect": " Select an enemy Formation within 12\" of this model containing 6 or more models and roll 6D6. For each result of 4+ the Formation suffers D3 ethereal damage. If the selected Formation contains 12 or more models, then roll 12D6 instead."
+    }, {
+        "Name": "The Curse of Baba Yaga (35)",
+        "Effect": " Select an enemy Formation within 12\" of this model and have the selected Formation perform 3 strength checks. For each failed strength test the selected Formation suffers D6 ethereal damage."
+    }]
+}

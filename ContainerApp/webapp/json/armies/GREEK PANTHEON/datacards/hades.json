@@ -1,1 +1,55 @@
-{"Name": "Hades", "Keywords": ["GREEK PANTHEON", "LEGENDARY", "GOD", "CHARACTER", "CASTER"], "Points": 2500, "Unit_Size": {"min": 1, "max": 1}, "Move": 14, "Dash": 8, "Melee": 2, "Ranged": 2, "Strength": 12, "Durability": 6, "Health": 24, "Attacks": 3, "Will": 12, "Armour": 4, "Equipment_Options": "This model is equipped with the Bident of the Underworld", "Weapons": [{"Name": "Bident of the Underworld (Ranged)", "Cost": 0, "Type": "Ranged 1", "Range": "12", "Wound": "3", "Rend": "4", "Damage": "6", "Abilities": ["Devastating", "\nEthereal Weapon (2) "]}, {"Name": "Bident of the Underworld (Melee)", "Cost": 0, "Type": "Melee", "Range": "2", "Wound": "2", "Rend": "4", "Damage": "4", "Abilities": ["Devastating", "\nEthereal Weapon (4)"]}], "Faction_Abilities": [], "Unit_Abilities": [{"Ability_Name": "Godly Form", "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."}, {"Ability_Name": "Helm of Darkness", "Ability_Effect": " Enemy Formations within 3\" of this model are considered to have a Will Characteristic of 0. In addition, once per battle in the Tactics Step this model can elect to use its Helm of Darkness. Until the end of the round this model may not be affected by or selected as the target of any attacks or abilities."}, {"Ability_Name": "King of the Underworld", "Ability_Effect": " Whenever this model is selected to fight in the Melee Combat Step, if all this model\u2019s attacks target a Formation composed of a single model, then increase the damage Characteristic of the melee profile of this model\u2019s Bident of the Underworld by 2."}], "Caster": "3", "Spells": [{"Name": "Blaze of Hellfire (35)", "Effect": " Select an enemy Formation containing a single model within 9\" of this model and roll 3D6. For each result of 3+ the selected Formation suffers D3+3 Ethereal Damage."}]}
+{
+    "Name": "Hades",
+    "Keywords": ["GREEK PANTHEON", "LEGENDARY", "GOD", "CHARACTER", "CASTER"],
+    "Points": 2500,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 14,
+    "Dash": 8,
+    "Melee": 2,
+    "Ranged": 2,
+    "Strength": 12,
+    "Durability": 6,
+    "Health": 24,
+    "Attacks": 3,
+    "Will": 12,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with the Bident of the Underworld",
+    "Weapons": [{
+        "Name": "Bident of the Underworld (Ranged)",
+        "Cost": 0,
+        "Type": "Ranged 1",
+        "Range": "12",
+        "Wound": "3",
+        "Rend": "4",
+        "Damage": "6",
+        "Abilities": ["Devastating", "\nEthereal Weapon (2) "]
+    }, {
+        "Name": "Bident of the Underworld (Melee)",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "2",
+        "Wound": "2",
+        "Rend": "4",
+        "Damage": "4",
+        "Abilities": ["Devastating", "\nEthereal Weapon (4)"]
+    }],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [{
+        "Ability_Name": "Godly Form",
+        "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."
+    }, {
+        "Ability_Name": "Helm of Darkness",
+        "Ability_Effect": " Enemy Formations within 3\" of this model are considered to have a Will Characteristic of 0. In addition, once per battle in the Tactics Step this model can elect to use its Helm of Darkness. Until the end of the round this model may not be affected by or selected as the target of any attacks or abilities."
+    }, {
+        "Ability_Name": "King of the Underworld",
+        "Ability_Effect": " Whenever this model is selected to fight in the Melee Combat Step, if all this model\u2019s attacks target a Formation composed of a single model, then increase the damage Characteristic of the melee profile of this model\u2019s Bident of the Underworld by 2."
+    }],
+    "Caster": "3",
+    "Spells": [{
+        "Name": "Blaze of Hellfire (35)",
+        "Effect": " Select an enemy Formation containing a single model within 9\" of this model and roll 3D6. For each result of 3+ the selected Formation suffers D3+3 Ethereal Damage."
+    }]
+}

@@ -1,6 +1,6 @@
 {
     "Name": "The Gift of Greed",
     "Points": 200,
-    "Requirements": ["Your Army must include King Midas", "4-8 Formations of Hoplites", "If your army includes this company you cannot include any LEGENDARY Formations other than King Midas."],
+    "Requirements": ["Your Army must include King Midas", "3-6 Formations of Hoplites", "If your army includes this company you cannot include any LEGENDARY Formations other than King Midas."],
     "Effect": "If your army includes this company then while a Formation from this company is within 6” of King Midas then improve the armour characteristic of models in that Formation by 1. In addition, when a Formation from this Formation attempts an action while within 6” of King Midas then that action is automatically succeeded."
 }

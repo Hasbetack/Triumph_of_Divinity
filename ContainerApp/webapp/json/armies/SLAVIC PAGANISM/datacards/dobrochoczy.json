@@ -1,1 +1,43 @@
-{"Name": "Dobrochoczy", "Keywords": ["SLAVIC PAGANISM", "LEGENDARY", "GOD", "CHARACTER"], "Points": 900, "Unit_Size": {"min": 1, "max": 1}, "Move": 6, "Dash": 5, "Melee": 3, "Ranged": -1, "Strength": 10, "Durability": -1, "Health": 18, "Attacks": 3, "Will": 10, "Armour": 4, "Equipment_Options": "This model is equipped with Impaling Branches.", "Weapons": [{"Name": "Impaling Branches", "Cost": 0, "Type": "Melee", "Range": "2", "Wound": "2", "Rend": "3", "Damage": "5", "Abilities": ["Devastating"]}], "Faction_Abilities": [], "Unit_Abilities": [{"Ability_Name": "Godly Form", "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."}, {"Ability_Name": "Watcher of the Forest", "Ability_Effect": " In the Tactics Step this model may select an enemy Formation within 18\" to watch until the start of the next Tactics Step."}, {"Ability_Name": "Ruthless Prosecutor", "Ability_Effect": " If an enemy Formation under the effect of the Watcher of the Forest ability destroys a SLAVIC PAGANISM model, then roll a D6. On a result of 4+ the Formation being rolled for suffers 1 ethereal damage."}], "Caster": 0, "Spells": []}
+{
+    "Name": "Dobrochoczy",
+    "Keywords": ["SLAVIC PAGANISM", "LEGENDARY", "GOD", "CHARACTER"],
+    "Points": 900,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 6,
+    "Dash": 5,
+    "Melee": 3,
+    "Ranged": -1,
+    "Strength": 10,
+    "Durability": -1,
+    "Health": 18,
+    "Attacks": 3,
+    "Will": 10,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with Impaling Branches.",
+    "Weapons": [{
+        "Name": "Impaling Branches",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "2",
+        "Wound": "2",
+        "Rend": "3",
+        "Damage": "5",
+        "Abilities": ["Devastating"]
+    }],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [{
+        "Ability_Name": "Godly Form",
+        "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."
+    }, {
+        "Ability_Name": "Watcher of the Forest",
+        "Ability_Effect": " In the Tactics Step this model may select an enemy Formation within 18\" to watch until the start of the next Tactics Step."
+    }, {
+        "Ability_Name": "Ruthless Prosecutor",
+        "Ability_Effect": " If an enemy Formation under the effect of the Watcher of the Forest ability destroys a SLAVIC PAGANISM model, then roll a D6. On a result of 4+ the Formation being rolled for suffers 1 ethereal damage."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

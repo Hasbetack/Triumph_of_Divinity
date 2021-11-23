@@ -1,1 +1,73 @@
-{"Name": "The Morrigan", "Keywords": ["CELTIC FAEBORN", "LEGENDARY", "GOD", "CHARACTER", "CASTER"], "Points": 2650, "Unit_Size": {"min": 1, "max": 1}, "Move": 10, "Dash": 6, "Melee": 2, "Ranged": 2, "Strength": 10, "Durability": 6, "Health": 24, "Attacks": 5, "Will": 11, "Armour": 3, "Equipment_Options": "This model is equipped with Ceremonial Daggers and Attack Crones.", "Weapons": [{"Name": "Ceremonial Daggers", "Cost": 0, "Type": "Melee", "Range": "2", "Wound": "2", "Rend": "5", "Damage": "3", "Abilities": ["Decimating", "Serrated (1)", "Ethereal Weapon (1)"]}, {"Name": "Attack Crones", "Cost": 0, "Type": "Ranged 3D3", "Range": "12", "Wound": "3", "Rend": "1", "Damage": "2", "Abilities": ["Ethereal Weapon (1)"]}], "Faction_Abilities": ["Master of Magic"], "Unit_Abilities": [{"Ability_Name": "Godly Form", "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."}, {"Ability_Name": "Seer of the End", "Ability_Effect": " The first time this model is slain and removed from the battlefield, roll a D6, on a 3+ this model returns to battlefield wholly within 6\" of any table edge (and more than 9\" away from any enemy models) with 8 Health remaining."}, {"Ability_Name": "Three Formed Goddess", "Ability_Effect": " At the start of each round, before rolling initiative, you may select one of the Aspects below to apply to this model until the duration of the turn"}, {"Ability_Name": "- Aspect of the Crone", "Ability_Effect": " Add 5\" to this model\u2019s Movement Characteristic."}, {"Ability_Name": "- Aspect of the Maiden", "Ability_Effect": " In the magic step add 2 to the dice in this model\u2019s magic pool."}, {"Ability_Name": "- Aspect of the Eldritch", "Ability_Effect": " Whenever this model would lose a health in the melee combat step roll a D6. On a result of 5+, the Formation that inflicted the damage suffers 1 ethereal damage."}], "Caster": "3", "Spells": [{"Name": "War, Death, Prophecy (35)", "Effect": " Select a friendly Formation within 12\" of the caster and visible to it. Choose one of the following effects to apply to the selected Formation until the start of your next Magic Step"}, {"Name": "War", "Effect": " Add 2 to the Attacks Characteristic of models in the selected Formation."}, {"Name": "Death", "Effect": " When the selected Formation completes a charge, roll XD6 where X is equal to the unmodified charge distance. For each roll of 5+ each enemy Formation within 1\" suffers 1 Ethereal Damage."}, {"Name": "Prophecy", "Effect": " Re-roll failed Armour Saves for models in the selected Formation."}]}
+{
+    "Name": "The Morrigan",
+    "Keywords": ["CELTIC FAEBORN", "LEGENDARY", "GOD", "CHARACTER", "CASTER"],
+    "Points": 2650,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 10,
+    "Dash": 6,
+    "Melee": 2,
+    "Ranged": 2,
+    "Strength": 10,
+    "Durability": 6,
+    "Health": 24,
+    "Attacks": 5,
+    "Will": 11,
+    "Armour": 3,
+    "Equipment_Options": "This model is equipped with Ceremonial Daggers and Attack Crones.",
+    "Weapons": [{
+        "Name": "Ceremonial Daggers",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "2",
+        "Wound": "2",
+        "Rend": "5",
+        "Damage": "3",
+        "Abilities": ["Decimating", "Serrated (1)", "Ethereal Weapon (1)"]
+    }, {
+        "Name": "Attack Crones",
+        "Cost": 0,
+        "Type": "Ranged 3D3",
+        "Range": "12",
+        "Wound": "3",
+        "Rend": "1",
+        "Damage": "2",
+        "Abilities": ["Ethereal Weapon (1)"]
+    }],
+    "Faction_Abilities": ["Master of Magic"],
+    "Unit_Abilities": [{
+        "Ability_Name": "Godly Form",
+        "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."
+    }, {
+        "Ability_Name": "Seer of the End",
+        "Ability_Effect": " The first time this model is slain and removed from the battlefield, roll a D6, on a 3+ this model returns to battlefield wholly within 6\" of any table edge (and more than 9\" away from any enemy models) with 8 Health remaining."
+    }, {
+        "Ability_Name": "Three Formed Goddess",
+        "Ability_Effect": " At the start of each round, before rolling initiative, you may select one of the Aspects below to apply to this model until the duration of the turn"
+    }, {
+        "Ability_Name": "- Aspect of the Crone",
+        "Ability_Effect": " Add 5\" to this model\u2019s Movement Characteristic."
+    }, {
+        "Ability_Name": "- Aspect of the Maiden",
+        "Ability_Effect": " In the magic step add 2 to the dice in this model\u2019s magic pool."
+    }, {
+        "Ability_Name": "- Aspect of the Eldritch",
+        "Ability_Effect": " Whenever this model would lose a health in the melee combat step roll a D6. On a result of 5+, the Formation that inflicted the damage suffers 1 ethereal damage."
+    }],
+    "Caster": "3",
+    "Spells": [{
+        "Name": "War, Death, Prophecy (35)",
+        "Effect": " Select a friendly Formation within 12\" of the caster and visible to it. Choose one of the following effects to apply to the selected Formation until the start of your next Magic Step"
+    }, {
+        "Name": "War",
+        "Effect": " Add 2 to the Attacks Characteristic of models in the selected Formation."
+    }, {
+        "Name": "Death",
+        "Effect": " When the selected Formation completes a charge, roll XD6 where X is equal to the unmodified charge distance. For each roll of 5+ each enemy Formation within 1\" suffers 1 Ethereal Damage."
+    }, {
+        "Name": "Prophecy",
+        "Effect": " Re-roll failed Armour Saves for models in the selected Formation."
+    }]
+}

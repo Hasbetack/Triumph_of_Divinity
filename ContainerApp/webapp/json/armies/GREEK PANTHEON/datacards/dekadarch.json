@@ -1,1 +1,40 @@
-{"Name": "Dekadarch", "Keywords": ["GREEK PANTHEON", "INFANTRY", "CHARACTER"], "Points": 165, "Unit_Size": {"min": 1, "max": 1}, "Move": 6, "Dash": 4, "Melee": 3, "Ranged": -1, "Strength": 7, "Durability": -1, "Health": 5, "Attacks": 4, "Will": 9, "Armour": 3, "Equipment_Options": "Models in this Formation are equipped with the Dekadarch Doru.", "Weapons": [{"Name": "Dekadarch Doru", "Cost": 0, "Type": "Melee", "Range": "3", "Wound": "3", "Rend": "2", "Damage": "2", "Abilities": ["Ethereal Weapon (1)"]}], "Faction_Abilities": [], "Unit_Abilities": [{"Ability_Name": "Officer of the Phalanx", "Ability_Effect": " Friendly INFANTRY Formations within 6\" of this model may re-roll failed hit rolls of 1."}, {"Ability_Name": "Battle Shield", "Ability_Effect": " Any attack that targets this model with a Rend Characteristic of -3 or better are treated as having a Rend Characteristic of -2."}], "Caster": 0, "Spells": []}
+{
+    "Name": "Dekadarch",
+    "Keywords": ["GREEK PANTHEON", "INFANTRY", "CHARACTER"],
+    "Points": 165,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 6,
+    "Dash": 4,
+    "Melee": 3,
+    "Ranged": -1,
+    "Strength": 7,
+    "Durability": -1,
+    "Health": 5,
+    "Attacks": 4,
+    "Will": 9,
+    "Armour": 3,
+    "Equipment_Options": "Models in this Formation are equipped with the Dekadarch Doru.",
+    "Weapons": [{
+        "Name": "Dekadarch Doru",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "3",
+        "Wound": "3",
+        "Rend": "2",
+        "Damage": "2",
+        "Abilities": ["Ethereal Weapon (1)"]
+    }],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [{
+        "Ability_Name": "Officer of the Phalanx",
+        "Ability_Effect": " Friendly INFANTRY Formations within 6\" of this model may re-roll failed hit rolls of 1."
+    }, {
+        "Ability_Name": "Battle Shield",
+        "Ability_Effect": " Any attack that targets this model with a Rend Characteristic of -3 or better are treated as having a Rend Characteristic of -2."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

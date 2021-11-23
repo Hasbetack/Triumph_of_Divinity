@@ -1,1 +1,52 @@
-{"Name": "Gunbeard", "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "LEGENDARY", "INFANTRY", "CHARACTER"], "Points": 1200, "Unit_Size": {"min": 1, "max": 1}, "Move": 6, "Dash": 5, "Melee": 3, "Ranged": 3, "Strength": 10, "Durability": -1, "Health": 10, "Attacks": "3D3", "Will": 10, "Armour": 5, "Equipment_Options": "This model is equipped with a Brace of Pistols, a Coat of Blades and a Ghost Tentacle.", "Weapons": [{"Name": "Coat of Blades", "Cost": 0, "Type": "Melee", "Range": "1", "Wound": "3", "Rend": "2", "Damage": "2", "Abilities": ["Ethereal Weapon (2)", "\nSerrated (D3)"]}, {"Name": "Brace of Pistols", "Cost": 0, "Type": "Ranged 6D3", "Range": "10", "Wound": "3", "Rend": "", "Damage": "1", "Abilities": ["Ethereal Weapon (1)", "Fragmentation (4),\nDeck Sweeper"]}], "Faction_Abilities": ["Ghost Pirate"], "Unit_Abilities": [{"Ability_Name": "Godly Form", "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."}, {"Ability_Name": "Crazed Pirate Lord", "Ability_Effect": " At the start of the Tactics Step, select a Friendly Formation within 6\" of this model and roll a D6, on a 4+ models in the selected Formation may make 1 additional shot with any ranged weapons they are equipped with."}, {"Ability_Name": "Deranged Razor Coat", "Ability_Effect": " In the Melee Combat Step, whenever an enemy Formation attacks this model, for each hit roll 1 made by that Formation, that enemy Formation suffers 1 Ethereal Damage."}], "Caster": 0, "Spells": []}
+{
+    "Name": "Gunbeard",
+    "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "LEGENDARY", "INFANTRY", "CHARACTER"],
+    "Points": 1200,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 6,
+    "Dash": 5,
+    "Melee": 3,
+    "Ranged": 3,
+    "Strength": 10,
+    "Durability": -1,
+    "Health": 10,
+    "Attacks": "3D3",
+    "Will": 10,
+    "Armour": 5,
+    "Equipment_Options": "This model is equipped with a Brace of Pistols, a Coat of Blades and a Ghost Tentacle.",
+    "Weapons": [{
+        "Name": "Coat of Blades",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "1",
+        "Wound": "3",
+        "Rend": "2",
+        "Damage": "2",
+        "Abilities": ["Ethereal Weapon (2)", "\nSerrated (D3)"]
+    }, {
+        "Name": "Brace of Pistols",
+        "Cost": 0,
+        "Type": "Ranged 6D3",
+        "Range": "10",
+        "Wound": "3",
+        "Rend": "",
+        "Damage": "1",
+        "Abilities": ["Ethereal Weapon (1)", "Fragmentation (4),\nDeck Sweeper"]
+    }],
+    "Faction_Abilities": ["Ghost Pirate"],
+    "Unit_Abilities": [{
+        "Ability_Name": "Godly Form",
+        "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."
+    }, {
+        "Ability_Name": "Crazed Pirate Lord",
+        "Ability_Effect": " At the start of the Tactics Step, select a Friendly Formation within 6\" of this model and roll a D6, on a 4+ models in the selected Formation may make 1 additional shot with any ranged weapons they are equipped with."
+    }, {
+        "Ability_Name": "Deranged Razor Coat",
+        "Ability_Effect": " In the Melee Combat Step, whenever an enemy Formation attacks this model, for each hit roll 1 made by that Formation, that enemy Formation suffers 1 Ethereal Damage."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

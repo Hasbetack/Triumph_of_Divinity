@@ -1,1 +1,52 @@
-{"Name": "Davy Jones", "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "LEGENDARY", "INFANTRY", "CHARACTER"], "Points": 1500, "Unit_Size": {"min": 1, "max": 1}, "Move": 6, "Dash": 5, "Melee": 2, "Ranged": 2, "Strength": 10, "Durability": -1, "Health": 18, "Attacks": 6, "Will": 10, "Armour": 4, "Equipment_Options": "This model is equipped with a Cursed Swashbuckler and a Cursed Blunderbuss.", "Weapons": [{"Name": "Cursed Swashbuckler", "Cost": 0, "Type": "Melee", "Range": "2", "Wound": "2", "Rend": "4", "Damage": "3", "Abilities": ["Ethereal Weapon (3)"]}, {"Name": "Cursed Blunderbuss", "Cost": 0, "Type": "Ranged 3D3", "Range": "10", "Wound": "3", "Rend": "1", "Damage": "D3", "Abilities": ["Ethereal Weapon (D3)", "\nDeck Sweeper"]}], "Faction_Abilities": ["Ghost Pirate"], "Unit_Abilities": [{"Ability_Name": "Godly Form", "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."}, {"Ability_Name": "Ghost Pirate Lord", "Ability_Effect": " While a friendly SCOUNDRELS OF THE BLACK SEA Formation is within 6\" of this model then models in that Formation may re-roll to hit and to wound rolls of 1."}, {"Ability_Name": "Davy Jones\u2019s Locker", "Ability_Effect": " At the start of the Tactics Step this model may select a non-LEGENDARY enemy Formation within 18\" of this model and send them to the locker. Place a marker at the current location of the selected Formation and then remove the Formation you sent to the locker from the battlefield. Then at the start of each following step your opponent must roll a D6. On a result of 5+ the Formation in the locker returns from the locker at the end of the current step and must be setup wholly within 3\" of the marker placed when they were sent to the locker. While a Formation is in the locker it is considered to have been slain for all rules purposes but selecting a Formation to be place in the locker does not count as destroying it. "}], "Caster": 0, "Spells": []}
+{
+    "Name": "Davy Jones",
+    "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "LEGENDARY", "INFANTRY", "CHARACTER"],
+    "Points": 1500,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 6,
+    "Dash": 5,
+    "Melee": 2,
+    "Ranged": 2,
+    "Strength": 10,
+    "Durability": -1,
+    "Health": 18,
+    "Attacks": 6,
+    "Will": 10,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with a Cursed Swashbuckler and a Cursed Blunderbuss.",
+    "Weapons": [{
+        "Name": "Cursed Swashbuckler",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "2",
+        "Wound": "2",
+        "Rend": "4",
+        "Damage": "3",
+        "Abilities": ["Ethereal Weapon (3)"]
+    }, {
+        "Name": "Cursed Blunderbuss",
+        "Cost": 0,
+        "Type": "Ranged 3D3",
+        "Range": "10",
+        "Wound": "3",
+        "Rend": "1",
+        "Damage": "D3",
+        "Abilities": ["Ethereal Weapon (D3)", "\nDeck Sweeper"]
+    }],
+    "Faction_Abilities": ["Ghost Pirate"],
+    "Unit_Abilities": [{
+        "Ability_Name": "Godly Form",
+        "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."
+    }, {
+        "Ability_Name": "Ghost Pirate Lord",
+        "Ability_Effect": " While a friendly SCOUNDRELS OF THE BLACK SEA Formation is within 6\" of this model then models in that Formation may re-roll to hit and to wound rolls of 1."
+    }, {
+        "Ability_Name": "Davy Jones\u2019s Locker",
+        "Ability_Effect": " At the start of the Tactics Step this model may select a non-LEGENDARY enemy Formation within 18\" of this model and send them to the locker. Place a marker at the current location of the selected Formation and then remove the Formation you sent to the locker from the battlefield. Then at the start of each following step your opponent must roll a D6. On a result of 5+ the Formation in the locker returns from the locker at the end of the current step and must be setup wholly within 3\" of the marker placed when they were sent to the locker. While a Formation is in the locker it is considered to have been slain for all rules purposes but selecting a Formation to be place in the locker does not count as destroying it. "
+    }],
+    "Caster": 0,
+    "Spells": []
+}

@@ -1,1 +1,43 @@
-{"Name": "Arthurian Horsemen", "Keywords": ["COURT OF KING ARTHUR", "CAVALRY", "KNIGHT"], "Points": 90, "Unit_Size": {"min": 2, "max": 6}, "Move": 10, "Dash": 6, "Melee": 3, "Ranged": -1, "Strength": 10, "Durability": -1, "Health": 4, "Attacks": 3, "Will": 9, "Armour": 2, "Equipment_Options": "Models in this Formation are equipped with a Arming Sword.", "Weapons": [{"Name": "Arming Sword", "Cost": 0, "Type": "Melee", "Range": "1", "Wound": "3", "Rend": "2", "Damage": "2", "Abilities": ["Serrated (1)"]}, {"Name": "Long Sword", "Cost": 5, "Type": "Melee", "Range": "2", "Wound": "3", "Rend": "4", "Damage": "2", "Abilities": []}], "Faction_Abilities": ["Charge of the Knights", "Knight of the Round Table", "Knightly Shield", "Holy Crusader"], "Unit_Abilities": [], "Caster": 0, "Spells": []}
+{
+    "Name": "Arthurian Horsemen",
+    "Keywords": ["COURT OF KING ARTHUR", "CAVALRY", "KNIGHT"],
+    "Points": 90,
+    "Unit_Size": {
+        "min": 2,
+        "max": 6
+    },
+    "Move": 10,
+    "Dash": 6,
+    "Melee": 3,
+    "Ranged": -1,
+    "Strength": 10,
+    "Durability": -1,
+    "Health": 4,
+    "Attacks": 3,
+    "Will": 9,
+    "Armour": 2,
+    "Equipment_Options": "Models in this Formation are equipped with a Arming Sword.",
+    "Weapons": [{
+        "Name": "Arming Sword",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "1",
+        "Wound": "3",
+        "Rend": "2",
+        "Damage": "2",
+        "Abilities": ["Serrated (1)"]
+    }, {
+        "Name": "Long Sword",
+        "Cost": 5,
+        "Type": "Melee",
+        "Range": "2",
+        "Wound": "3",
+        "Rend": "4",
+        "Damage": "2",
+        "Abilities": []
+    }],
+    "Faction_Abilities": ["Charge of the Knights", "Knight of the Round Table", "Knightly Shield", "Holy Crusader"],
+    "Unit_Abilities": [],
+    "Caster": 0,
+    "Spells": []
+}

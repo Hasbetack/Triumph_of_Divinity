@@ -1,1 +1,34 @@
-{"Name": "Pikemen", "Keywords": ["COURT OF KING ARTHUR", "INFANTRY"], "Points": 25, "Unit_Size": {"min": 5, "max": 10}, "Move": 5, "Dash": 4, "Melee": 3, "Ranged": -1, "Strength": 7, "Durability": -1, "Health": 1, "Attacks": 2, "Will": 7, "Armour": 4, "Equipment_Options": "Models in this Formation are equipped with a Warpike.", "Weapons": [{"Name": "Warpike", "Cost": 0, "Type": "Melee", "Range": "3", "Wound": "3", "Rend": "2", "Damage": "2", "Abilities": ["Unwieldy"]}], "Faction_Abilities": ["-"], "Unit_Abilities": [], "Caster": 0, "Spells": []}
+{
+    "Name": "Pikemen",
+    "Keywords": ["COURT OF KING ARTHUR", "INFANTRY"],
+    "Points": 25,
+    "Unit_Size": {
+        "min": 5,
+        "max": 10
+    },
+    "Move": 5,
+    "Dash": 4,
+    "Melee": 3,
+    "Ranged": -1,
+    "Strength": 7,
+    "Durability": -1,
+    "Health": 1,
+    "Attacks": 2,
+    "Will": 7,
+    "Armour": 4,
+    "Equipment_Options": "Models in this Formation are equipped with a Warpike.",
+    "Weapons": [{
+        "Name": "Warpike",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "3",
+        "Wound": "3",
+        "Rend": "2",
+        "Damage": "2",
+        "Abilities": ["Unwieldy"]
+    }],
+    "Faction_Abilities": ["-"],
+    "Unit_Abilities": [],
+    "Caster": 0,
+    "Spells": []
+}

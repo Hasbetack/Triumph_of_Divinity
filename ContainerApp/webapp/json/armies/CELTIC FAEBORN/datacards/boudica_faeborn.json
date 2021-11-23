@@ -1,1 +1,49 @@
-{"Name": "Boudica Faeborn", "Keywords": ["CELTIC FAEBORN", "LEGENDARY", "GOD", "CHARACTER", "CASTER", "FLY", "FAE"], "Points": 2300, "Unit_Size": {"min": 1, "max": 1}, "Move": 10, "Dash": 6, "Melee": 2, "Ranged": -1, "Strength": 10, "Durability": 6, "Health": 18, "Attacks": 6, "Will": 10, "Armour": 4, "Equipment_Options": "This model is equipped with Llafn Chwedl.", "Weapons": [{"Name": "Llafn Chwedl", "Cost": 0, "Type": "Melee", "Range": "1", "Wound": "3", "Rend": "2", "Damage": "3", "Abilities": ["Serrated (1)", "\nEthereal Weapon (2)"]}], "Faction_Abilities": ["Master of Magic"], "Unit_Abilities": [{"Ability_Name": "Godly Form", "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."}, {"Ability_Name": "Queen of the Celts", "Ability_Effect": " Friendly CELTIC FAEBORN CASTER Formation within 6\" of this model attempts to cast a Magic Spell, that Formation may re-roll a single dice used to cast that Magic Spell. In addition, each time a friendly CELTIC FAEBORN Formation within 6\" of this model successfully casts a Magic Spell, add 1 to that Formations Will Characteristic until the end of the Round."}], "Caster": "4", "Spells": [{"Name": "Trust In The Fae (35)", "Effect": " All friendly CELTIC FAEBORN Formations within 9\" of this model add 2 to their Will Characteristic until the end of the Round. In addition, all friendly CELTIC FAEBORN within 9\" of this model may immediately move 3\"."}, {"Name": "Mindrazor (35)", "Effect": " Until the end of the Round, all CELTIC FAEBORN units within 9\" of this model add 1 to wound rolls and improve the Rend Characteristic of weapons they are equipped with by 2."}, {"Name": "Blessing of the Fae Courts (35)", "Effect": " All friendly non-LEGENDARY FAE Formations within 9\" of this model improve their Armour Save Characteristic by 2 until the end of the Round."}]}
+{
+    "Name": "Boudica Faeborn",
+    "Keywords": ["CELTIC FAEBORN", "LEGENDARY", "GOD", "CHARACTER", "CASTER", "FLY", "FAE"],
+    "Points": 2300,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 10,
+    "Dash": 6,
+    "Melee": 2,
+    "Ranged": -1,
+    "Strength": 10,
+    "Durability": 6,
+    "Health": 18,
+    "Attacks": 6,
+    "Will": 10,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with Llafn Chwedl.",
+    "Weapons": [{
+        "Name": "Llafn Chwedl",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "1",
+        "Wound": "3",
+        "Rend": "2",
+        "Damage": "3",
+        "Abilities": ["Serrated (1)", "\nEthereal Weapon (2)"]
+    }],
+    "Faction_Abilities": ["Master of Magic"],
+    "Unit_Abilities": [{
+        "Ability_Name": "Godly Form",
+        "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."
+    }, {
+        "Ability_Name": "Queen of the Celts",
+        "Ability_Effect": " Friendly CELTIC FAEBORN CASTER Formation within 6\" of this model attempts to cast a Magic Spell, that Formation may re-roll a single dice used to cast that Magic Spell. In addition, each time a friendly CELTIC FAEBORN Formation within 6\" of this model successfully casts a Magic Spell, add 1 to that Formations Will Characteristic until the end of the Round."
+    }],
+    "Caster": "4",
+    "Spells": [{
+        "Name": "Trust In The Fae (35)",
+        "Effect": " All friendly CELTIC FAEBORN Formations within 9\" of this model add 2 to their Will Characteristic until the end of the Round. In addition, all friendly CELTIC FAEBORN within 9\" of this model may immediately move 3\"."
+    }, {
+        "Name": "Mindrazor (35)",
+        "Effect": " Until the end of the Round, all CELTIC FAEBORN units within 9\" of this model add 1 to wound rolls and improve the Rend Characteristic of weapons they are equipped with by 2."
+    }, {
+        "Name": "Blessing of the Fae Courts (35)",
+        "Effect": " All friendly non-LEGENDARY FAE Formations within 9\" of this model improve their Armour Save Characteristic by 2 until the end of the Round."
+    }]
+}

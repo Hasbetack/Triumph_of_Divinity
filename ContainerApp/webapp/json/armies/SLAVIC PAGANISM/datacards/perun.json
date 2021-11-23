@@ -1,1 +1,46 @@
-{"Name": "Perun", "Keywords": ["SLAVIC PAGANISM", "LEGENDARY", "GOD", "CHARACTER", "CASTER"], "Points": 2500, "Unit_Size": {"min": 1, "max": 1}, "Move": 10, "Dash": 6, "Melee": 2, "Ranged": -1, "Strength": 12, "Durability": -1, "Health": 24, "Attacks": 4, "Will": 12, "Armour": 3, "Equipment_Options": "This model is equipped with The Leviathan Axe.", "Weapons": [{"Name": "The Leviathan Axe", "Cost": 0, "Type": "Melee", "Range": "2", "Wound": "2", "Rend": "4", "Damage": "4", "Abilities": ["Devastating", "\nEthereal Weapon (D6)"]}], "Faction_Abilities": [], "Unit_Abilities": [{"Ability_Name": "Godly Form", "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."}, {"Ability_Name": "God of the Skies", "Ability_Effect": " While a friendly SLAVIC formation is within 6\" of this model then that formation has the FLY tag and a Durability Characteristic of 6+. In addition, whenever a ranged attack targets this formation, subtract 1 from the hit roll."}, {"Ability_Name": "God of Thunder and Lightning", "Ability_Effect": " After this formation completes a normal move or dash roll 5D6 for each enemy formation within 6\" of this model. On a result of 4+ the formation being rolled for suffers 1 ethereal damage."}], "Caster": "3", "Spells": [{"Name": "Thunderous Smiting (35)", "Effect": " Select an enemy Formation within 18\" of this model and roll 3D6. For each result of 4+ the formation being rolled for suffers D6 ethereal damage and all other formations (friend or foe) within 6\" of the selected formation suffer D3 ethereal damage."}]}
+{
+    "Name": "Perun",
+    "Keywords": ["SLAVIC PAGANISM", "LEGENDARY", "GOD", "CHARACTER", "CASTER"],
+    "Points": 2500,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 10,
+    "Dash": 6,
+    "Melee": 2,
+    "Ranged": -1,
+    "Strength": 12,
+    "Durability": -1,
+    "Health": 24,
+    "Attacks": 4,
+    "Will": 12,
+    "Armour": 3,
+    "Equipment_Options": "This model is equipped with The Leviathan Axe.",
+    "Weapons": [{
+        "Name": "The Leviathan Axe",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "2",
+        "Wound": "2",
+        "Rend": "4",
+        "Damage": "4",
+        "Abilities": ["Devastating", "\nEthereal Weapon (D6)"]
+    }],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [{
+        "Ability_Name": "Godly Form",
+        "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."
+    }, {
+        "Ability_Name": "God of the Skies",
+        "Ability_Effect": " While a friendly SLAVIC formation is within 6\" of this model then that formation has the FLY tag and a Durability Characteristic of 6+. In addition, whenever a ranged attack targets this formation, subtract 1 from the hit roll."
+    }, {
+        "Ability_Name": "God of Thunder and Lightning",
+        "Ability_Effect": " After this formation completes a normal move or dash roll 5D6 for each enemy formation within 6\" of this model. On a result of 4+ the formation being rolled for suffers 1 ethereal damage."
+    }],
+    "Caster": "3",
+    "Spells": [{
+        "Name": "Thunderous Smiting (35)",
+        "Effect": " Select an enemy Formation within 18\" of this model and roll 3D6. For each result of 4+ the formation being rolled for suffers D6 ethereal damage and all other formations (friend or foe) within 6\" of the selected formation suffer D3 ethereal damage."
+    }]
+}

@@ -1,1 +1,52 @@
-{"Name": "Lugh", "Keywords": ["CELTIC FAEBORN", "LEGENDARY", "GOD", "CHARACTER", "CASTER", "FAE"], "Points": 2400, "Unit_Size": {"min": 1, "max": 1}, "Move": 10, "Dash": 6, "Melee": 2, "Ranged": -1, "Strength": 10, "Durability": 6, "Health": 18, "Attacks": 6, "Will": 10, "Armour": 4, "Equipment_Options": "This model is equipped with The Light Blade and The Staff of the Skies.", "Weapons": [{"Name": "The Light Blade", "Cost": 0, "Type": "Melee", "Range": "1", "Wound": "3", "Rend": "3", "Damage": "4", "Abilities": ["Lance"]}, {"Name": "The Staff of the Skies", "Cost": 0, "Type": "Melee", "Range": "3", "Wound": "3", "Rend": "2", "Damage": "1", "Abilities": ["Serrated (3)", "\nAdditional Attacks (2)"]}], "Faction_Abilities": ["Master of Magic"], "Unit_Abilities": [{"Ability_Name": "Godly Form", "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."}, {"Ability_Name": "Master of All Skills", "Ability_Effect": " Every time this model fails to hit or wound you may re-roll any result of 1 or 2."}], "Caster": "4", "Spells": [{"Name": "Light of Lugh (30)", "Effect": " Select an enemy Formation within 12\" of this model and place a Barrage Template centred anywhere over the selected enemy Formation. Roll a D6 for each model under that template. On each roll of 4+, the Formation that model belongs to suffers 1 Ethereal Damage. In addition, until the end of the turn if a Formation that suffered any ethereal damage as a result of this Magic Spell fails a Will Power Test, then D6 additional models automatically flee from that Formation."}]}
+{
+    "Name": "Lugh",
+    "Keywords": ["CELTIC FAEBORN", "LEGENDARY", "GOD", "CHARACTER", "CASTER", "FAE"],
+    "Points": 2400,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 10,
+    "Dash": 6,
+    "Melee": 2,
+    "Ranged": -1,
+    "Strength": 10,
+    "Durability": 6,
+    "Health": 18,
+    "Attacks": 6,
+    "Will": 10,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with The Light Blade and The Staff of the Skies.",
+    "Weapons": [{
+        "Name": "The Light Blade",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "1",
+        "Wound": "3",
+        "Rend": "3",
+        "Damage": "4",
+        "Abilities": ["Lance"]
+    }, {
+        "Name": "The Staff of the Skies",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "3",
+        "Wound": "3",
+        "Rend": "2",
+        "Damage": "1",
+        "Abilities": ["Serrated (3)", "\nAdditional Attacks (2)"]
+    }],
+    "Faction_Abilities": ["Master of Magic"],
+    "Unit_Abilities": [{
+        "Ability_Name": "Godly Form",
+        "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."
+    }, {
+        "Ability_Name": "Master of All Skills",
+        "Ability_Effect": " Every time this model fails to hit or wound you may re-roll any result of 1 or 2."
+    }],
+    "Caster": "4",
+    "Spells": [{
+        "Name": "Light of Lugh (30)",
+        "Effect": " Select an enemy Formation within 12\" of this model and place a Barrage Template centred anywhere over the selected enemy Formation. Roll a D6 for each model under that template. On each roll of 4+, the Formation that model belongs to suffers 1 Ethereal Damage. In addition, until the end of the turn if a Formation that suffered any ethereal damage as a result of this Magic Spell fails a Will Power Test, then D6 additional models automatically flee from that Formation."
+    }]
+}

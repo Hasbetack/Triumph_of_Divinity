@@ -1,1 +1,43 @@
-{"Name": "Beis", "Keywords": ["SLAVIC PAGANISM", "LEGENDARY", "GOD", "CHARACTER"], "Points": 1800, "Unit_Size": {"min": 1, "max": 1}, "Move": 9, "Dash": 6, "Melee": 3, "Ranged": -1, "Strength": 10, "Durability": -1, "Health": 18, "Attacks": 6, "Will": 10, "Armour": 4, "Equipment_Options": "This model is equipped with Birch Claws.", "Weapons": [{"Name": "Birch Claws", "Cost": 0, "Type": "Melee", "Range": "2", "Wound": "2", "Rend": "3", "Damage": "D3+3", "Abilities": ["Serrated (1)"]}], "Faction_Abilities": [], "Unit_Abilities": [{"Ability_Name": "Godly Form", "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."}, {"Ability_Name": "Master Hunter", "Ability_Effect": " At the start of the charge phase if this model is within 6\" of an enemy Formation then it may choose to ambush that enemy Formation. You may immediately move this model up to 6\" but it must end within 1\" of an enemy Formation. Then, each enemy Formation within 3\" of this model must move up to 3\" and end within 1\" of this model and are unable to charge for the rest of the step."}, {"Ability_Name": "Demon of the Forest", "Ability_Effect": " At the start of the Melee Combat Step roll a D6 for each enemy Formation within 1\" of this model on a 3+ the Formation being rolled for suffers 3 ethereal damage and may not be selected to fight this step until all other eligible models have done so."}], "Caster": 0, "Spells": []}
+{
+    "Name": "Beis",
+    "Keywords": ["SLAVIC PAGANISM", "LEGENDARY", "GOD", "CHARACTER"],
+    "Points": 1800,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 9,
+    "Dash": 6,
+    "Melee": 3,
+    "Ranged": -1,
+    "Strength": 10,
+    "Durability": -1,
+    "Health": 18,
+    "Attacks": 6,
+    "Will": 10,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with Birch Claws.",
+    "Weapons": [{
+        "Name": "Birch Claws",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "2",
+        "Wound": "2",
+        "Rend": "3",
+        "Damage": "D3+3",
+        "Abilities": ["Serrated (1)"]
+    }],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [{
+        "Ability_Name": "Godly Form",
+        "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."
+    }, {
+        "Ability_Name": "Master Hunter",
+        "Ability_Effect": " At the start of the charge phase if this model is within 6\" of an enemy Formation then it may choose to ambush that enemy Formation. You may immediately move this model up to 6\" but it must end within 1\" of an enemy Formation. Then, each enemy Formation within 3\" of this model must move up to 3\" and end within 1\" of this model and are unable to charge for the rest of the step."
+    }, {
+        "Ability_Name": "Demon of the Forest",
+        "Ability_Effect": " At the start of the Melee Combat Step roll a D6 for each enemy Formation within 1\" of this model on a 3+ the Formation being rolled for suffers 3 ethereal damage and may not be selected to fight this step until all other eligible models have done so."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

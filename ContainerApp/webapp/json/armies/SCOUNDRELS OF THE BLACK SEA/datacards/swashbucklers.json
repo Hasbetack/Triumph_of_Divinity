@@ -1,1 +1,43 @@
-{"Name": "Swashbucklers", "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "INFANTRY"], "Points": 40, "Unit_Size": {"min": 10, "max": 20}, "Move": 6, "Dash": 5, "Melee": 4, "Ranged": 4, "Strength": 7, "Durability": -1, "Health": 1, "Attacks": 2, "Will": 8, "Armour": 5, "Equipment_Options": "Models in this Formation are equipped with a Duckfoot Pistol and a Swashbuckler Sword.", "Weapons": [{"Name": "Duckfoot Pistol", "Cost": 0, "Type": "Ranged 4", "Range": "8", "Wound": "4", "Rend": "1", "Damage": "1", "Abilities": ["Ethereal Weapon (1)", "\nDeck Sweeper"]}, {"Name": "Swashbuckler Sword", "Cost": 0, "Type": "Melee", "Range": "1", "Wound": "4", "Rend": "1", "Damage": "1", "Abilities": []}], "Faction_Abilities": ["Ghost Pirate"], "Unit_Abilities": [], "Caster": 0, "Spells": []}
+{
+    "Name": "Swashbucklers",
+    "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "INFANTRY"],
+    "Points": 40,
+    "Unit_Size": {
+        "min": 10,
+        "max": 20
+    },
+    "Move": 6,
+    "Dash": 5,
+    "Melee": 4,
+    "Ranged": 4,
+    "Strength": 7,
+    "Durability": -1,
+    "Health": 1,
+    "Attacks": 2,
+    "Will": 8,
+    "Armour": 5,
+    "Equipment_Options": "Models in this Formation are equipped with a Duckfoot Pistol and a Swashbuckler Sword.",
+    "Weapons": [{
+        "Name": "Duckfoot Pistol",
+        "Cost": 0,
+        "Type": "Ranged 4",
+        "Range": "8",
+        "Wound": "4",
+        "Rend": "1",
+        "Damage": "1",
+        "Abilities": ["Ethereal Weapon (1)", "\nDeck Sweeper"]
+    }, {
+        "Name": "Swashbuckler Sword",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "1",
+        "Wound": "4",
+        "Rend": "1",
+        "Damage": "1",
+        "Abilities": []
+    }],
+    "Faction_Abilities": ["Ghost Pirate"],
+    "Unit_Abilities": [],
+    "Caster": 0,
+    "Spells": []
+}

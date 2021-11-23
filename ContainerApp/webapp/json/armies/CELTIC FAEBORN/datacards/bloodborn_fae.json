@@ -1,1 +1,55 @@
-{"Name": "Bloodborn Fae", "Keywords": ["CELTIC FAEBORN", "INFANTRY", "FLY", "FAE"], "Points": 45, "Unit_Size": {"min": 5, "max": 10}, "Move": 12, "Dash": 6, "Melee": 3, "Ranged": -1, "Strength": 6, "Durability": 5, "Health": 2, "Attacks": 3, "Will": 7, "Armour": 6, "Equipment_Options": "Models in this Formation are equipped with a Blood Fae Claws and Death Scythes.", "Weapons": [{"Name": "Blood Fae Claws", "Cost": 0, "Type": "Melee", "Range": "1", "Wound": "4", "Rend": "1", "Damage": "1", "Abilities": ["Serrated (2)", "\nAdditional Attacks (2)"]}, {"Name": "Death Scythes", "Cost": 0, "Type": "Melee", "Range": "4", "Wound": "4", "Rend": "2", "Damage": "2", "Abilities": ["Lance"]}], "Faction_Abilities": ["Master of Magic"], "Unit_Abilities": [{"Ability_Name": "Fae Magic", "Ability_Effect": " If this Formation has 1-5 Models then the Formation gains a Caster level of 1. If this Formation has 6-10 models then the Formation gains a Caster level of 2. This Formation may only use the Magic Spells listed in the Caster section to the right (In addition to Magic Blast and Mystic Touch)."}, {"Ability_Name": "Bloodthirsty Tricksters", "Ability_Effect": " At the start of the Magic Step, you may activate this Formations Thirst for Blood, if you do, then until the start of the next Magic Step, this Formation loses the ability to cast Magic Spells and does not get a magic pool and this model adds 1 to hit and wound rolls for attacks made in the Melee Combat Step."}], "Caster": "1/2", "Spells": [{"Name": "Vengance of Annwn (30)", "Effect": " Select an enemy non- LEGENDARY Formation within 12\" of the caster and visible to it. The selected model suffers D3 Ethereal Damage and, if the selected Formation contains a caster, until the next Magic Step, your opponent must discard any dice that caster added to the magic pool."}, {"Name": "Bloodborn (20)", "Effect": " Select a friendly Formation within 9\" of the caster, until the start of the next Magic Step, add 1 to the Attacks Characteristic of models in the selected Formation."}]}
+{
+    "Name": "Bloodborn Fae",
+    "Keywords": ["CELTIC FAEBORN", "INFANTRY", "FLY", "FAE"],
+    "Points": 45,
+    "Unit_Size": {
+        "min": 5,
+        "max": 10
+    },
+    "Move": 12,
+    "Dash": 6,
+    "Melee": 3,
+    "Ranged": -1,
+    "Strength": 6,
+    "Durability": 5,
+    "Health": 2,
+    "Attacks": 3,
+    "Will": 7,
+    "Armour": 6,
+    "Equipment_Options": "Models in this Formation are equipped with a Blood Fae Claws and Death Scythes.",
+    "Weapons": [{
+        "Name": "Blood Fae Claws",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "1",
+        "Wound": "4",
+        "Rend": "1",
+        "Damage": "1",
+        "Abilities": ["Serrated (2)", "\nAdditional Attacks (2)"]
+    }, {
+        "Name": "Death Scythes",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "4",
+        "Wound": "4",
+        "Rend": "2",
+        "Damage": "2",
+        "Abilities": ["Lance"]
+    }],
+    "Faction_Abilities": ["Master of Magic"],
+    "Unit_Abilities": [{
+        "Ability_Name": "Fae Magic",
+        "Ability_Effect": " If this Formation has 1-5 Models then the Formation gains a Caster level of 1. If this Formation has 6-10 models then the Formation gains a Caster level of 2. This Formation may only use the Magic Spells listed in the Caster section to the right (In addition to Magic Blast and Mystic Touch)."
+    }, {
+        "Ability_Name": "Bloodthirsty Tricksters",
+        "Ability_Effect": " At the start of the Magic Step, you may activate this Formations Thirst for Blood, if you do, then until the start of the next Magic Step, this Formation loses the ability to cast Magic Spells and does not get a magic pool and this model adds 1 to hit and wound rolls for attacks made in the Melee Combat Step."
+    }],
+    "Caster": "1/2",
+    "Spells": [{
+        "Name": "Vengance of Annwn (30)",
+        "Effect": " Select an enemy non- LEGENDARY Formation within 12\" of the caster and visible to it. The selected model suffers D3 Ethereal Damage and, if the selected Formation contains a caster, until the next Magic Step, your opponent must discard any dice that caster added to the magic pool."
+    }, {
+        "Name": "Bloodborn (20)",
+        "Effect": " Select a friendly Formation within 9\" of the caster, until the start of the next Magic Step, add 1 to the Attacks Characteristic of models in the selected Formation."
+    }]
+}

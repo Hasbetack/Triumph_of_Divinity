@@ -1,1 +1,43 @@
-{"Name": "Dairagchid", "Keywords": ["MONGOLIAN KHANNATE", "CAVALRY"], "Points": 60, "Unit_Size": {"min": 5, "max": 10}, "Move": 12, "Dash": 8, "Melee": 3, "Ranged": -1, "Strength": 7, "Durability": -1, "Health": 3, "Attacks": 4, "Will": 8, "Armour": 4, "Equipment_Options": "Models in this Formation are equipped with a Moriton Lans.", "Weapons": [{"Name": "Moriton Lans", "Cost": 0, "Type": "Melee", "Range": "3", "Wound": "3", "Rend": "2", "Damage": "1", "Abilities": []}, {"Name": "Moriton Khalbyerd", "Cost": 5, "Type": "Melee", "Range": "3", "Wound": "3", "Rend": "4", "Damage": "2", "Abilities": ["Lance"]}], "Faction_Abilities": ["Dash Quickly"], "Unit_Abilities": [], "Caster": 0, "Spells": []}
+{
+    "Name": "Dairagchid",
+    "Keywords": ["MONGOLIAN KHANNATE", "CAVALRY"],
+    "Points": 60,
+    "Unit_Size": {
+        "min": 5,
+        "max": 10
+    },
+    "Move": 12,
+    "Dash": 8,
+    "Melee": 3,
+    "Ranged": -1,
+    "Strength": 7,
+    "Durability": -1,
+    "Health": 3,
+    "Attacks": 4,
+    "Will": 8,
+    "Armour": 4,
+    "Equipment_Options": "Models in this Formation are equipped with a Moriton Lans.",
+    "Weapons": [{
+        "Name": "Moriton Lans",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "3",
+        "Wound": "3",
+        "Rend": "2",
+        "Damage": "1",
+        "Abilities": []
+    }, {
+        "Name": "Moriton Khalbyerd",
+        "Cost": 5,
+        "Type": "Melee",
+        "Range": "3",
+        "Wound": "3",
+        "Rend": "4",
+        "Damage": "2",
+        "Abilities": ["Lance"]
+    }],
+    "Faction_Abilities": ["Dash Quickly"],
+    "Unit_Abilities": [],
+    "Caster": 0,
+    "Spells": []
+}

@@ -1,1 +1,43 @@
-{"Name": "Mongol War Archers", "Keywords": ["MONGOLIAN KHANNATE", "INFANTRY"], "Points": 30, "Unit_Size": {"min": 5, "max": 10}, "Move": 6, "Dash": 5, "Melee": 3, "Ranged": 3, "Strength": 7, "Durability": -1, "Health": 1, "Attacks": 2, "Will": 7, "Armour": 5, "Equipment_Options": "Models in this Formation are equipped with a Morit Uyaach.", "Weapons": [{"Name": "Morit Uyaach", "Cost": 0, "Type": "Ranged 2", "Range": "24", "Wound": "3", "Rend": "1", "Damage": "1", "Abilities": []}, {"Name": "Moriton Urtnum", "Cost": 5, "Type": "Ranged 1", "Range": "30", "Wound": "2", "Rend": "2", "Damage": "2", "Abilities": ["Ethereal Weapon (1)"]}], "Faction_Abilities": ["-"], "Unit_Abilities": [], "Caster": 0, "Spells": []}
+{
+    "Name": "Mongol War Archers",
+    "Keywords": ["MONGOLIAN KHANNATE", "INFANTRY"],
+    "Points": 30,
+    "Unit_Size": {
+        "min": 5,
+        "max": 10
+    },
+    "Move": 6,
+    "Dash": 5,
+    "Melee": 3,
+    "Ranged": 3,
+    "Strength": 7,
+    "Durability": -1,
+    "Health": 1,
+    "Attacks": 2,
+    "Will": 7,
+    "Armour": 5,
+    "Equipment_Options": "Models in this Formation are equipped with a Morit Uyaach.",
+    "Weapons": [{
+        "Name": "Morit Uyaach",
+        "Cost": 0,
+        "Type": "Ranged 2",
+        "Range": "24",
+        "Wound": "3",
+        "Rend": "1",
+        "Damage": "1",
+        "Abilities": []
+    }, {
+        "Name": "Moriton Urtnum",
+        "Cost": 5,
+        "Type": "Ranged 1",
+        "Range": "30",
+        "Wound": "2",
+        "Rend": "2",
+        "Damage": "2",
+        "Abilities": ["Ethereal Weapon (1)"]
+    }],
+    "Faction_Abilities": ["-"],
+    "Unit_Abilities": [],
+    "Caster": 0,
+    "Spells": []
+}

@@ -1,1 +1,46 @@
-{"Name": "Pirate Captain", "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "INFANTRY", "CHARACTER"], "Points": 220, "Unit_Size": {"min": 1, "max": 1}, "Move": 5, "Dash": 4, "Melee": 3, "Ranged": 2, "Strength": 9, "Durability": -1, "Health": 6, "Attacks": 4, "Will": 9, "Armour": 3, "Equipment_Options": "This model is equipped with a Captain\u2019s Swashbuckler and a Captain\u2019s Powder Pistol.", "Weapons": [{"Name": "Captain\u2019s Swashbuckler", "Cost": 0, "Type": "Melee", "Range": "1", "Wound": "3", "Rend": "2", "Damage": "2", "Abilities": ["Ethereal Weapon (2)"]}, {"Name": "Captain\u2019s Powder Pistol", "Cost": 0, "Type": "Ranged 2D3", "Range": "6", "Wound": "3", "Rend": "1", "Damage": "2", "Abilities": ["Ethereal Weapon (2)", "\nDeck Sweeper"]}], "Faction_Abilities": ["Ghost Pirate"], "Unit_Abilities": [{"Ability_Name": "Ghost Pirate Captain", "Ability_Effect": " While a friendly SCOUNDRELS OF THE BLACK SEA Formation is within 6\" of this model then models in that Formation may re-roll to hit rolls of 1."}], "Caster": 0, "Spells": []}
+{
+    "Name": "Pirate Captain",
+    "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "INFANTRY", "CHARACTER"],
+    "Points": 220,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 5,
+    "Dash": 4,
+    "Melee": 3,
+    "Ranged": 2,
+    "Strength": 9,
+    "Durability": -1,
+    "Health": 6,
+    "Attacks": 4,
+    "Will": 9,
+    "Armour": 3,
+    "Equipment_Options": "This model is equipped with a Captain\u2019s Swashbuckler and a Captain\u2019s Powder Pistol.",
+    "Weapons": [{
+        "Name": "Captain\u2019s Swashbuckler",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "1",
+        "Wound": "3",
+        "Rend": "2",
+        "Damage": "2",
+        "Abilities": ["Ethereal Weapon (2)"]
+    }, {
+        "Name": "Captain\u2019s Powder Pistol",
+        "Cost": 0,
+        "Type": "Ranged 2D3",
+        "Range": "6",
+        "Wound": "3",
+        "Rend": "1",
+        "Damage": "2",
+        "Abilities": ["Ethereal Weapon (2)", "\nDeck Sweeper"]
+    }],
+    "Faction_Abilities": ["Ghost Pirate"],
+    "Unit_Abilities": [{
+        "Ability_Name": "Ghost Pirate Captain",
+        "Ability_Effect": " While a friendly SCOUNDRELS OF THE BLACK SEA Formation is within 6\" of this model then models in that Formation may re-roll to hit rolls of 1."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

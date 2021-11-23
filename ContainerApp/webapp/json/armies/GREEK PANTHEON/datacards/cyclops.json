@@ -1,1 +1,40 @@
-{"Name": "Cyclops", "Keywords": ["GREEK PANTHEON", "MONSTER"], "Points": 650, "Unit_Size": {"min": 1, "max": 1}, "Move": 8, "Dash": 6, "Melee": 3, "Ranged": -1, "Strength": 10, "Durability": -1, "Health": 18, "Attacks": 4, "Will": 10, "Armour": 4, "Equipment_Options": "This model is equipped with the Hammer of the Cyclops.", "Weapons": [{"Name": "Hammer of the Cyclops", "Cost": 0, "Type": "Melee", "Range": "1", "Wound": "3", "Rend": "2", "Damage": "4", "Abilities": ["Devastating"]}], "Faction_Abilities": [], "Unit_Abilities": [{"Ability_Name": "Godly Form", "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."}, {"Ability_Name": "Master Crafters", "Ability_Effect": " Each time this model makes an attack in the Melee Combat step, if an unmodified wound roll of 5+ is scored, then double the Damage Characteristic of that attack. In addition, while a friendly LEGENDARY Formation is within 3\" of this model then add 1 to the Damage Characteristic of weapons equipped by that LEGENDARY Formation."}], "Caster": 0, "Spells": []}
+{
+    "Name": "Cyclops",
+    "Keywords": ["GREEK PANTHEON", "MONSTER"],
+    "Points": 650,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 8,
+    "Dash": 6,
+    "Melee": 3,
+    "Ranged": -1,
+    "Strength": 10,
+    "Durability": -1,
+    "Health": 18,
+    "Attacks": 4,
+    "Will": 10,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with the Hammer of the Cyclops.",
+    "Weapons": [{
+        "Name": "Hammer of the Cyclops",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "1",
+        "Wound": "3",
+        "Rend": "2",
+        "Damage": "4",
+        "Abilities": ["Devastating"]
+    }],
+    "Faction_Abilities": [],
+    "Unit_Abilities": [{
+        "Ability_Name": "Godly Form",
+        "Ability_Effect": " Any attack that targets this model is treated as having a Rend Characteristic of 0."
+    }, {
+        "Ability_Name": "Master Crafters",
+        "Ability_Effect": " Each time this model makes an attack in the Melee Combat step, if an unmodified wound roll of 5+ is scored, then double the Damage Characteristic of that attack. In addition, while a friendly LEGENDARY Formation is within 3\" of this model then add 1 to the Damage Characteristic of weapons equipped by that LEGENDARY Formation."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

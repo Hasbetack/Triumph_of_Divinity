@@ -1,0 +1,6 @@
+{
+    "Name": "Faeborn",
+    "Points": 350,
+    "Requirements": ["Your Army must include Boudica Faeborn", "1-2 Formations of Lesser Fae", "1-2 Formations of Wyld Fae", "1-2 Formations of Bloodborn Fae"],
+    "Effect": "If your army includes this company then all Formations in this company may add 1 additional dice to their Magic Pool."
+}

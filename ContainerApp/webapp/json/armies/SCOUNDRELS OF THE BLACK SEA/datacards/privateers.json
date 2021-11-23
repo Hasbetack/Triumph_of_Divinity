@@ -1,1 +1,46 @@
-{"Name": "Privateers", "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "INFANTRY"], "Points": 85, "Unit_Size": {"min": 3, "max": 6}, "Move": 5, "Dash": 4, "Melee": 3, "Ranged": 5, "Strength": 8, "Durability": -1, "Health": 3, "Attacks": 3, "Will": 8, "Armour": 5, "Equipment_Options": "Models in this Formation are equipped with a Flintlock Pistol and a Boarding Axe.", "Weapons": [{"Name": "Flintlock Pistol", "Cost": 0, "Type": "Ranged 1", "Range": "8", "Wound": "4", "Rend": "", "Damage": "1", "Abilities": ["Ethereal Weapon (1)", "\nDeck Sweeper"]}, {"Name": "Boarding Pike", "Cost": 5, "Type": "Melee", "Range": "3", "Wound": "4", "Rend": "2", "Damage": "1", "Abilities": ["Unwieldy", "\nEthereal Weapon (1)"]}], "Faction_Abilities": ["Ghost Pirate"], "Unit_Abilities": [{"Ability_Name": "Boarding Pike", "Ability_Effect": " When an enemy is hit with a Boarding Pike, that enemy Formation cannot disengage from this Formation until this Formation has been destroyed."}], "Caster": 0, "Spells": []}
+{
+    "Name": "Privateers",
+    "Keywords": ["SCOUNDRELS OF THE BLACK SEA", "INFANTRY"],
+    "Points": 85,
+    "Unit_Size": {
+        "min": 3,
+        "max": 6
+    },
+    "Move": 5,
+    "Dash": 4,
+    "Melee": 3,
+    "Ranged": 5,
+    "Strength": 8,
+    "Durability": -1,
+    "Health": 3,
+    "Attacks": 3,
+    "Will": 8,
+    "Armour": 5,
+    "Equipment_Options": "Models in this Formation are equipped with a Flintlock Pistol and a Boarding Axe.",
+    "Weapons": [{
+        "Name": "Flintlock Pistol",
+        "Cost": 0,
+        "Type": "Ranged 1",
+        "Range": "8",
+        "Wound": "4",
+        "Rend": "",
+        "Damage": "1",
+        "Abilities": ["Ethereal Weapon (1)", "\nDeck Sweeper"]
+    }, {
+        "Name": "Boarding Pike",
+        "Cost": 5,
+        "Type": "Melee",
+        "Range": "3",
+        "Wound": "4",
+        "Rend": "2",
+        "Damage": "1",
+        "Abilities": ["Unwieldy", "\nEthereal Weapon (1)"]
+    }],
+    "Faction_Abilities": ["Ghost Pirate"],
+    "Unit_Abilities": [{
+        "Ability_Name": "Boarding Pike",
+        "Ability_Effect": " When an enemy is hit with a Boarding Pike, that enemy Formation cannot disengage from this Formation until this Formation has been destroyed."
+    }],
+    "Caster": 0,
+    "Spells": []
+}

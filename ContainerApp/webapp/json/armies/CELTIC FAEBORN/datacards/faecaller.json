@@ -1,1 +1,49 @@
-{"Name": "Faecaller", "Keywords": ["CELTIC FAEBORN", "INFANTRY", "CHARACTER", "CASTER", "FAE"], "Points": 160, "Unit_Size": {"min": 1, "max": 1}, "Move": 6, "Dash": 5, "Melee": 3, "Ranged": -1, "Strength": 8, "Durability": 6, "Health": 3, "Attacks": 4, "Will": 8, "Armour": 4, "Equipment_Options": "This model is equipped with Fae Claws and a Ritual Dagger.", "Weapons": [{"Name": "Fae Claws", "Cost": 0, "Type": "Melee", "Range": "1", "Wound": "4", "Rend": "1", "Damage": "1", "Abilities": ["Serrated (1)"]}, {"Name": "Ritual Dagger", "Cost": 0, "Type": "Melee", "Range": "1", "Wound": "2", "Rend": "4", "Damage": "1", "Abilities": ["Additional Attacks (1)"]}], "Faction_Abilities": ["Master of Magic"], "Unit_Abilities": [{"Ability_Name": "Bloodthirsty Tricksters", "Ability_Effect": " At the start of the Magic Step, you may activate this Formations Thirst for Blood, if you do, then until the start of the next Magic Step, this Formation loses the ability to cast Magic Spells and does not get a magic pool and this model adds 1 to hit and wound rolls for attacks made in the Melee Combat Step."}], "Caster": "2", "Spells": [{"Name": "Doom of the Fae (25)", "Effect": " Select a point of the battlefield within 12\" of this model, place a 3\" Blast Template over this point. Roll a D6 for each model under the template, for each result of 5+ the Formation the model being rolled for belongs to takes 1 Ethereal Damage. If you roll a 6, then the Formation suffers 1 additional Ethereal Damage."}]}
+{
+    "Name": "Faecaller",
+    "Keywords": ["CELTIC FAEBORN", "INFANTRY", "CHARACTER", "CASTER", "FAE"],
+    "Points": 160,
+    "Unit_Size": {
+        "min": 1,
+        "max": 1
+    },
+    "Move": 6,
+    "Dash": 5,
+    "Melee": 3,
+    "Ranged": -1,
+    "Strength": 8,
+    "Durability": 6,
+    "Health": 3,
+    "Attacks": 4,
+    "Will": 8,
+    "Armour": 4,
+    "Equipment_Options": "This model is equipped with Fae Claws and a Ritual Dagger.",
+    "Weapons": [{
+        "Name": "Fae Claws",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "1",
+        "Wound": "4",
+        "Rend": "1",
+        "Damage": "1",
+        "Abilities": ["Serrated (1)"]
+    }, {
+        "Name": "Ritual Dagger",
+        "Cost": 0,
+        "Type": "Melee",
+        "Range": "1",
+        "Wound": "2",
+        "Rend": "4",
+        "Damage": "1",
+        "Abilities": ["Additional Attacks (1)"]
+    }],
+    "Faction_Abilities": ["Master of Magic"],
+    "Unit_Abilities": [{
+        "Ability_Name": "Bloodthirsty Tricksters",
+        "Ability_Effect": " At the start of the Magic Step, you may activate this Formations Thirst for Blood, if you do, then until the start of the next Magic Step, this Formation loses the ability to cast Magic Spells and does not get a magic pool and this model adds 1 to hit and wound rolls for attacks made in the Melee Combat Step."
+    }],
+    "Caster": "2",
+    "Spells": [{
+        "Name": "Doom of the Fae (25)",
+        "Effect": " Select a point of the battlefield within 12\" of this model, place a 3\" Blast Template over this point. Roll a D6 for each model under the template, for each result of 5+ the Formation the model being rolled for belongs to takes 1 Ethereal Damage. If you roll a 6, then the Formation suffers 1 additional Ethereal Damage."
+    }]
+}
