@@ -3,12 +3,7 @@ import json
 import re
 import os
 
-
-# Python Script to extract relevant tables from the playtest docx and process them into json files. 
-# run this file while CDed into the directory it os contained in unless you like messy output locations.
-
-
-rootdir = '/'
+rootdir = 'C:\\Users\\Sam\\EpitaphDocParse\\src\\'
 
 document = Document(os.path.join(rootdir, "test.docx"))
 tables = document.tables
@@ -41,8 +36,11 @@ def parse_caster(abilities_table):
 def weapon_sanitizer(weapon):
 
     abilities = weapon["Abilities"]
-    abilities_list = abilities.split(", ")
-    weapon["Abilities"] = abilities_list
+    if abilities == "-":
+        weapon["Abilities"] = []
+    else:
+        abilities_list = abilities.split(", ")
+        weapon["Abilities"] = abilities_list
 
     return weapon
 
@@ -116,6 +114,8 @@ def parse_header(header):
 
     keywords = text_lines[1].split(',')
     keywords = [keyword.strip() for keyword in keywords]
+    keyword_len = len(keywords)
+    del keywords[keyword_len - 1]
     faction = keywords[0]
 
     unit_loadout = text_lines[2]
@@ -199,7 +199,9 @@ def sanitize_abilities(abilities):
                 "Ability_Effect": ability_split[1].replace("\u201d", "\""),
             })
         else:
-            faction_abilities.append(ability)
+            ability_split = ability.split(", ")
+            for i in ability_split:
+                faction_abilities.append(i)
 
     abilities_sanitized.append(unit_abilities)
     abilities_sanitized.append(faction_abilities)
@@ -240,7 +242,7 @@ def sanitize_caster(caster):
 
         return spells_sanitized
     else:
-        return [0, {}]
+        return [0, []]
 
 
 def make_dir(faction):
@@ -249,43 +251,46 @@ def make_dir(faction):
 
 
 def make_datacards():
-    for table in tables[-85:]:
-        name, faction, points, unit_size_min, unit_size_max, base_size, keywords, unit_loadout, stats, weapons, abilities, caster = parse_datacard(table)
-        if faction not in datacards:
-            datacards[faction] = {}
+    for table in tables:
+        try:
+            name, faction, points, unit_size_min, unit_size_max, base_size, keywords, unit_loadout, stats, weapons, abilities, caster = parse_datacard(table)
+            if faction not in datacards:
+                datacards[faction] = {}
 
-        make_dir(faction)
+            make_dir(faction)
 
-        stats = statline_sanitizer(stats)
-        abilities = sanitize_abilities(abilities)
-        caster = sanitize_caster(caster)
-        datacard_key = name.replace(" ", "_").lower()
+            stats = statline_sanitizer(stats)
+            abilities = sanitize_abilities(abilities)
+            caster = sanitize_caster(caster)
+            datacard_key = name.replace(" ", "_").lower()
 
-        datacards[faction][datacard_key] = {
-            "Name": name,
-            "Keywords": keywords,
-            "Points": int(points),
-            "Unit_Size": {
-                "min": int(unit_size_min),
-                "max": int(unit_size_max)
-            },
-            "Move": stats["Move"],
-            "Dash": stats["Dash"],
-            "Melee": stats["Melee"],
-            "Ranged": stats["Ranged"],
-            "Strength": int(stats["Strength"]),
-            "Durability": stats["Durability"],
-            "Health": int(stats["Health"]),
-            "Attacks": stats["Attacks"],
-            "Will": int(stats["Will"]),
-            "Armour": stats["Armour"],
-            "Equipment_Options": unit_loadout,
-            "Weapons": weapons,
-            "Faction_Abilities": abilities[1],
-            "Unit_Abilities": abilities[0],
-            "Caster": caster[0],
-            "Spells": caster[1]
-        }
+            datacards[faction][datacard_key] = {
+                "Name": name,
+                "Keywords": keywords,
+                "Points": int(points),
+                "Unit_Size": {
+                    "min": int(unit_size_min),
+                    "max": int(unit_size_max)
+                },
+                "Move": stats["Move"],
+                "Dash": stats["Dash"],
+                "Melee": stats["Melee"],
+                "Ranged": stats["Ranged"],
+                "Strength": int(stats["Strength"]),
+                "Durability": stats["Durability"],
+                "Health": int(stats["Health"]),
+                "Attacks": stats["Attacks"],
+                "Will": int(stats["Will"]),
+                "Armour": stats["Armour"],
+                "Equipment_Options": unit_loadout,
+                "Weapons": weapons,
+                "Faction_Abilities": abilities[1],
+                "Unit_Abilities": abilities[0],
+                "Caster": caster[0],
+                "Spells": caster[1]
+            }
+        except Exception:
+            pass
 
 
 make_datacards()
