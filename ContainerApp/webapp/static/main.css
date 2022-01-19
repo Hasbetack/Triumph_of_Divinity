@@ -1,6 +1,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
   /**/
+
   body {
     background: #282a36;/*Main Page Background*/
     margin-top: 5rem;
@@ -144,11 +145,74 @@
     bottom: 0%;
   }
 
-
   .table>:not(caption)>*>* {
     padding: 0;
   }
 
   .borderless td, .borderless th {
     border: none;
+  }
+
+  .table-text-color {
+    color: #fff;
+  }
+
+  .celtic-faeborn-dark {
+    background: #4f2272;
+  }
+  .celtic-faeborn-normal {
+    background: #6f30a0;
+  }
+  .celtic-faeborn-light {
+    background: #d9c2ed;
+  }
+
+  .greek-pantheon-dark {
+    background: #323e4f;
+  }
+  .greek-pantheon-normal {
+    background: #44546a;
+  }
+  .greek-pantheon-light {
+    background: #d6dce5;
+  }
+
+  .settlers-of-the-nile-dark {
+    background: #1c68c4;
+  }
+  .settlers-of-the-nile-normal {
+    background: #ffc200;
+  }
+  .settlers-of-the-nile-light {
+    background: #fef2cc;
+  }
+
+  .court-of-king-arthur-dark {
+    background: #cd1818;
+  }
+  .court-of-king-arthur-normal {
+    background: #e83a3a;
+  }
+  .court-of-king-arthur-light {
+    background: #e69797;
+  }
+
+  .scoundrels-of-the-black-sea-dark {
+    background: #2e76b5;
+  }
+  .scoundrels-of-the-black-sea-normal {
+    background: #5b9bd5;
+  }
+  .scoundrels-of-the-black-sea-light {
+    background: #deebf6;
+  }
+
+  .slavic-paganism-dark {
+    background: #537e35;
+  }
+  .slavic-paganism-normal {
+    background: #70ad47;
+  }
+  .slavic-paganism-light {
+    background: #e2efda;
   }

@@ -1,6 +1,6 @@
 from flask import render_template, url_for, flash, redirect, request
 from webapp import app, Content
-from webapp.utils import load_changelog_json, filter_datacards_by_faction, filter_datacards_by_keyword
+from webapp.utils import load_changelog_json, filter_datacards_by_faction, filter_datacards_by_keyword, parse_spaces_in_faction_name
 import copy
 
 @app.route("/")
@@ -26,7 +26,8 @@ def datacards():
         datacards=datacards_data,
         all_factions=all_factions,
         all_keywords=all_keywords,
-        weapon_ability_tooltip=Content.weapon_ability_tooltip)
+        weapon_ability_tooltip=Content.weapon_ability_tooltip,
+        parse_spaces_in_faction_name=parse_spaces_in_faction_name)
 
 
 @app.route("/army_builder")

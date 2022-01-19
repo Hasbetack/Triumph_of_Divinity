@@ -111,7 +111,7 @@ class Content_Loader:
         abilities = {}
         with open(path_abilities_json, "r", encoding="utf8") as json_abilities:
             abilities = json.load(json_abilities)
-        
+
         assert isinstance(abilities, dict), "In {}: Abilities must be stored in dict".format(path_abilities_json)
 
         if len(abilities.keys()) == 0:
@@ -136,7 +136,7 @@ class Content_Loader:
         for company_json in company_jsons:
             path_company_json = os.path.join(path_companies, company_json)
             assert os.path.isfile(path_company_json), "Contents of {} must be json files".format(path_companies)
-            
+
             company = {}
             with open(path_company_json, "r", encoding="utf8") as json_company:
                 company = json.load(json_company)
@@ -158,7 +158,7 @@ class Content_Loader:
             assert isinstance(company["Points"], int),        "In {}: 'Points' must be of type int".format(path_company_json)
             assert isinstance(company["Requirements"], list), "In {}: 'Requirements' must be of type list".format(path_company_json)
             assert isinstance(company["Effect"], str),        "In {}: 'Effect' must be of type string".format(path_company_json)
-            
+
             for requirement in company["Requirements"]:
                 assert isinstance(requirement, str), "In {}: Each element of 'Requirements' must be of type string".format(path_company_json)
 
@@ -178,7 +178,7 @@ class Content_Loader:
         for unit_json in unit_jsons:
             path_unit_json = os.path.join(path_datacards, unit_json)
             assert os.path.isfile(path_unit_json), "Contents of {} must be json files".format(path_datacards)
-            
+
             unit = {}
             with open(path_unit_json, "r", encoding="utf8") as json_unit:
                 unit = json.load(json_unit)
@@ -188,7 +188,7 @@ class Content_Loader:
             if len(unit.keys()) == 0:
                 print("In {}: Found empty json".format(path_unit_json))
                 continue  
-            
+
             UNIT_KEYS = [
                 "Name",
                 "Keywords",
@@ -235,12 +235,12 @@ class Content_Loader:
             assert isinstance(unit["Unit_Abilities"], list),    "In {}: Unit abilities must be in a list".format(path_unit_json)
             assert isinstance(unit["Caster"], (int, str)),      "In {}: Unit caster must be int, 0 if non-caster".format(path_unit_json)
             assert isinstance(unit["Spells"], list),            "In {}: Unit spells must be in a list".format(path_unit_json)
-            
+
             for keyword in unit["Keywords"]:
                 assert isinstance(keyword, str), "In {}: Unit keyword '{}' must all be string".format(path_unit_json, keyword)
                 assert keyword.isupper(), "In {}, unit keyword '{}' must be all caps".format(path_unit_json, keyword)
                 assert keyword in self.DATACARD_TAGS, "In {}, unit keyword '{}' is not a recognized keyword".format(path_unit_json, keyword)
-            
+
             assert sorted(unit["Unit_Size"].keys()) == ["max", "min"], "In {}, unit size must only have keys 'max' and 'min'".format(path_unit_json)
             assert isinstance(unit["Unit_Size"]['max'], int), "In {}, unit size 'max' must be int".format(path_unit_json)
             assert isinstance(unit["Unit_Size"]['min'], int), "In {}, unit size 'min' must be int".format(path_unit_json)
@@ -278,7 +278,7 @@ class Content_Loader:
 
             for faction_ability in unit["Faction_Abilities"]:
                 assert isinstance(faction_ability, str)
-                
+
             for unit_ability in unit["Unit_Abilities"]:
                 assert isinstance(unit_ability, dict)
                 assert sorted(unit_ability.keys()) == ["Ability_Effect", "Ability_Name"]
@@ -290,7 +290,7 @@ class Content_Loader:
                 assert sorted(spell.keys()) == ["Effect", "Name"]
                 assert isinstance(spell["Name"], str)
                 assert isinstance(spell["Effect"], str)
- 
+
             units.append(unit)
 
         return units
@@ -384,3 +384,10 @@ def filter_datacards_by_keyword(datacards, searched_keywords, strict):
             datacards[faction]["Units"] = [unit for unit in datacards[faction]["Units"] if any_keywords_shared(unit["Keywords"], searched_keywords)]
 
     return datacards
+
+
+def parse_spaces_in_faction_name(faction_name):
+    faction_name = faction_name.replace(" ", "-")
+    faction_name = faction_name.lower()
+
+    return faction_name
